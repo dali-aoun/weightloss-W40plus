@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>AuthorizationQueryParametersError</Code><Message>Invalid credential date "20260709". This date is not the same as X-Amz-Date: "20260710".</Message><RequestId>KJFY64TH3ERNE099</RequestId><HostId>0hlB6lWV6LZ6z4QYnEF3MRFdlKK/rAdCw74dWgcUh/iFy5O/RSn5586dXkxJ8WYVBDnYsHBpYrj0HzD13Cewjb8E83BT7t8p</HostId></Error>
