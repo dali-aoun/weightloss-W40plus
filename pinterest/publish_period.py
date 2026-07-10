@@ -97,7 +97,7 @@ def get_board_id(board_name, headers, board_cache):
 
 
 def get_image_url(state):
-    local_pins = sorted(f for f in os.listdir(IMAGES_DIR) if f.endswith(".png")) if os.path.isdir(IMAGES_DIR) else []
+    local_pins = sorted(f for f in os.listdir(IMAGES_DIR) if f.lower().endswith((".png", ".jpg", ".jpeg"))) if os.path.isdir(IMAGES_DIR) else []
     if not local_pins:
         return None
     idx = state.get("img_idx", 0) % len(local_pins)
