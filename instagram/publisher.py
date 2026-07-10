@@ -39,19 +39,34 @@ IMAGE_KEYWORDS = [
 ]
 
 REEL_KEYWORDS = [
-    "smoothie making blender",
-    "healthy morning routine woman",
-    "women fitness home workout",
-    "yoga morning routine woman",
-    "green smoothie preparation",
-    "smoothie bowl making",
-    "women morning wellness",
-    "healthy drink preparation",
+    "woman drinking smoothie close up",
+    "fitness woman morning routine kitchen",
+    "mature woman preparing healthy food",
+    "woman yoga morning wellness",
+    "woman blending green smoothie",
+    "healthy woman eating salad portrait",
+    "woman exercising at home",
+    "woman wellness lifestyle over 40",
+    "woman drinking green juice",
+    "fitness woman healthy breakfast",
 ]
 
 # Local royalty-free background music (Pixabay License - free commercial use)
 MUSIC_DIR = os.path.join(BASE_DIR, "music")
 MUSIC_FILES = ["track_01.mp3", "track_02.mp3", "track_03.mp3"]
+
+VOICEOVER_SCRIPTS = [
+    "Ladies, this one smoothie changed everything. No gym, no crazy diets. Real results, starting now.",
+    "Struggling with stubborn belly fat? This powerful morning smoothie melts it naturally.",
+    "Women over 40 are finally losing weight with this one simple smoothie. Ready to transform?",
+    "Wake up and blend this. One smoothie boosts your metabolism all day long.",
+    "Your hormones might be blocking fat loss. This special smoothie resets everything naturally.",
+    "No more starving. This delicious smoothie fills you up and burns fat at the same time.",
+    "21 days, one smoothie recipe. Thousands of women already transformed. You could be next.",
+    "This ancient smoothie secret is going viral. Women everywhere are finally reaching their goal weight.",
+    "Feel lighter, look younger, have more energy. This smoothie does it all. Link in bio.",
+    "Cortisol is making you fat after 40. This smoothie fights it naturally. Try it free today.",
+]
 
 
 def log(msg):
@@ -67,7 +82,7 @@ def log(msg):
 
 def load_state():
     defaults = {"image_idx": 0, "reel_idx": 0, "img_kw": 0, "reel_kw": 0,
-                "music_idx": 0, "published": []}
+                "music_idx": 0, "vo_idx": 0, "published": []}
     if not os.path.exists(STATE_FILE):
         return defaults
     try:
@@ -105,18 +120,34 @@ def download_file(url, dest_path, label="file"):
     return True
 
 
+def generate_voiceover(text, output_path, voice="en-US-JennyNeural"):
+    """Microsoft Neural TTS via edge-tts — free, no API key needed."""
+    try:
+        result = subprocess.run(
+            ["edge-tts", "--voice", voice, "--text", text, "--write-media", output_path],
+            capture_output=True, text=True, timeout=60
+        )
+        if result.returncode == 0 and os.path.exists(output_path) and os.path.getsize(output_path) > 1000:
+            log(f"  Voiceover OK: {os.path.getsize(output_path) // 1024}KB")
+            return True
+        log(f"  edge-tts erreur: {result.stderr[-200:]}")
+    except (subprocess.TimeoutExpired, FileNotFoundError, Exception) as e:
+        log(f"  generate_voiceover erreur: {e}")
+    return False
+
+
 def merge_video_audio(video_path, audio_path, output_path):
     """ffmpeg: loop audio to cover full video, volume at -18dB background level."""
     cmd = [
         "ffmpeg", "-y",
-        "-stream_loop", "-1",   # loop audio
+        "-stream_loop", "-1",
         "-i", audio_path,
         "-i", video_path,
         "-map", "1:v:0",
         "-map", "0:a:0",
         "-c:v", "copy",
         "-c:a", "aac",
-        "-af", "volume=-18dB",  # background level
+        "-af", "volume=-18dB",
         "-shortest",
         "-movflags", "+faststart",
         output_path
@@ -126,6 +157,35 @@ def merge_video_audio(video_path, audio_path, output_path):
         if result.returncode == 0:
             size_mb = os.path.getsize(output_path) / 1024 / 1024
             log(f"  ffmpeg merge OK: {size_mb:.1f}MB")
+            return True
+        log(f"  ffmpeg erreur: {result.stderr[-300:]}")
+        return False
+    except subprocess.TimeoutExpired:
+        log("  ffmpeg timeout")
+        return False
+
+
+def merge_video_voiceover_music(video_path, voiceover_path, music_path, output_path, max_sec=30):
+    """Mix: video + voiceover (foreground) + background music (-20dB)."""
+    cmd = [
+        "ffmpeg", "-y",
+        "-i", video_path,
+        "-stream_loop", "-1", "-i", music_path,
+        "-i", voiceover_path,
+        "-map", "0:v:0",
+        "-filter_complex",
+        f"[1:a]atrim=end={max_sec},volume=-20dB[bg];[2:a]volume=1.2[vo];[bg][vo]amix=inputs=2:duration=first:dropout_transition=2[aout]",
+        "-map", "[aout]",
+        "-c:v", "copy", "-c:a", "aac", "-ar", "44100",
+        "-t", str(max_sec), "-shortest",
+        "-movflags", "+faststart",
+        output_path
+    ]
+    try:
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
+        if result.returncode == 0:
+            size_mb = os.path.getsize(output_path) / 1024 / 1024
+            log(f"  ffmpeg 3-track merge OK: {size_mb:.1f}MB")
             return True
         log(f"  ffmpeg erreur: {result.stderr[-300:]}")
         return False
@@ -286,10 +346,11 @@ def get_with_fallback(keyword, all_keywords, fetch_fn):
     return None
 
 
-def build_reel_url(pexels_video_url_str, music_idx):
-    """Download Pexels video + local background music, merge, upload to catbox."""
+def build_reel_url(pexels_video_url_str, music_idx, vo_idx):
+    """Download Pexels video + voiceover + music, merge 3 tracks, upload."""
     with tempfile.TemporaryDirectory() as tmpdir:
         video_path  = os.path.join(tmpdir, "video.mp4")
+        vo_path     = os.path.join(tmpdir, "voiceover.mp3")
         output_path = os.path.join(tmpdir, "reel.mp4")
 
         log("  Download video Pexels...")
@@ -297,14 +358,22 @@ def build_reel_url(pexels_video_url_str, music_idx):
             return None
 
         audio_path = os.path.join(MUSIC_DIR, MUSIC_FILES[music_idx % len(MUSIC_FILES)])
-        log(f"  Musique locale: {MUSIC_FILES[music_idx % len(MUSIC_FILES)]}")
-
+        log(f"  Musique: {MUSIC_FILES[music_idx % len(MUSIC_FILES)]}")
         if not os.path.exists(audio_path):
-            log(f"  ERREUR: fichier musique introuvable: {audio_path}")
+            log(f"  ERREUR: musique introuvable: {audio_path}")
             return None
 
-        if not merge_video_audio(video_path, audio_path, output_path):
-            return None
+        vo_text = VOICEOVER_SCRIPTS[vo_idx % len(VOICEOVER_SCRIPTS)]
+        log(f"  Voiceover: {vo_text[:60]}...")
+        vo_ok = generate_voiceover(vo_text, vo_path)
+
+        if vo_ok:
+            if not merge_video_voiceover_music(video_path, vo_path, audio_path, output_path):
+                return None
+        else:
+            log("  Voiceover indisponible — fallback musique seule")
+            if not merge_video_audio(video_path, audio_path, output_path):
+                return None
 
         return upload_to_host(output_path)
 
@@ -437,17 +506,18 @@ def main():
         kw_idx     = state["reel_kw"] % len(REEL_KEYWORDS)
         keyword    = REEL_KEYWORDS[kw_idx]
         music_idx  = state.get("music_idx", 0)
+        vo_idx     = state.get("vo_idx", 0)
 
-        log(f"Recherche video Pexels: {keyword}")
+        log(f"Recherche video Pexels (personne reelle): {keyword}")
         raw_video_url = get_with_fallback(keyword, REEL_KEYWORDS, pexels_video_url)
         if not raw_video_url:
             log("ERREUR: aucune video Pexels disponible")
             sys.exit(1)
         log(f"Video Pexels: {raw_video_url[:80]}...")
 
-        # Build reel with background music
-        log("Preparation reel (video + musique)...")
-        hosted_url = build_reel_url(raw_video_url, music_idx)
+        # Build reel: video + voiceover + background music
+        log("Preparation reel (video + voiceover + musique)...")
+        hosted_url = build_reel_url(raw_video_url, music_idx, vo_idx)
         if not hosted_url:
             log("ERREUR: echec preparation reel")
             sys.exit(1)
@@ -473,6 +543,7 @@ def main():
         state["reel_idx"]  = (idx + 1) % len(reels)
         state["reel_kw"]   = (kw_idx + 1) % len(REEL_KEYWORDS)
         state["music_idx"] = (music_idx + 1) % len(MUSIC_FILES)
+        state["vo_idx"]    = (vo_idx + 1) % len(VOICEOVER_SCRIPTS)
 
     state["published"].append({
         "slot":     slot_key,

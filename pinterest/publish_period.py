@@ -5,7 +5,7 @@ publish_period.py — Pinterest auto-publisher (100% autonomous)
   Slot 17h: 2 standard + 1 idea pin (multi-image)
 """
 
-import os, sys, json, time, random, tempfile, traceback
+import os, sys, json, time, random, tempfile, traceback, subprocess
 from datetime import date, datetime, timezone, timedelta
 
 BASE_DIR     = os.path.dirname(os.path.abspath(__file__))
@@ -17,6 +17,8 @@ IMAGES_DIR   = os.path.join(BASE_DIR, "pin_images")
 
 PINTEREST_TOKEN = os.environ.get("PINTEREST_ACCESS_TOKEN", "")
 PEXELS_API_KEY  = os.environ.get("PEXELS_API_KEY", "")
+MUSIC_DIR  = os.path.join(os.path.dirname(BASE_DIR), "instagram", "music")
+MUSIC_FILES = ["track_01.mp3", "track_02.mp3", "track_03.mp3"]
 REPO_RAW = "https://raw.githubusercontent.com/dali-aoun/weightloss-W40plus/refs/heads/main/pinterest/pin_images"
 
 LINK_POOL = [
@@ -37,16 +39,29 @@ BOARD_LINK_MAP = {
 }
 
 PEXELS_VIDEO_QUERIES = [
-    "green smoothie",
-    "healthy lifestyle women",
-    "weight loss healthy food",
-    "woman drinking smoothie",
-    "fresh fruits blending",
-    "healthy breakfast women",
-    "fitness women over 40",
-    "salad preparation",
-    "morning routine wellness",
-    "detox juice",
+    "woman drinking green smoothie",
+    "mature woman fitness workout",
+    "woman preparing healthy breakfast",
+    "woman yoga morning routine",
+    "woman blending fresh fruits",
+    "fitness woman healthy lifestyle",
+    "woman drinking detox juice",
+    "woman running outdoor exercise",
+    "woman healthy meal preparation",
+    "woman wellness morning routine",
+]
+
+VOICEOVER_SCRIPTS = [
+    "Ladies, this one smoothie changed everything. No gym, no crazy diets. Real results, starting now.",
+    "Struggling with stubborn belly fat? This powerful morning smoothie melts it naturally.",
+    "Women over 40 are finally losing weight with this one simple smoothie. Ready to transform?",
+    "Wake up and blend this. One smoothie boosts your metabolism all day long.",
+    "Your hormones might be blocking fat loss. This special smoothie resets everything naturally.",
+    "No more starving. This delicious smoothie fills you up and burns fat at the same time.",
+    "21 days, one smoothie recipe. Thousands of women already transformed. You could be next.",
+    "This ancient smoothie secret is going viral. Women everywhere are finally reaching their goal weight.",
+    "Feel lighter, look younger, have more energy. This smoothie does it all.",
+    "Cortisol is making you fat after 40. This smoothie fights it naturally. Try it free today.",
 ]
 
 
@@ -152,6 +167,66 @@ def fetch_pexels_video_url(query):
     return None
 
 
+def generate_voiceover(text, output_path, voice="en-US-JennyNeural"):
+    """Microsoft Neural TTS via edge-tts — free, no API key needed."""
+    try:
+        result = subprocess.run(
+            ["edge-tts", "--voice", voice, "--text", text, "--write-media", output_path],
+            capture_output=True, text=True, timeout=60
+        )
+        if result.returncode == 0 and os.path.exists(output_path) and os.path.getsize(output_path) > 1000:
+            log(f"    → voiceover OK: {os.path.getsize(output_path) // 1024}KB")
+            return True
+        log(f"    → edge-tts erreur: {result.stderr[-200:]}")
+    except (subprocess.TimeoutExpired, FileNotFoundError, Exception) as e:
+        log(f"    → generate_voiceover erreur: {e}")
+    return False
+
+
+def download_file(url, dest_path):
+    import requests
+    try:
+        r = requests.get(url, timeout=90, stream=True, headers={"User-Agent": "Mozilla/5.0"})
+        if r.status_code != 200:
+            return False
+        with open(dest_path, "wb") as f:
+            for chunk in r.iter_content(chunk_size=65536):
+                f.write(chunk)
+        log(f"    → downloaded {os.path.getsize(dest_path) // 1024}KB")
+        return True
+    except Exception as e:
+        log(f"    → download_file erreur: {e}")
+        return False
+
+
+def merge_video_voiceover_music(video_path, voiceover_path, music_path, output_path, max_sec=55):
+    """Mix: video + voiceover (foreground) + background music (-20dB)."""
+    cmd = [
+        "ffmpeg", "-y",
+        "-i", video_path,
+        "-stream_loop", "-1", "-i", music_path,
+        "-i", voiceover_path,
+        "-map", "0:v:0",
+        "-filter_complex",
+        f"[1:a]atrim=end={max_sec},volume=-20dB[bg];[2:a]volume=1.2[vo];[bg][vo]amix=inputs=2:duration=first:dropout_transition=2[aout]",
+        "-map", "[aout]",
+        "-c:v", "copy", "-c:a", "aac", "-ar", "44100",
+        "-t", str(max_sec), "-shortest",
+        "-movflags", "+faststart",
+        output_path
+    ]
+    try:
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
+        if result.returncode == 0:
+            log(f"    → ffmpeg 3-track OK: {os.path.getsize(output_path) / 1024 / 1024:.1f}MB")
+            return True
+        log(f"    → ffmpeg erreur: {result.stderr[-300:]}")
+        return False
+    except subprocess.TimeoutExpired:
+        log("    → ffmpeg timeout")
+        return False
+
+
 def register_pinterest_video(headers):
     import requests
     try:
@@ -203,6 +278,24 @@ def upload_video_file(video_url, upload_url, upload_params):
                 pass
 
 
+def upload_video_file_local(local_path, upload_url, upload_params):
+    """Upload a locally prepared video file to Pinterest S3."""
+    import requests
+    if not upload_url:
+        log(f"  upload_video_file_local: no upload_url")
+        return False
+    try:
+        with open(local_path, "rb") as f:
+            resp = requests.post(upload_url, data=upload_params, files={"file": ("video.mp4", f, "video/mp4")}, timeout=300)
+        ok = resp.status_code in (200, 201, 204)
+        if not ok:
+            log(f"  upload_video_file_local error {resp.status_code}: {resp.text[:200]}")
+        return ok
+    except Exception as e:
+        log(f"  upload_video_file_local error: {e}")
+        return False
+
+
 def wait_for_video_ready(media_id, headers, max_wait=150):
     import requests
     for _ in range(max_wait // 10):
@@ -222,39 +315,73 @@ def wait_for_video_ready(media_id, headers, max_wait=150):
     return False
 
 
-def publish_video_pin(title, description, board_id, image_url, link, headers):
+def publish_video_pin(title, description, board_id, image_url, link, headers, vo_idx=0, music_idx=0):
     import requests
     query = random.choice(PEXELS_VIDEO_QUERIES)
-    log(f"    → searching Pexels video: '{query}'")
-    video_url = fetch_pexels_video_url(query)
+    log(f"    → searching Pexels video (real person): '{query}'")
+    pexels_url = fetch_pexels_video_url(query)
 
-    if video_url:
-        media_id, upload_url, upload_params = register_pinterest_video(headers)
-        if media_id:
-            log(f"    → uploading video (media_id={media_id}, url={'yes' if upload_url else 'MISSING'})…")
-            ok = upload_video_file(video_url, upload_url, dict(upload_params))
-            if ok:
-                log(f"    → waiting for Pinterest to process video…")
-                if wait_for_video_ready(media_id, headers):
-                    payload = {
-                        "title": title[:100],
-                        "description": description[:500],
-                        "board_id": board_id,
-                        "media_source": {
-                            "source_type": "video_id",
-                            "cover_image_url": image_url,
-                            "media_id": media_id,
-                        },
-                        "link": link,
-                    }
-                    try:
-                        r = requests.post("https://api.pinterest.com/v5/pins", json=payload, headers=headers, timeout=30)
-                        if r.status_code in (200, 201):
-                            log(f"    → VIDEO PIN OK (media_id={media_id})")
-                            return r.status_code, r.json()
-                        log(f"    → video pin create error {r.status_code}: {r.text[:200]}")
-                    except Exception as e:
-                        log(f"    → video pin post exception: {e}")
+    if pexels_url:
+        final_path = None
+        tmp_files  = []
+        try:
+            raw_path = tempfile.mktemp(suffix=".mp4")
+            tmp_files.append(raw_path)
+            log(f"    → downloading Pexels video...")
+            if download_file(pexels_url, raw_path):
+                vo_path    = tempfile.mktemp(suffix=".mp3")
+                tmp_files.append(vo_path)
+                vo_text    = VOICEOVER_SCRIPTS[vo_idx % len(VOICEOVER_SCRIPTS)]
+                log(f"    → voiceover: {vo_text[:60]}...")
+                vo_ok      = generate_voiceover(vo_text, vo_path)
+                music_path = os.path.join(MUSIC_DIR, MUSIC_FILES[music_idx % len(MUSIC_FILES)])
+
+                if vo_ok and os.path.exists(music_path):
+                    mixed_path = tempfile.mktemp(suffix=".mp4")
+                    tmp_files.append(mixed_path)
+                    if merge_video_voiceover_music(raw_path, vo_path, music_path, mixed_path):
+                        final_path = mixed_path
+                        log(f"    → using mixed video (voiceover + music)")
+
+                if not final_path:
+                    log(f"    → using raw Pexels video (no audio mix)")
+                    final_path = raw_path
+        except Exception as e:
+            log(f"    → video prep exception: {e}")
+
+        if final_path and os.path.exists(final_path):
+            media_id, upload_url, upload_params = register_pinterest_video(headers)
+            if media_id:
+                log(f"    → uploading video (media_id={media_id}, url={'yes' if upload_url else 'MISSING'})…")
+                ok = upload_video_file_local(final_path, upload_url, dict(upload_params))
+                if ok:
+                    log(f"    → waiting for Pinterest to process video…")
+                    if wait_for_video_ready(media_id, headers):
+                        payload = {
+                            "title": title[:100],
+                            "description": description[:500],
+                            "board_id": board_id,
+                            "media_source": {
+                                "source_type": "video_id",
+                                "cover_image_url": image_url,
+                                "media_id": media_id,
+                            },
+                            "link": link,
+                        }
+                        try:
+                            r = requests.post("https://api.pinterest.com/v5/pins", json=payload, headers=headers, timeout=30)
+                            if r.status_code in (200, 201):
+                                log(f"    → VIDEO PIN OK (media_id={media_id})")
+                                for f in tmp_files:
+                                    try: os.unlink(f)
+                                    except Exception: pass
+                                return r.status_code, r.json()
+                            log(f"    → video pin create error {r.status_code}: {r.text[:200]}")
+                        except Exception as e:
+                            log(f"    → video pin post exception: {e}")
+        for f in tmp_files:
+            try: os.unlink(f)
+            except Exception: pass
 
     log(f"    → video fallback → standard pin")
     return publish_standard_pin(title, description, board_id, image_url, link, headers)
@@ -316,7 +443,7 @@ def main():
     content      = load_json(CONTENT_FILE)
     boards_data  = content.get("boards", {})
     idea_sets    = content.get("idea_pin_sets", [])
-    state        = load_json(STATE_FILE, {"content_idx": 0, "img_idx": 0, "idea_idx": 0, "board_order_idx": 0})
+    state        = load_json(STATE_FILE, {"content_idx": 0, "img_idx": 0, "idea_idx": 0, "board_order_idx": 0, "vo_idx": 0, "music_idx": 0})
 
     headers = {
         "Authorization": f"Bearer {PINTEREST_TOKEN}",
@@ -382,7 +509,11 @@ def main():
         state["content_idx"] = cidx + 1
 
         if board_id3 and image_url3:
-            status, resp = publish_video_pin(pin_data3["title"], pin_data3["desc"], board_id3, image_url3, link3, headers)
+            vo_idx    = state.get("vo_idx", 0)
+            music_idx = state.get("music_idx", 0)
+            state["vo_idx"]    = (vo_idx + 1) % len(VOICEOVER_SCRIPTS)
+            state["music_idx"] = (music_idx + 1) % len(MUSIC_FILES)
+            status, resp = publish_video_pin(pin_data3["title"], pin_data3["desc"], board_id3, image_url3, link3, headers, vo_idx=vo_idx, music_idx=music_idx)
             if status in (200, 201):
                 log(f"  [3] OK VIDEO/STANDARD [{board_name3}]")
                 published += 1

@@ -34,7 +34,10 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests
+        run: pip install requests edge-tts
+
+      - name: Install ffmpeg
+        run: sudo apt-get install -y ffmpeg
 
       - name: Publish pins
         env:
