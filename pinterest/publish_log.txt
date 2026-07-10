@@ -18,3 +18,10 @@
 [2026-07-10 10:18 UTC]     → video fallback → standard pin
 [2026-07-10 10:18 UTC]   [3] OK VIDEO/STANDARD [Metabolism Boosting Drinks Women Over 40]
 [2026-07-10 10:18 UTC] === Done: 3 published | 0 errors ===
+[2026-07-10 17:46 UTC] UTC 17h46 → next slot: 17h
+[2026-07-10 17:46 UTC] === Pinterest Publisher 2026-07-10 17h (6 pins/day mode) ===
+[2026-07-10 17:46 UTC]   [1] OK [Weight Loss Transformation]: The Weight Loss Industry Doesn't Want You to Know 
+[2026-07-10 17:46 UTC]   [2] OK [Hormonal Belly Fat Tips]: Upper Belly vs Lower Belly Fat
+[2026-07-10 17:46 UTC]   [3] IDEA PIN [Menopause Weight Loss Tips]: Why Diets Fail Women Over 40
+[2026-07-10 17:46 UTC]   [3] OK IDEA PIN [Menopause Weight Loss Tips]
+[2026-07-10 17:46 UTC] === Done: 3 published | 0 errors ===
