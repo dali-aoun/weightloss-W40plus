@@ -1,20 +1,22 @@
 """
 publish_period.py — Pinterest auto-publisher (100% autonomous)
-10 pins/jour: 2 slots x 5 pins (4 standard + 1 idea pin)
-No CSV dependency — content from pin_content.json + Canva images
+6 pins/jour: 2 slots x 3 pins
+  Slot 08h: 2 standard + 1 video pin (Pexels)
+  Slot 17h: 2 standard + 1 idea pin (multi-image)
 """
 
-import os, sys, json, time, random, traceback
+import os, sys, json, time, random, tempfile, traceback
 from datetime import date, datetime, timezone, timedelta
 
-BASE_DIR  = os.path.dirname(os.path.abspath(__file__))
-DONE_FILE = os.path.join(BASE_DIR, "published_done.json")
-LOG_FILE  = os.path.join(BASE_DIR, "publish_log.txt")
-STATE_FILE = os.path.join(BASE_DIR, "pin_auto_state.json")
+BASE_DIR     = os.path.dirname(os.path.abspath(__file__))
+DONE_FILE    = os.path.join(BASE_DIR, "published_done.json")
+LOG_FILE     = os.path.join(BASE_DIR, "publish_log.txt")
+STATE_FILE   = os.path.join(BASE_DIR, "pin_auto_state.json")
 CONTENT_FILE = os.path.join(BASE_DIR, "pin_content.json")
-IMAGES_DIR = os.path.join(BASE_DIR, "pin_images")
+IMAGES_DIR   = os.path.join(BASE_DIR, "pin_images")
 
 PINTEREST_TOKEN = os.environ.get("PINTEREST_ACCESS_TOKEN", "")
+PEXELS_API_KEY  = os.environ.get("PEXELS_API_KEY", "")
 REPO_RAW = "https://raw.githubusercontent.com/dali-aoun/weightloss-W40plus/refs/heads/main/pinterest/pin_images"
 
 LINK_POOL = [
@@ -33,6 +35,19 @@ BOARD_LINK_MAP = {
     "Energy Boosters for Women 40+": 3,
     "Metabolism Boosting Drinks Women Over 40": 3,
 }
+
+PEXELS_VIDEO_QUERIES = [
+    "green smoothie",
+    "healthy lifestyle women",
+    "weight loss healthy food",
+    "woman drinking smoothie",
+    "fresh fruits blending",
+    "healthy breakfast women",
+    "fitness women over 40",
+    "salad preparation",
+    "morning routine wellness",
+    "detox juice",
+]
 
 
 def log(msg):
@@ -81,6 +96,15 @@ def get_board_id(board_name, headers, board_cache):
     return None
 
 
+def get_image_url(state):
+    local_pins = sorted(f for f in os.listdir(IMAGES_DIR) if f.endswith(".png")) if os.path.isdir(IMAGES_DIR) else []
+    if not local_pins:
+        return None
+    idx = state.get("img_idx", 0) % len(local_pins)
+    state["img_idx"] = idx + 1
+    return f"{REPO_RAW}/{local_pins[idx]}"
+
+
 def publish_standard_pin(title, description, board_id, image_url, link, headers):
     import requests
     payload = {
@@ -103,41 +127,152 @@ def publish_standard_pin(title, description, board_id, image_url, link, headers)
     return 0, {"error": "failed after 3 attempts"}
 
 
+def fetch_pexels_video_url(query):
+    import requests
+    if not PEXELS_API_KEY:
+        return None
+    try:
+        r = requests.get(
+            "https://api.pexels.com/videos/search",
+            headers={"Authorization": PEXELS_API_KEY},
+            params={"query": query, "per_page": 10, "orientation": "portrait"},
+            timeout=30
+        )
+        if r.status_code != 200:
+            return None
+        videos = r.json().get("videos", [])
+        random.shuffle(videos)
+        for v in videos:
+            files = v.get("video_files", [])
+            for f in sorted(files, key=lambda x: x.get("width", 0)):
+                if f.get("quality") in ("sd", "hd") and f.get("link"):
+                    return f["link"]
+    except Exception as e:
+        log(f"  pexels error: {e}")
+    return None
+
+
+def register_pinterest_video(headers):
+    import requests
+    try:
+        r = requests.post(
+            "https://api.pinterest.com/v5/media",
+            json={"media_type": "video"},
+            headers=headers,
+            timeout=30
+        )
+        if r.status_code in (200, 201):
+            data = r.json()
+            return data.get("media_id"), data.get("upload_parameters", {})
+        log(f"  register_video error {r.status_code}: {r.text[:200]}")
+    except Exception as e:
+        log(f"  register_video exception: {e}")
+    return None, {}
+
+
+def upload_video_file(video_url, upload_params):
+    import requests
+    upload_url = upload_params.pop("upload_url", None)
+    if not upload_url:
+        return False
+    tmp_path = None
+    try:
+        r = requests.get(video_url, timeout=90, stream=True)
+        if r.status_code != 200:
+            return False
+        with tempfile.NamedTemporaryFile(delete=False, suffix=".mp4") as tmp:
+            for chunk in r.iter_content(chunk_size=65536):
+                tmp.write(chunk)
+            tmp_path = tmp.name
+        with open(tmp_path, "rb") as f:
+            resp = requests.post(upload_url, data=upload_params, files={"file": ("video.mp4", f, "video/mp4")}, timeout=180)
+        return resp.status_code in (200, 201, 204)
+    except Exception as e:
+        log(f"  upload_video_file error: {e}")
+        return False
+    finally:
+        if tmp_path and os.path.exists(tmp_path):
+            try:
+                os.unlink(tmp_path)
+            except Exception:
+                pass
+
+
+def wait_for_video_ready(media_id, headers, max_wait=150):
+    import requests
+    for _ in range(max_wait // 10):
+        try:
+            r = requests.get(f"https://api.pinterest.com/v5/media/{media_id}", headers=headers, timeout=30)
+            if r.status_code == 200:
+                status = r.json().get("status", "")
+                if status == "succeeded":
+                    return True
+                if status == "failed":
+                    log(f"  video processing failed: {r.json()}")
+                    return False
+        except Exception:
+            pass
+        time.sleep(10)
+    log(f"  video processing timed out after {max_wait}s")
+    return False
+
+
+def publish_video_pin(title, description, board_id, image_url, link, headers):
+    import requests
+    query = random.choice(PEXELS_VIDEO_QUERIES)
+    log(f"    → searching Pexels video: '{query}'")
+    video_url = fetch_pexels_video_url(query)
+
+    if video_url:
+        media_id, upload_params = register_pinterest_video(headers)
+        if media_id:
+            log(f"    → uploading video (media_id={media_id})…")
+            params_copy = dict(upload_params)
+            ok = upload_video_file(video_url, params_copy)
+            if ok:
+                log(f"    → waiting for Pinterest to process video…")
+                if wait_for_video_ready(media_id, headers):
+                    payload = {
+                        "title": title[:100],
+                        "description": description[:500],
+                        "board_id": board_id,
+                        "media_source": {
+                            "source_type": "video_id",
+                            "cover_image_url": image_url,
+                            "media_id": media_id,
+                        },
+                        "link": link,
+                    }
+                    try:
+                        r = requests.post("https://api.pinterest.com/v5/pins", json=payload, headers=headers, timeout=30)
+                        if r.status_code in (200, 201):
+                            log(f"    → VIDEO PIN OK (media_id={media_id})")
+                            return r.status_code, r.json()
+                        log(f"    → video pin create error {r.status_code}: {r.text[:200]}")
+                    except Exception as e:
+                        log(f"    → video pin post exception: {e}")
+
+    log(f"    → video fallback → standard pin")
+    return publish_standard_pin(title, description, board_id, image_url, link, headers)
+
+
 def publish_idea_pin(title, pages_text, board_id, image_urls, headers):
     import requests
-    items = []
-    for i, img_url in enumerate(image_urls):
-        items.append({"url": img_url})
-
+    items = [{"url": u} for u in image_urls]
     payload = {
         "title": title[:100],
         "description": " | ".join(pages_text)[:500],
         "board_id": board_id,
-        "media_source": {
-            "source_type": "multiple_image_urls",
-            "items": items
-        },
+        "media_source": {"source_type": "multiple_image_urls", "items": items},
     }
     for attempt in range(3):
         try:
-            r = requests.post(
-                "https://api.pinterest.com/v5/pins",
-                json=payload, headers=headers, timeout=30
-            )
+            r = requests.post("https://api.pinterest.com/v5/pins", json=payload, headers=headers, timeout=30)
             return r.status_code, r.json()
         except Exception as e:
             log(f"  idea pin error attempt {attempt+1}: {e}")
             time.sleep(5)
     return 0, {"error": "failed after 3 attempts"}
-
-
-def get_image_url(state):
-    local_pins = sorted(f for f in os.listdir(IMAGES_DIR) if f.endswith(".png")) if os.path.isdir(IMAGES_DIR) else []
-    if not local_pins:
-        return None
-    idx = state.get("img_idx", 0) % len(local_pins)
-    state["img_idx"] = idx + 1
-    return f"{REPO_RAW}/{local_pins[idx]}"
 
 
 def main():
@@ -146,69 +281,66 @@ def main():
         sys.exit(1)
 
     tz_tunis = timezone(timedelta(hours=1))
-    now_utc = datetime.now(timezone.utc)
+    now_utc   = datetime.now(timezone.utc)
     now_tunis = now_utc.astimezone(tz_tunis)
 
     if len(sys.argv) >= 3:
         target_date = sys.argv[1]
-        period = sys.argv[2]
+        period      = sys.argv[2]
     else:
         target_date = now_tunis.strftime("%Y-%m-%d")
-        done = load_json(DONE_FILE)
+        done  = load_json(DONE_FILE)
         slots = ["08h", "17h"]
         period = None
         for s in slots:
-            key = f"{target_date}_{s}"
-            if not done.get(key):
+            if not done.get(f"{target_date}_{s}"):
                 period = s
                 break
         if not period:
-            log(f"Both slots for {target_date} already published - skip")
+            log(f"Both slots for {target_date} already published — skip")
             sys.exit(0)
-        log(f"UTC {now_utc.hour}h{now_utc.minute:02d} -> next unpublished slot: {period}")
+        log(f"UTC {now_utc.hour}h{now_utc.minute:02d} → next slot: {period}")
 
     period_key = f"{target_date}_{period}"
-    log(f"=== Pinterest Auto-Publisher {target_date} {period} ===")
+    log(f"=== Pinterest Publisher {target_date} {period} (6 pins/day mode) ===")
 
     done = load_json(DONE_FILE)
     if done.get(period_key, {}).get("published", 0) > 0:
-        log(f"Already published: {period_key} - skip")
+        log(f"Already published: {period_key} — skip")
         sys.exit(0)
 
-    content = load_json(CONTENT_FILE)
-    boards_content = content.get("boards", {})
-    idea_sets = content.get("idea_pin_sets", [])
-    state = load_json(STATE_FILE, {"content_idx": 0, "img_idx": 0, "idea_idx": 0, "board_order_idx": 0})
+    content      = load_json(CONTENT_FILE)
+    boards_data  = content.get("boards", {})
+    idea_sets    = content.get("idea_pin_sets", [])
+    state        = load_json(STATE_FILE, {"content_idx": 0, "img_idx": 0, "idea_idx": 0, "board_order_idx": 0})
 
     headers = {
         "Authorization": f"Bearer {PINTEREST_TOKEN}",
         "Content-Type": "application/json"
     }
-
     board_cache_file = os.path.join(BASE_DIR, "boards.json")
-    board_cache = load_json(board_cache_file)
+    board_cache      = load_json(board_cache_file)
+    board_names      = list(boards_data.keys())
 
-    board_names = list(boards_content.keys())
     if not board_names:
-        log("ERROR: no board content found in pin_content.json")
+        log("ERROR: no board content in pin_content.json")
         sys.exit(1)
 
     published = 0
-    errors = 0
+    errors    = 0
 
-    # Publish 4 standard pins from different boards
-    for i in range(4):
-        board_idx = (state.get("board_order_idx", 0) + i) % len(board_names)
+    # 2 standard pins from different boards
+    for i in range(2):
+        board_idx  = (state.get("board_order_idx", 0) + i) % len(board_names)
         board_name = board_names[board_idx]
-        pins_pool = boards_content[board_name]
-
-        content_idx = state.get("content_idx", 0) % len(pins_pool)
-        pin_data = pins_pool[content_idx]
-        state["content_idx"] = content_idx + 1
+        pins_pool  = boards_data[board_name]
+        cidx       = state.get("content_idx", 0) % len(pins_pool)
+        pin_data   = pins_pool[cidx]
+        state["content_idx"] = cidx + 1
 
         image_url = get_image_url(state)
         if not image_url:
-            log(f"  [{i+1}] ERROR: no images available")
+            log(f"  [{i+1}] ERROR: no images")
             errors += 1
             continue
 
@@ -221,10 +353,7 @@ def main():
         link_idx = BOARD_LINK_MAP.get(board_name, (i + state.get("board_order_idx", 0)) % len(LINK_POOL))
         pin_link = LINK_POOL[link_idx]
 
-        status, resp = publish_standard_pin(
-            pin_data["title"], pin_data["desc"],
-            board_id, image_url, pin_link, headers
-        )
+        status, resp = publish_standard_pin(pin_data["title"], pin_data["desc"], board_id, image_url, pin_link, headers)
         if status in (200, 201):
             log(f"  [{i+1}] OK [{board_name}]: {pin_data['title'][:50]}")
             published += 1
@@ -233,50 +362,65 @@ def main():
             errors += 1
         time.sleep(3)
 
-    # Publish 1 idea pin (multi-image, no link — boosts algorithm)
-    if idea_sets:
-        idea_idx = state.get("idea_idx", 0) % len(idea_sets)
-        idea = idea_sets[idea_idx]
-        state["idea_idx"] = idea_idx + 1
+    # 3rd pin: video pin (08h) or idea pin (17h)
+    board_idx3  = (state.get("board_order_idx", 0) + 2) % len(board_names)
+    board_name3 = board_names[board_idx3]
+    board_id3   = get_board_id(board_name3, headers, board_cache)
+    image_url3  = get_image_url(state)
+    link3_idx   = BOARD_LINK_MAP.get(board_name3, state.get("board_order_idx", 0) % len(LINK_POOL))
+    link3       = LINK_POOL[link3_idx]
 
-        idea_images = []
-        for _ in range(min(len(idea["pages"]), 4)):
-            img = get_image_url(state)
-            if img:
-                idea_images.append(img)
+    if period == "08h":
+        # Video pin in morning slot
+        log(f"  [3] VIDEO PIN [{board_name3}]")
+        cidx = state.get("content_idx", 0) % len(boards_data[board_name3])
+        pin_data3 = boards_data[board_name3][cidx]
+        state["content_idx"] = cidx + 1
 
-        if len(idea_images) >= 2:
-            idea_board_idx = (state.get("board_order_idx", 0) + 4) % len(board_names)
-            idea_board = board_names[idea_board_idx]
-            idea_board_id = get_board_id(idea_board, headers, board_cache)
+        if board_id3 and image_url3:
+            status, resp = publish_video_pin(pin_data3["title"], pin_data3["desc"], board_id3, image_url3, link3, headers)
+            if status in (200, 201):
+                log(f"  [3] OK VIDEO/STANDARD [{board_name3}]")
+                published += 1
+            else:
+                log(f"  [3] ERROR {status}: {resp}")
+                errors += 1
+        else:
+            log(f"  [3] SKIP: missing board_id or image")
+            errors += 1
 
-            if idea_board_id:
-                status, resp = publish_idea_pin(
-                    idea["title"], idea["pages"],
-                    idea_board_id, idea_images, headers
-                )
+    else:
+        # Idea pin in evening slot
+        if idea_sets:
+            idea_idx = state.get("idea_idx", 0) % len(idea_sets)
+            idea     = idea_sets[idea_idx]
+            state["idea_idx"] = idea_idx + 1
+
+            idea_images = []
+            for _ in range(min(len(idea["pages"]), 4)):
+                img = get_image_url(state)
+                if img:
+                    idea_images.append(img)
+
+            log(f"  [3] IDEA PIN [{board_name3}]: {idea['title'][:40]}")
+            if board_id3 and len(idea_images) >= 2:
+                status, resp = publish_idea_pin(idea["title"], idea["pages"], board_id3, idea_images, headers)
                 if status in (200, 201):
-                    log(f"  [5] OK IDEA PIN [{idea_board}]: {idea['title'][:50]}")
+                    log(f"  [3] OK IDEA PIN [{board_name3}]")
                     published += 1
                 else:
-                    log(f"  [5] IDEA PIN ERROR {status}: {resp}")
-                    # Fallback: publish as standard pin instead
-                    fallback_board_idx = (state.get("board_order_idx", 0) + 4) % len(board_names)
-                    fb_board = board_names[fallback_board_idx]
-                    fb_pins = boards_content[fb_board]
-                    fb_idx = state.get("content_idx", 0) % len(fb_pins)
-                    fb_pin = fb_pins[fb_idx]
-                    state["content_idx"] = fb_idx + 1
-                    fb_img = get_image_url(state)
-                    fb_board_id = get_board_id(fb_board, headers, board_cache)
-                    if fb_img and fb_board_id:
-                        fb_link = LINK_POOL[BOARD_LINK_MAP.get(fb_board, state.get("board_order_idx", 0) % len(LINK_POOL))]
-                        st2, rp2 = publish_standard_pin(fb_pin["title"], fb_pin["desc"], fb_board_id, fb_img, fb_link, headers)
+                    log(f"  [3] IDEA PIN ERROR {status}: {resp}")
+                    # Fallback to standard
+                    if image_url3 and board_id3:
+                        cidx = state.get("content_idx", 0) % len(boards_data[board_name3])
+                        fb_pin = boards_data[board_name3][cidx]
+                        state["content_idx"] = cidx + 1
+                        st2, rp2 = publish_standard_pin(fb_pin["title"], fb_pin["desc"], board_id3, image_url3, link3, headers)
                         if st2 in (200, 201):
-                            log(f"  [5] OK FALLBACK [{fb_board}]: {fb_pin['title'][:50]}")
+                            log(f"  [3] OK FALLBACK [{board_name3}]")
                             published += 1
                         else:
-                            log(f"  [5] FALLBACK ERROR {st2}: {rp2}")
+                            log(f"  [3] FALLBACK ERROR {st2}")
                             errors += 1
                     else:
                         errors += 1
@@ -285,7 +429,7 @@ def main():
         else:
             errors += 1
 
-    state["board_order_idx"] = (state.get("board_order_idx", 0) + 5) % len(board_names)
+    state["board_order_idx"] = (state.get("board_order_idx", 0) + 3) % len(board_names)
 
     save_json(board_cache_file, board_cache)
     save_json(STATE_FILE, state)
@@ -294,12 +438,12 @@ def main():
         done[period_key] = {
             "published": published,
             "errors": errors,
-            "total": 5,
+            "total": 3,
             "at": datetime.utcnow().isoformat()
         }
         save_json(DONE_FILE, done)
     else:
-        log(f"WARNING: 0 pins published, slot NOT marked as done (will retry)")
+        log("WARNING: 0 pins published — slot NOT marked done (will retry)")
 
     log(f"=== Done: {published} published | {errors} errors ===")
 
