@@ -163,17 +163,22 @@ def register_pinterest_video(headers):
         )
         if r.status_code in (200, 201):
             data = r.json()
-            return data.get("media_id"), data.get("upload_parameters", {})
-        log(f"  register_video error {r.status_code}: {r.text[:200]}")
+            log(f"    → media register response keys: {list(data.keys())}")
+            media_id = data.get("media_id")
+            # upload_url can be top-level OR inside upload_parameters
+            upload_params = dict(data.get("upload_parameters", {}))
+            upload_url = data.get("upload_url") or upload_params.pop("upload_url", None)
+            return media_id, upload_url, upload_params
+        log(f"  register_video error {r.status_code}: {r.text[:300]}")
     except Exception as e:
         log(f"  register_video exception: {e}")
-    return None, {}
+    return None, None, {}
 
 
-def upload_video_file(video_url, upload_params):
+def upload_video_file(video_url, upload_url, upload_params):
     import requests
-    upload_url = upload_params.pop("upload_url", None)
     if not upload_url:
+        log(f"  upload_video_file: no upload_url")
         return False
     tmp_path = None
     try:
@@ -224,11 +229,10 @@ def publish_video_pin(title, description, board_id, image_url, link, headers):
     video_url = fetch_pexels_video_url(query)
 
     if video_url:
-        media_id, upload_params = register_pinterest_video(headers)
+        media_id, upload_url, upload_params = register_pinterest_video(headers)
         if media_id:
-            log(f"    → uploading video (media_id={media_id})…")
-            params_copy = dict(upload_params)
-            ok = upload_video_file(video_url, params_copy)
+            log(f"    → uploading video (media_id={media_id}, url={'yes' if upload_url else 'MISSING'})…")
+            ok = upload_video_file(video_url, upload_url, dict(upload_params))
             if ok:
                 log(f"    → waiting for Pinterest to process video…")
                 if wait_for_video_ready(media_id, headers):
