@@ -1,8 +1,11 @@
-name: Pinterest Publisher
+﻿name: Pinterest Publisher
 
 on:
   schedule:
+    # 6 pins/jour : 2 slots x 3 pins (2 standard + 1 video/idea)
+    # 08h Tunis = 07:00 UTC
     - cron: '0 7 * * *'
+    # 17h Tunis = 16:00 UTC
     - cron: '0 16 * * *'
   workflow_dispatch:
     inputs:
@@ -20,18 +23,23 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
       - name: Install dependencies
         run: pip install requests
+
       - name: Publish pins
         env:
           PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
           TARGET_DATE: ${{ github.event.inputs.target_date }}
           PERIOD: ${{ github.event.inputs.period }}
         working-directory: pinterest
@@ -41,6 +49,7 @@ jobs:
           else
             python publish_period.py
           fi
+
       - name: Commit state files
         run: |
           git config user.name "pinterest-bot"
