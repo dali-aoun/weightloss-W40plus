@@ -68,3 +68,11 @@
 [2026-07-12 09:00 UTC]     → VIDEO PIN OK (media_id=3671351208428891520)
 [2026-07-12 09:00 UTC]   [3] OK VIDEO/STANDARD [Motivation & Mindset]
 [2026-07-12 09:00 UTC] === Done: 3 published | 0 errors ===
+[2026-07-12 16:57 UTC] UTC 16h57 → next slot: 17h
+[2026-07-12 16:57 UTC] === Pinterest Publisher 2026-07-12 17h (6 pins/day mode) ===
+[2026-07-12 16:57 UTC]   [1] OK [Energy Boosters for Women 40+]: 5 AM Wake-Up and Can't Fall Back Asleep
+[2026-07-12 16:57 UTC]   [2] OK [Weight Loss Tips for Women Over 40]: Brain Fog and Weight Gain Share the Same Cause
+[2026-07-12 16:57 UTC]   [3] IDEA PIN [Fat Burning Foods & Drinks]: 5 Signs Your Belly Fat Is Hormonal
+[2026-07-12 16:57 UTC]   [3] IDEA PIN ERROR 400: {'code': 1, 'message': 'Images must have the same width/height ratios.'}
+[2026-07-12 16:57 UTC]   [3] OK FALLBACK [Fat Burning Foods & Drinks]
+[2026-07-12 16:57 UTC] === Done: 3 published | 0 errors ===
