@@ -94,3 +94,10 @@
 [2026-07-13 10:19 UTC]     → VIDEO PIN OK (media_id=3674409628399093248)
 [2026-07-13 10:19 UTC]   [3] OK VIDEO/STANDARD [Weight Loss Meal Recipes for Women Over 40]
 [2026-07-13 10:19 UTC] === Done: 3 published | 0 errors ===
+[2026-07-13 17:53 UTC] UTC 17h53 → next slot: 17h
+[2026-07-13 17:53 UTC] === Pinterest Publisher 2026-07-13 17h (6 pins/day mode) ===
+[2026-07-13 17:53 UTC]   [1] OK [Metabolism Boosting Drinks Women Over 40]: The Drink That Replaces 5 Supplements
+[2026-07-13 17:53 UTC]   [2] OK [Weight Loss Transformation]: Grandmothers Didn't Have Belly Fat Like This
+[2026-07-13 17:53 UTC]   [3] IDEA PIN [Hormonal Belly Fat Tips]: The 7am Morning Protocol for Fat Loss
+[2026-07-13 17:53 UTC]   [3] OK IDEA PIN [Hormonal Belly Fat Tips]
+[2026-07-13 17:53 UTC] === Done: 3 published | 0 errors ===
