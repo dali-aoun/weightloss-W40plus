@@ -120,6 +120,16 @@ def get_image_url(state):
     return f"{REPO_RAW}/{local_pins[idx]}"
 
 
+def get_canva_image_url(state):
+    """Return only Canva PNG images (consistent 2:3 ratio) for Idea Pins."""
+    canva_pins = sorted(f for f in os.listdir(IMAGES_DIR) if f.lower().endswith(".png")) if os.path.isdir(IMAGES_DIR) else []
+    if not canva_pins:
+        return get_image_url(state)
+    idx = state.get("canva_idx", 0) % len(canva_pins)
+    state["canva_idx"] = idx + 1
+    return f"{REPO_RAW}/{canva_pins[idx]}"
+
+
 def publish_standard_pin(title, description, board_id, image_url, link, headers):
     import requests
     payload = {
@@ -443,7 +453,7 @@ def main():
     content      = load_json(CONTENT_FILE)
     boards_data  = content.get("boards", {})
     idea_sets    = content.get("idea_pin_sets", [])
-    state        = load_json(STATE_FILE, {"content_idx": 0, "img_idx": 0, "idea_idx": 0, "board_order_idx": 0, "vo_idx": 0, "music_idx": 0})
+    state        = load_json(STATE_FILE, {"content_idx": 0, "img_idx": 0, "canva_idx": 0, "idea_idx": 0, "board_order_idx": 0, "vo_idx": 0, "music_idx": 0})
 
     headers = {
         "Authorization": f"Bearer {PINTEREST_TOKEN}",
@@ -533,7 +543,7 @@ def main():
 
             idea_images = []
             for _ in range(min(len(idea["pages"]), 4)):
-                img = get_image_url(state)
+                img = get_canva_image_url(state)
                 if img:
                     idea_images.append(img)
 
