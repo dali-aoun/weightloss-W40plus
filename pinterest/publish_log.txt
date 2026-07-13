@@ -76,3 +76,21 @@
 [2026-07-12 16:57 UTC]   [3] IDEA PIN ERROR 400: {'code': 1, 'message': 'Images must have the same width/height ratios.'}
 [2026-07-12 16:57 UTC]   [3] OK FALLBACK [Fat Burning Foods & Drinks]
 [2026-07-12 16:57 UTC] === Done: 3 published | 0 errors ===
+[2026-07-13 10:18 UTC] UTC 10h18 → next slot: 08h
+[2026-07-13 10:18 UTC] === Pinterest Publisher 2026-07-13 08h (6 pins/day mode) ===
+[2026-07-13 10:18 UTC]   [1] OK [High Protein Meals for Women]: 25g Protein Before 8am Changes Everything
+[2026-07-13 10:18 UTC]   [2] OK [Before and After Transformations]: 22 Pounds Lost at 57 in 5 Weeks
+[2026-07-13 10:18 UTC]   [3] VIDEO PIN [Weight Loss Meal Recipes for Women Over 40]
+[2026-07-13 10:18 UTC]     → searching Pexels video (real person): 'woman running outdoor exercise'
+[2026-07-13 10:18 UTC]     → downloading Pexels video...
+[2026-07-13 10:18 UTC]     → downloaded 351KB
+[2026-07-13 10:18 UTC]     → voiceover: Women over 40 are finally losing weight with this one simple...
+[2026-07-13 10:18 UTC]     → voiceover OK: 39KB
+[2026-07-13 10:19 UTC]     → ffmpeg 3-track OK: 0.5MB
+[2026-07-13 10:19 UTC]     → using mixed video (voiceover + music)
+[2026-07-13 10:19 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-07-13 10:19 UTC]     → uploading video (media_id=3674409628399093248, url=yes)…
+[2026-07-13 10:19 UTC]     → waiting for Pinterest to process video…
+[2026-07-13 10:19 UTC]     → VIDEO PIN OK (media_id=3674409628399093248)
+[2026-07-13 10:19 UTC]   [3] OK VIDEO/STANDARD [Weight Loss Meal Recipes for Women Over 40]
+[2026-07-13 10:19 UTC] === Done: 3 published | 0 errors ===
