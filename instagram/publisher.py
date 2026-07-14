@@ -145,8 +145,8 @@ def merge_video_audio(video_path, audio_path, output_path):
         "-i", video_path,
         "-map", "1:v:0",
         "-map", "0:a:0",
-        "-c:v", "copy",
-        "-c:a", "aac",
+        "-c:v", "libx264", "-preset", "fast", "-crf", "23",
+        "-c:a", "aac", "-b:a", "128k",
         "-af", "volume=-18dB",
         "-shortest",
         "-movflags", "+faststart",
@@ -176,7 +176,8 @@ def merge_video_voiceover_music(video_path, voiceover_path, music_path, output_p
         "-filter_complex",
         f"[1:a]atrim=end={max_sec},volume=-20dB[bg];[2:a]volume=1.2[vo];[bg][vo]amix=inputs=2:duration=first:dropout_transition=2[aout]",
         "-map", "[aout]",
-        "-c:v", "copy", "-c:a", "aac", "-ar", "44100",
+        "-c:v", "libx264", "-preset", "fast", "-crf", "23",
+        "-c:a", "aac", "-b:a", "128k", "-ar", "44100",
         "-t", str(max_sec), "-shortest",
         "-movflags", "+faststart",
         output_path
@@ -198,7 +199,8 @@ def upload_to_host(file_path):
     """Upload video to a public host. Tries multiple services as fallback."""
     hosters = [
         ("litterbox.catbox.moe", _upload_litterbox),
-        ("0x0.st", _upload_0x0),
+        ("uguu.se", _upload_uguu),
+        ("oshi.at", _upload_oshi),
         ("catbox.moe", _upload_catbox),
         ("tmpfiles.org", _upload_tmpfiles),
     ]
@@ -229,19 +231,43 @@ def _upload_litterbox(file_path):
     return None
 
 
-def _upload_0x0(file_path):
+def _upload_uguu(file_path):
     try:
         with open(file_path, "rb") as f:
             r = requests.post(
-                "https://0x0.st",
-                files={"file": ("reel.mp4", f, "video/mp4")},
+                "https://uguu.se/upload",
+                files={"files[]": ("reel.mp4", f, "video/mp4")},
                 timeout=300
             )
-        if r.status_code == 200 and r.text.strip().startswith("http"):
-            return r.text.strip()
-        log(f"  0x0.st: {r.status_code} {r.text[:100]}")
+        if r.status_code == 200:
+            data = r.json()
+            files = data.get("files", [])
+            if files and files[0].get("url"):
+                return files[0]["url"]
+        log(f"  uguu.se: {r.status_code} {r.text[:100]}")
     except Exception as e:
-        log(f"  0x0.st exception: {e}")
+        log(f"  uguu.se exception: {e}")
+    return None
+
+
+def _upload_oshi(file_path):
+    try:
+        with open(file_path, "rb") as f:
+            r = requests.post(
+                "https://oshi.at",
+                files={"f": ("reel.mp4", f, "video/mp4")},
+                data={"expire": "1440"},
+                timeout=300
+            )
+        if r.status_code == 200:
+            for line in r.text.split("\n"):
+                if line.startswith("DL:"):
+                    url = line[3:].strip()
+                    if url.startswith("http"):
+                        return url
+        log(f"  oshi.at: {r.status_code} {r.text[:100]}")
+    except Exception as e:
+        log(f"  oshi.at exception: {e}")
     return None
 
 
@@ -318,9 +344,11 @@ def pexels_video_url(keyword):
             for quality in ("hd", "sd", ""):
                 for vf in files:
                     link = vf.get("link", "")
+                    h = vf.get("height", 0)
+                    w = vf.get("width", 1)
                     if (vf.get("file_type") == "video/mp4"
                             and "videos.pexels.com" in link
-                            and vf.get("height", 0) >= vf.get("width", 1)):
+                            and h >= w and h >= 1280 and w >= 720):
                         if not quality or vf.get("quality") == quality:
                             return link
             # fallback: any pexels CDN mp4 in duration range

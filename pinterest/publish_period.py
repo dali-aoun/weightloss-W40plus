@@ -168,9 +168,15 @@ def fetch_pexels_video_url(query):
         videos = r.json().get("videos", [])
         random.shuffle(videos)
         for v in videos:
+            dur = v.get("duration", 0)
+            if not (3 <= dur <= 88):
+                continue
             files = v.get("video_files", [])
-            for f in sorted(files, key=lambda x: x.get("width", 0)):
-                if f.get("quality") in ("sd", "hd") and f.get("link"):
+            for f in sorted(files, key=lambda x: -x.get("height", 0)):
+                h = f.get("height", 0)
+                w = f.get("width", 1)
+                if (f.get("quality") in ("sd", "hd") and f.get("link")
+                        and h >= w and h >= 1280 and w >= 720):
                     return f["link"]
     except Exception as e:
         log(f"  pexels error: {e}")
@@ -220,7 +226,8 @@ def merge_video_voiceover_music(video_path, voiceover_path, music_path, output_p
         "-filter_complex",
         f"[1:a]atrim=end={max_sec},volume=-20dB[bg];[2:a]volume=1.2[vo];[bg][vo]amix=inputs=2:duration=first:dropout_transition=2[aout]",
         "-map", "[aout]",
-        "-c:v", "copy", "-c:a", "aac", "-ar", "44100",
+        "-c:v", "libx264", "-preset", "fast", "-crf", "23",
+        "-c:a", "aac", "-b:a", "128k", "-ar", "44100",
         "-t", str(max_sec), "-shortest",
         "-movflags", "+faststart",
         output_path
