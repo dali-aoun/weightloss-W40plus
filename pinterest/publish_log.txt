@@ -119,3 +119,10 @@
 [2026-07-14 09:02 UTC]     → VIDEO PIN OK (media_id=3677152534235710592)
 [2026-07-14 09:02 UTC]   [3] OK VIDEO/STANDARD [Morning Routines for Weight Loss]
 [2026-07-14 09:02 UTC] === Done: 3 published | 0 errors ===
+[2026-07-14 17:13 UTC] UTC 17h13 → next slot: 17h
+[2026-07-14 17:13 UTC] === Pinterest Publisher 2026-07-14 17h (6 pins/day mode) ===
+[2026-07-14 17:13 UTC]   [1] OK [Weight Loss for Women Over 40]: Counting Calories After 40 Is Like Using the Wrong
+[2026-07-14 17:13 UTC]   [2] OK [Metabolism Boost After 40]: Inflammation: The Silent Metabolism Killer
+[2026-07-14 17:13 UTC]   [3] IDEA PIN [21-Day Smoothie Diet Recipes]: 3 Smoothie Ingredients That Lower Cortis
+[2026-07-14 17:13 UTC]   [3] OK IDEA PIN [21-Day Smoothie Diet Recipes]
+[2026-07-14 17:13 UTC] === Done: 3 published | 0 errors ===
