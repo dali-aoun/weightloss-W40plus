@@ -126,3 +126,21 @@
 [2026-07-14 17:13 UTC]   [3] IDEA PIN [21-Day Smoothie Diet Recipes]: 3 Smoothie Ingredients That Lower Cortis
 [2026-07-14 17:13 UTC]   [3] OK IDEA PIN [21-Day Smoothie Diet Recipes]
 [2026-07-14 17:13 UTC] === Done: 3 published | 0 errors ===
+[2026-07-15 09:07 UTC] UTC 9h07 → next slot: 08h
+[2026-07-15 09:07 UTC] === Pinterest Publisher 2026-07-15 08h (6 pins/day mode) ===
+[2026-07-15 09:07 UTC]   [1] OK [Anti-Inflammatory Diet Tips]: Your CRP Level Is Controlling Your Weight
+[2026-07-15 09:07 UTC]   [2] OK [Green Smoothie Detox for Women]: Why Kale Works Better Frozen Than Raw in Smoothies
+[2026-07-15 09:07 UTC]   [3] VIDEO PIN [Natural Supplements & Wellness]
+[2026-07-15 09:07 UTC]     → searching Pexels video (real person): 'woman blending fresh fruits'
+[2026-07-15 09:07 UTC]     → downloading Pexels video...
+[2026-07-15 09:07 UTC]     → downloaded 8712KB
+[2026-07-15 09:07 UTC]     → voiceover: Your hormones might be blocking fat loss. This special smoot...
+[2026-07-15 09:07 UTC]     → voiceover OK: 39KB
+[2026-07-15 09:07 UTC]     → ffmpeg 3-track OK: 6.0MB
+[2026-07-15 09:07 UTC]     → using mixed video (voiceover + music)
+[2026-07-15 09:07 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-07-15 09:07 UTC]     → uploading video (media_id=3680063779604098112, url=yes)…
+[2026-07-15 09:07 UTC]     → waiting for Pinterest to process video…
+[2026-07-15 09:08 UTC]     → VIDEO PIN OK (media_id=3680063779604098112)
+[2026-07-15 09:08 UTC]   [3] OK VIDEO/STANDARD [Natural Supplements & Wellness]
+[2026-07-15 09:08 UTC] === Done: 3 published | 0 errors ===
