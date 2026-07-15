@@ -144,3 +144,21 @@
 [2026-07-15 09:08 UTC]     → VIDEO PIN OK (media_id=3680063779604098112)
 [2026-07-15 09:08 UTC]   [3] OK VIDEO/STANDARD [Natural Supplements & Wellness]
 [2026-07-15 09:08 UTC] === Done: 3 published | 0 errors ===
+[2026-07-15 17:15 UTC] UTC 17h15 → next slot: 17h
+[2026-07-15 17:15 UTC] === Pinterest Publisher 2026-07-15 17h (6 pins/day mode) ===
+[2026-07-15 17:15 UTC]   [1] OK [Motivation & Mindset]: For the Woman Who Has Tried Everything — There's O
+[2026-07-15 17:16 UTC]   [2] OK [Energy Boosters for Women 40+]: Adrenal Fatigue: The Real Reason You're Exhausted 
+[2026-07-15 17:16 UTC]   [3] VIDEO PIN [Weight Loss Tips for Women Over 40]
+[2026-07-15 17:16 UTC]     → searching Pexels video (real person): 'woman yoga morning routine'
+[2026-07-15 17:16 UTC]     → downloading Pexels video...
+[2026-07-15 17:16 UTC]     → downloaded 5613KB
+[2026-07-15 17:16 UTC]     → voiceover: No more starving. This delicious smoothie fills you up and b...
+[2026-07-15 17:16 UTC]     → voiceover OK: 36KB
+[2026-07-15 17:16 UTC]     → ffmpeg 3-track OK: 3.4MB
+[2026-07-15 17:16 UTC]     → using mixed video (voiceover + music)
+[2026-07-15 17:16 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-07-15 17:16 UTC]     → uploading video (media_id=3681047963339914432, url=yes)…
+[2026-07-15 17:16 UTC]     → waiting for Pinterest to process video…
+[2026-07-15 17:17 UTC]     → VIDEO PIN OK (media_id=3681047963339914432)
+[2026-07-15 17:17 UTC]   [3] OK VIDEO/STANDARD [Weight Loss Tips for Women Over 40]
+[2026-07-15 17:17 UTC] === Done: 3 published | 0 errors ===
