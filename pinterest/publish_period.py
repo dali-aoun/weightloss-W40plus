@@ -22,10 +22,10 @@ MUSIC_FILES = ["track_01.mp3", "track_02.mp3", "track_03.mp3"]
 REPO_RAW = "https://raw.githubusercontent.com/dali-aoun/weightloss-W40plus/refs/heads/main/pinterest/pin_images"
 
 LINK_POOL = [
-    "https://smoothie.thehappy-healthy-life.com",
-    "https://smoothie.thehappy-healthy-life.com/blog/cortisol-belly-fat",
-    "https://smoothie.thehappy-healthy-life.com/blog/menopause-weight-loss",
-    "https://smoothie.thehappy-healthy-life.com/blog/morning-routine",
+    "https://smoothie.thehappy-healthy-life.com/?utm_source=pinterest&utm_medium=pin&utm_campaign=organic",
+    "https://smoothie.thehappy-healthy-life.com/blog/cortisol-belly-fat?utm_source=pinterest&utm_medium=pin&utm_campaign=organic",
+    "https://smoothie.thehappy-healthy-life.com/blog/menopause-weight-loss?utm_source=pinterest&utm_medium=pin&utm_campaign=organic",
+    "https://smoothie.thehappy-healthy-life.com/blog/morning-routine?utm_source=pinterest&utm_medium=pin&utm_campaign=organic",
 ]
 
 BOARD_LINK_MAP = {
@@ -160,7 +160,7 @@ def fetch_pexels_video_url(query):
         r = requests.get(
             "https://api.pexels.com/videos/search",
             headers={"Authorization": PEXELS_API_KEY},
-            params={"query": query, "per_page": 10, "orientation": "portrait"},
+            params={"query": query, "per_page": 15, "orientation": "portrait", "size": "large"},
             timeout=30
         )
         if r.status_code != 200:
@@ -169,7 +169,7 @@ def fetch_pexels_video_url(query):
         random.shuffle(videos)
         for v in videos:
             dur = v.get("duration", 0)
-            if not (3 <= dur <= 88):
+            if not (15 <= dur <= 88):
                 continue
             files = v.get("video_files", [])
             for f in sorted(files, key=lambda x: -x.get("height", 0)):
@@ -542,43 +542,29 @@ def main():
             errors += 1
 
     else:
-        # Idea pin in evening slot
-        if idea_sets:
-            idea_idx = state.get("idea_idx", 0) % len(idea_sets)
-            idea     = idea_sets[idea_idx]
-            state["idea_idx"] = idea_idx + 1
+        # Video pin in evening slot (Idea Pins removed — no outbound links)
+        log(f"  [3] VIDEO PIN [{board_name3}]")
+        cidx = state.get("content_idx", 0) % len(boards_data[board_name3])
+        pin_data3 = boards_data[board_name3][cidx]
+        state["content_idx"] = cidx + 1
 
-            idea_images = []
-            for _ in range(min(len(idea["pages"]), 4)):
-                img = get_canva_image_url(state)
-                if img:
-                    idea_images.append(img)
-
-            log(f"  [3] IDEA PIN [{board_name3}]: {idea['title'][:40]}")
-            if board_id3 and len(idea_images) >= 2:
-                status, resp = publish_idea_pin(idea["title"], idea["pages"], board_id3, idea_images, headers)
-                if status in (200, 201):
-                    log(f"  [3] OK IDEA PIN [{board_name3}]")
-                    published += 1
-                else:
-                    log(f"  [3] IDEA PIN ERROR {status}: {resp}")
-                    # Fallback to standard
-                    if image_url3 and board_id3:
-                        cidx = state.get("content_idx", 0) % len(boards_data[board_name3])
-                        fb_pin = boards_data[board_name3][cidx]
-                        state["content_idx"] = cidx + 1
-                        st2, rp2 = publish_standard_pin(fb_pin["title"], fb_pin["desc"], board_id3, image_url3, link3, headers)
-                        if st2 in (200, 201):
-                            log(f"  [3] OK FALLBACK [{board_name3}]")
-                            published += 1
-                        else:
-                            log(f"  [3] FALLBACK ERROR {st2}")
-                            errors += 1
-                    else:
-                        errors += 1
+        if board_id3 and image_url3:
+            vo_idx    = state.get("vo_idx", 0)
+            music_idx = state.get("music_idx", 0)
+            state["vo_idx"]    = (vo_idx + 1) % len(VOICEOVER_SCRIPTS)
+            state["music_idx"] = (music_idx + 1) % len(MUSIC_FILES)
+            status, resp = publish_video_pin(
+                pin_data3["title"], pin_data3["desc"], board_id3,
+                image_url3, link3, headers, vo_idx=vo_idx, music_idx=music_idx
+            )
+            if status in (200, 201):
+                log(f"  [3] OK VIDEO/STANDARD [{board_name3}]")
+                published += 1
             else:
+                log(f"  [3] ERROR {status}: {resp}")
                 errors += 1
         else:
+            log(f"  [3] SKIP: missing board_id or image")
             errors += 1
 
     state["board_order_idx"] = (state.get("board_order_idx", 0) + 3) % len(board_names)
