@@ -180,3 +180,21 @@
 [2026-07-16 09:10 UTC]     → VIDEO PIN OK (media_id=3682968074741586880)
 [2026-07-16 09:10 UTC]   [3] OK VIDEO/STANDARD [Before and After Transformations]
 [2026-07-16 09:10 UTC] === Done: 3 published | 0 errors ===
+[2026-07-16 17:14 UTC] UTC 17h14 → next slot: 17h
+[2026-07-16 17:14 UTC] === Pinterest Publisher 2026-07-16 17h (6 pins/day mode) ===
+[2026-07-16 17:14 UTC]   [1] OK [Weight Loss Meal Recipes for Women Over 40]: Simple Anti-Inflammatory Meal Plan
+[2026-07-16 17:14 UTC]   [2] OK [Metabolism Boosting Drinks Women Over 40]: The Morning Drink That Replaced My Coffee and Chan
+[2026-07-16 17:14 UTC]   [3] VIDEO PIN [Weight Loss Transformation]
+[2026-07-16 17:14 UTC]     → searching Pexels video (real person): 'woman running outdoor exercise'
+[2026-07-16 17:14 UTC]     → downloading Pexels video...
+[2026-07-16 17:14 UTC]     → downloaded 6347KB
+[2026-07-16 17:14 UTC]     → voiceover: This ancient smoothie secret is going viral. Women everywher...
+[2026-07-16 17:14 UTC]     → voiceover OK: 40KB
+[2026-07-16 17:14 UTC]     → ffmpeg 3-track OK: 4.5MB
+[2026-07-16 17:14 UTC]     → using mixed video (voiceover + music)
+[2026-07-16 17:14 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-07-16 17:14 UTC]     → uploading video (media_id=3683944318258024576, url=yes)…
+[2026-07-16 17:14 UTC]     → waiting for Pinterest to process video…
+[2026-07-16 17:15 UTC]     → VIDEO PIN OK (media_id=3683944318258024576)
+[2026-07-16 17:15 UTC]   [3] OK VIDEO/STANDARD [Weight Loss Transformation]
+[2026-07-16 17:15 UTC] === Done: 3 published | 0 errors ===
