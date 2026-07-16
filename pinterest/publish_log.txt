@@ -162,3 +162,21 @@
 [2026-07-15 17:17 UTC]     → VIDEO PIN OK (media_id=3681047963339914432)
 [2026-07-15 17:17 UTC]   [3] OK VIDEO/STANDARD [Weight Loss Tips for Women Over 40]
 [2026-07-15 17:17 UTC] === Done: 3 published | 0 errors ===
+[2026-07-16 09:09 UTC] UTC 9h09 → next slot: 08h
+[2026-07-16 09:09 UTC] === Pinterest Publisher 2026-07-16 08h (6 pins/day mode) ===
+[2026-07-16 09:09 UTC]   [1] OK [Fat Burning Foods & Drinks]: Frozen Berries: Why Frozen Beats Fresh
+[2026-07-16 09:09 UTC]   [2] OK [High Protein Meals for Women]: The Best High-Protein Smoothie for Weight Loss
+[2026-07-16 09:09 UTC]   [3] VIDEO PIN [Before and After Transformations]
+[2026-07-16 09:09 UTC]     → searching Pexels video (real person): 'woman running outdoor exercise'
+[2026-07-16 09:09 UTC]     → downloading Pexels video...
+[2026-07-16 09:09 UTC]     → downloaded 6347KB
+[2026-07-16 09:09 UTC]     → voiceover: 21 days, one smoothie recipe. Thousands of women already tra...
+[2026-07-16 09:09 UTC]     → voiceover OK: 48KB
+[2026-07-16 09:10 UTC]     → ffmpeg 3-track OK: 4.5MB
+[2026-07-16 09:10 UTC]     → using mixed video (voiceover + music)
+[2026-07-16 09:10 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-07-16 09:10 UTC]     → uploading video (media_id=3682968074741586880, url=yes)…
+[2026-07-16 09:10 UTC]     → waiting for Pinterest to process video…
+[2026-07-16 09:10 UTC]     → VIDEO PIN OK (media_id=3682968074741586880)
+[2026-07-16 09:10 UTC]   [3] OK VIDEO/STANDARD [Before and After Transformations]
+[2026-07-16 09:10 UTC] === Done: 3 published | 0 errors ===
