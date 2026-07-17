@@ -33,7 +33,26 @@ if r_boards.ok:
 
 result["recent_pin_ids_sample"] = pin_ids[:10]
 
-# Try analytics on one pin
+# Pinterest account-level analytics (requires user_accounts:read)
+start30 = (today - timedelta(days=30)).strftime("%Y-%m-%d")
+r_ua = requests.get(
+    "https://api.pinterest.com/v5/user_account/analytics",
+    params={"start_date": start30, "end_date": end,
+            "metric_types": "IMPRESSION,OUTBOUND_CLICK,PIN_CLICK,SAVE"},
+    headers=headers_p)
+print(f"Pinterest account analytics: {r_ua.status_code}")
+if r_ua.ok:
+    ua = r_ua.json()
+    result["pinterest_account_analytics"] = ua
+    # Extract summary totals
+    summary = ua.get("all", {}).get("summary_metrics", {})
+    result["pinterest_summary"] = summary
+    print(f"Pinterest 30d → Impressions: {summary.get('IMPRESSION',0)} | Outbound clicks: {summary.get('OUTBOUND_CLICK',0)} | Saves: {summary.get('SAVE',0)} | Pin clicks: {summary.get('PIN_CLICK',0)}")
+else:
+    result["pinterest_account_analytics_error"] = r_ua.text[:300]
+    print(f"Pinterest account analytics error: {r_ua.text[:200]}")
+
+# Per-pin analytics on a sample pin
 if pin_ids:
     start7 = (today - timedelta(days=7)).strftime("%Y-%m-%d")
     rpa = requests.get(
