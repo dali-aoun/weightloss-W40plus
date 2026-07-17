@@ -15,95 +15,16 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Install deps
+        run: pip install requests -q
       - name: Fetch analytics
         env:
           PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
           LONG_LIVED_TOKEN: ${{ secrets.LONG_LIVED_TOKEN }}
           INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
-        run: |
-          pip install requests -q
-          python - <<'EOF'
-import os, requests, json
-from datetime import datetime, timedelta, timezone
-
-result = {}
-
-# ── Pinterest Analytics ──────────────────────────────────────────────
-pt = os.environ.get("PINTEREST_ACCESS_TOKEN","")
-headers_p = {"Authorization": f"Bearer {pt}", "Content-Type": "application/json"}
-
-today = datetime.now(timezone.utc).date()
-start = (today - timedelta(days=30)).strftime("%Y-%m-%d")
-end   = today.strftime("%Y-%m-%d")
-
-# Account-level metrics (last 30 days)
-r = requests.get(
-    "https://api.pinterest.com/v5/user_account/analytics",
-    params={"start_date": start, "end_date": end,
-            "metric_types": "IMPRESSION,OUTBOUND_CLICK,SAVE,PIN_CLICK,ENGAGEMENT"},
-    headers=headers_p
-)
-print("Pinterest account analytics:", r.status_code)
-if r.status_code == 200:
-    result["pinterest_30d"] = r.json()
-else:
-    result["pinterest_30d_error"] = r.text[:300]
-
-# Last 7 days
-start7 = (today - timedelta(days=7)).strftime("%Y-%m-%d")
-r7 = requests.get(
-    "https://api.pinterest.com/v5/user_account/analytics",
-    params={"start_date": start7, "end_date": end,
-            "metric_types": "IMPRESSION,OUTBOUND_CLICK,SAVE,PIN_CLICK,ENGAGEMENT"},
-    headers=headers_p
-)
-print("Pinterest 7d:", r7.status_code)
-if r7.status_code == 200:
-    result["pinterest_7d"] = r7.json()
-
-# Top pins (last 7 days)
-rp = requests.get(
-    "https://api.pinterest.com/v5/user_account/analytics/top_pins",
-    params={"start_date": start7, "end_date": end,
-            "sort_by": "IMPRESSION", "num_of_pins": 10,
-            "metric_types": "IMPRESSION,OUTBOUND_CLICK,SAVE,PIN_CLICK"},
-    headers=headers_p
-)
-print("Top pins:", rp.status_code)
-if rp.status_code == 200:
-    result["top_pins"] = rp.json()
-else:
-    result["top_pins_error"] = rp.text[:300]
-
-# ── Instagram Insights ───────────────────────────────────────────────
-ig_token = os.environ.get("LONG_LIVED_TOKEN","")
-ig_id    = os.environ.get("INSTAGRAM_USER_ID","")
-
-r_ig = requests.get(
-    f"https://graph.instagram.com/v21.0/{ig_id}/insights",
-    params={
-        "metric": "impressions,reach,profile_views,website_clicks,follower_count",
-        "period": "day",
-        "since": int((datetime.now(timezone.utc) - timedelta(days=7)).timestamp()),
-        "until": int(datetime.now(timezone.utc).timestamp()),
-        "access_token": ig_token
-    }
-)
-print("Instagram insights:", r_ig.status_code)
-if r_ig.status_code == 200:
-    result["instagram_insights"] = r_ig.json()
-else:
-    result["instagram_insights_error"] = r_ig.text[:300]
-
-# ── Save result ──────────────────────────────────────────────────────
-result["generated_at"] = datetime.now(timezone.utc).isoformat()
-with open("analytics/snapshot.json", "w") as f:
-    json.dump(result, f, indent=2)
-print("Saved to analytics/snapshot.json")
-EOF
+        run: python analytics/fetch_analytics.py
       - name: Commit snapshot
         run: |
-          mkdir -p analytics
           git config user.email "action@github.com"
           git config user.name "GitHub Actions"
           git add analytics/snapshot.json
