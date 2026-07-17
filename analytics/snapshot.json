@@ -1,0 +1,18 @@
+{
+  "pinterest_30d": {
+    "error": "{\"code\":3,\"message\":\"Your token does not have sufficient permissions to perform this operation. Please ensure your token is authorized with the correct set of scopes. Missing: ['user_accounts:read']\"}"
+  },
+  "pinterest_7d": {
+    "error": "{\"code\":3,\"message\":\"Your token does not have sufficient permissions to perform this operation. Please ensure your token is authorized with the correct set of scopes. Missing: ['user_accounts:read']\"}"
+  },
+  "top_pins": {
+    "error": "{\"code\":3,\"message\":\"Your token does not have sufficient permissions to perform this operation. Please ensure your token is authorized with the correct set of scopes. Missing: ['user_accounts:read']\"}"
+  },
+  "pinterest_daily": {
+    "error": "{\"code\":3,\"message\":\"Your token does not have sufficient permissions to perform this operation. Please ensure your token is authorized with the correct set of scopes. Missing: ['user_accounts:read']\"}"
+  },
+  "instagram_7d": {
+    "error": "{\"error\":{\"message\":\"metric[0] must be one of the following values: reach, follower_count, website_clicks, profile_views, online_followers, accounts_engaged, total_interactions, likes, comments, shares, saves, replies, engaged_audience_demographics, reached_audience_demographics, follower_demographi"
+  },
+  "generated_at": "2026-07-17T10:03:51.375195+00:00"
+}
