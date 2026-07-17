@@ -1,137 +1,405 @@
 {
-  "pinterest_boards_count": 20,
   "pinterest_boards": [
     {
-      "board": "21-Day Smoothie Diet Recipes",
       "id": "1029635602248374231",
-      "error": {
-        "status": "failure",
-        "code": 11,
-        "message": "API method not found.",
-        "endpoint_name": null,
-        "data": null
-      }
+      "name": "21-Day Smoothie Diet Recipes",
+      "pin_count": 28
     },
     {
-      "board": "Anti-Inflammatory Diet Tips",
       "id": "1029635602248341063",
-      "error": {
-        "status": "failure",
-        "code": 11,
-        "message": "API method not found.",
-        "endpoint_name": null,
-        "data": null
-      }
+      "name": "Anti-Inflammatory Diet Tips",
+      "pin_count": 86
     },
     {
-      "board": "Before and After Transformations",
       "id": "1029635602248341068",
-      "error": {
-        "status": "failure",
-        "code": 11,
-        "message": "API method not found.",
-        "endpoint_name": null,
-        "data": null
-      }
+      "name": "Before and After Transformations",
+      "pin_count": 62
     },
     {
-      "board": "Energy Boosters for Women 40+",
       "id": "1029635602248341069",
-      "error": {
-        "status": "failure",
-        "code": 11,
-        "message": "API method not found.",
-        "endpoint_name": null,
-        "data": null
-      }
+      "name": "Energy Boosters for Women 40+",
+      "pin_count": 44
     },
     {
-      "board": "Fat Burning Foods & Drinks",
       "id": "1029635602248341061",
-      "error": {
-        "status": "failure",
-        "code": 11,
-        "message": "API method not found.",
-        "endpoint_name": null,
-        "data": null
-      }
+      "name": "Fat Burning Foods & Drinks",
+      "pin_count": 42
+    },
+    {
+      "id": "1029635602246753716",
+      "name": "Fat Burning Smoothies for Women Over 40",
+      "pin_count": 98
+    },
+    {
+      "id": "1029635602248374232",
+      "name": "Green Smoothie Detox for Women",
+      "pin_count": 33
+    },
+    {
+      "id": "1029635602248341064",
+      "name": "High Protein Meals for Women",
+      "pin_count": 38
+    },
+    {
+      "id": "1029635602248341055",
+      "name": "Hormonal Belly Fat Tips",
+      "pin_count": 102
+    },
+    {
+      "id": "1029635602248341065",
+      "name": "Menopause Weight Loss Tips",
+      "pin_count": 72
+    },
+    {
+      "id": "1029635602248341060",
+      "name": "Metabolism Boost After 40",
+      "pin_count": 52
+    },
+    {
+      "id": "1029635602246765608",
+      "name": "Metabolism Boosting Drinks Women Over 40",
+      "pin_count": 37
+    },
+    {
+      "id": "1029635602248341062",
+      "name": "Morning Routines for Weight Loss",
+      "pin_count": 78
+    },
+    {
+      "id": "1029635602248341071",
+      "name": "Motivation & Mindset",
+      "pin_count": 75
+    },
+    {
+      "id": "1029635602248341070",
+      "name": "Natural Supplements & Wellness",
+      "pin_count": 67
+    },
+    {
+      "id": "1029635602248402049",
+      "name": "Social",
+      "pin_count": 110
+    },
+    {
+      "id": "1029635602248341054",
+      "name": "Weight Loss for Women Over 40",
+      "pin_count": 68
+    },
+    {
+      "id": "1029635602246762118",
+      "name": "Weight Loss Meal Recipes for Women Over 40",
+      "pin_count": 34
+    },
+    {
+      "id": "1029635602247093057",
+      "name": "Weight Loss Tips for Women Over 40",
+      "pin_count": 60
+    },
+    {
+      "id": "1029635602246752436",
+      "name": "Weight Loss Transformation",
+      "pin_count": 72
     }
   ],
-  "pinterest_30d": {
-    "scope_error": true,
-    "msg": "Your token does not have sufficient permissions to perform this operation. Please ensure your token is authorized with the correct set of scopes. Missing: ['user_accounts:read']"
-  },
-  "pinterest_token_info": {
-    "error": "{\"code\":3,\"message\":\"Your token does not have sufficient permissions to perform this operation. Please ensure your token is authorized with the correct set of scopes. Missing: ['user_accounts:read']\"}"
-  },
-  "instagram_7d_daily": {
-    "data": [
-      {
-        "name": "reach",
-        "period": "day",
-        "values": [
-          {
-            "value": 32,
-            "end_time": "2026-07-11T07:00:00+0000"
-          },
-          {
-            "value": 37,
-            "end_time": "2026-07-12T07:00:00+0000"
-          },
-          {
-            "value": 128,
-            "end_time": "2026-07-13T07:00:00+0000"
-          },
-          {
-            "value": 120,
-            "end_time": "2026-07-14T07:00:00+0000"
-          },
-          {
-            "value": 248,
-            "end_time": "2026-07-15T07:00:00+0000"
-          },
-          {
-            "value": 232,
-            "end_time": "2026-07-16T07:00:00+0000"
-          },
-          {
-            "value": 5,
-            "end_time": "2026-07-17T07:00:00+0000"
+  "pinterest_boards_count": 20,
+  "recent_pin_ids_sample": [
+    {
+      "pin_id": "1029635533582019259",
+      "board": "21-Day Smoothie Diet Recipes",
+      "title": ""
+    },
+    {
+      "pin_id": "1029635533581928617",
+      "board": "21-Day Smoothie Diet Recipes",
+      "title": ""
+    },
+    {
+      "pin_id": "1029635533581888442",
+      "board": "21-Day Smoothie Diet Recipes",
+      "title": ""
+    },
+    {
+      "pin_id": "1029635533581856698",
+      "board": "21-Day Smoothie Diet Recipes",
+      "title": ""
+    },
+    {
+      "pin_id": "1029635533581795166",
+      "board": "21-Day Smoothie Diet Recipes",
+      "title": ""
+    },
+    {
+      "pin_id": "1029635533582040493",
+      "board": "Anti-Inflammatory Diet Tips",
+      "title": ""
+    },
+    {
+      "pin_id": "1029635533581928621",
+      "board": "Anti-Inflammatory Diet Tips",
+      "title": ""
+    },
+    {
+      "pin_id": "1029635533581856701",
+      "board": "Anti-Inflammatory Diet Tips",
+      "title": ""
+    },
+    {
+      "pin_id": "1029635533581795167",
+      "board": "Anti-Inflammatory Diet Tips",
+      "title": ""
+    },
+    {
+      "pin_id": "1029635533581730317",
+      "board": "Anti-Inflammatory Diet Tips",
+      "title": ""
+    }
+  ],
+  "pin_analytics_test": {
+    "all": {
+      "summary_metrics": {
+        "SAVE": 0,
+        "IMPRESSION": 1,
+        "OUTBOUND_CLICK": 0,
+        "PIN_CLICK": 0
+      },
+      "daily_metrics": [
+        {
+          "date": "2026-07-10",
+          "data_status": "BEFORE_PIN_CREATED",
+          "metrics": {
+            "IMPRESSION": 0.0,
+            "SAVE": 0.0,
+            "OUTBOUND_CLICK": 0.0,
+            "PIN_CLICK": 0.0
           }
-        ],
-        "title": "Reach",
-        "description": "Total number of times the Business Account's media objects have been uniquely viewed",
-        "id": "17841447125795032/insights/reach/day"
-      }
-    ]
-  },
-  "instagram_followers": {
-    "data": [
-      {
-        "name": "follower_count",
-        "period": "week",
-        "values": [
-          {
-            "value": 0,
-            "end_time": "2026-07-16T07:00:00+0000"
-          },
-          {
-            "value": 0,
-            "end_time": "2026-07-17T07:00:00+0000"
+        },
+        {
+          "date": "2026-07-11",
+          "data_status": "BEFORE_PIN_CREATED",
+          "metrics": {
+            "IMPRESSION": 0.0,
+            "SAVE": 0.0,
+            "OUTBOUND_CLICK": 0.0,
+            "PIN_CLICK": 0.0
           }
-        ],
-        "title": "Follower Count",
-        "description": "Total number of unique accounts following this profile",
-        "id": "17841447125795032/insights/follower_count/week"
-      }
-    ]
+        },
+        {
+          "date": "2026-07-12",
+          "data_status": "BEFORE_PIN_CREATED",
+          "metrics": {
+            "IMPRESSION": 0.0,
+            "SAVE": 0.0,
+            "OUTBOUND_CLICK": 0.0,
+            "PIN_CLICK": 0.0
+          }
+        },
+        {
+          "date": "2026-07-13",
+          "data_status": "BEFORE_PIN_CREATED",
+          "metrics": {
+            "IMPRESSION": 0.0,
+            "SAVE": 0.0,
+            "OUTBOUND_CLICK": 0.0,
+            "PIN_CLICK": 0.0
+          }
+        },
+        {
+          "date": "2026-07-14",
+          "data_status": "READY",
+          "metrics": {
+            "SAVE": 0,
+            "IMPRESSION": 0,
+            "OUTBOUND_CLICK": 0,
+            "PIN_CLICK": 0
+          }
+        },
+        {
+          "date": "2026-07-15",
+          "data_status": "READY",
+          "metrics": {
+            "SAVE": 0,
+            "IMPRESSION": 1,
+            "OUTBOUND_CLICK": 0,
+            "PIN_CLICK": 0
+          }
+        },
+        {
+          "date": "2026-07-16",
+          "data_status": "PROCESSING",
+          "metrics": {
+            "IMPRESSION": 0.0,
+            "SAVE": 0.0,
+            "OUTBOUND_CLICK": 0.0,
+            "PIN_CLICK": 0.0
+          }
+        },
+        {
+          "date": "2026-07-17",
+          "data_status": "PROCESSING",
+          "metrics": {
+            "IMPRESSION": 0.0,
+            "SAVE": 0.0,
+            "OUTBOUND_CLICK": 0.0,
+            "PIN_CLICK": 0.0
+          }
+        }
+      ],
+      "lifetime_metrics": {}
+    }
   },
   "instagram_account": {
     "username": "weightlossusmindset",
     "followers_count": 826,
     "media_count": 167,
     "biography": "Fat loss for women 40+ | Hormone reset\nSmoothie recipes that actually work\nPerimenopause & belly fat tips daily\n\u2193 Free 21-day smoothie plan",
+    "website": "https://smoothie.thehappy-healthy-life.com/",
     "id": "27645316161821605"
   },
-  "generated_at": "2026-07-17T10:06:35.018908+00:00"
+  "instagram_reach_7d": [
+    {
+      "value": 32,
+      "end_time": "2026-07-11T07:00:00+0000"
+    },
+    {
+      "value": 37,
+      "end_time": "2026-07-12T07:00:00+0000"
+    },
+    {
+      "value": 128,
+      "end_time": "2026-07-13T07:00:00+0000"
+    },
+    {
+      "value": 120,
+      "end_time": "2026-07-14T07:00:00+0000"
+    },
+    {
+      "value": 248,
+      "end_time": "2026-07-15T07:00:00+0000"
+    },
+    {
+      "value": 232,
+      "end_time": "2026-07-16T07:00:00+0000"
+    },
+    {
+      "value": 5,
+      "end_time": "2026-07-17T07:00:00+0000"
+    }
+  ],
+  "instagram_profile_views_7d": [],
+  "instagram_website_clicks_7d": [],
+  "instagram_interactions_7d": [],
+  "instagram_recent_media": [
+    {
+      "id": "17979229311102682",
+      "media_type": "IMAGE",
+      "timestamp": "2026-07-17T08:05:07+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "18190744288376453",
+      "media_type": "IMAGE",
+      "timestamp": "2026-07-16T18:56:02+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "17980059897028641",
+      "media_type": "VIDEO",
+      "timestamp": "2026-07-16T16:17:24+0000",
+      "like_count": 2,
+      "comments_count": 0
+    },
+    {
+      "id": "18138220756570197",
+      "media_type": "IMAGE",
+      "timestamp": "2026-07-16T13:25:30+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "18606264628031275",
+      "media_type": "VIDEO",
+      "timestamp": "2026-07-16T10:49:34+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "18100342007545122",
+      "media_type": "IMAGE",
+      "timestamp": "2026-07-16T08:07:49+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "18027975218836058",
+      "media_type": "IMAGE",
+      "timestamp": "2026-07-15T18:55:36+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "18138514744562323",
+      "media_type": "VIDEO",
+      "timestamp": "2026-07-15T16:22:07+0000",
+      "like_count": 3,
+      "comments_count": 0
+    },
+    {
+      "id": "18087799883644885",
+      "media_type": "IMAGE",
+      "timestamp": "2026-07-15T13:18:27+0000",
+      "like_count": 1,
+      "comments_count": 0
+    },
+    {
+      "id": "18099354695351938",
+      "media_type": "VIDEO",
+      "timestamp": "2026-07-15T10:42:48+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "17910294087435387",
+      "media_type": "IMAGE",
+      "timestamp": "2026-07-15T08:03:01+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "18370009468235613",
+      "media_type": "IMAGE",
+      "timestamp": "2026-07-14T19:02:31+0000",
+      "like_count": 0,
+      "comments_count": 0
+    }
+  ],
+  "instagram_media_insights": [
+    {
+      "id": "17979229311102682",
+      "type": "IMAGE",
+      "error": "{\"error\":{\"message\":\"The Media Insights API does not support the impressions metric for this media p"
+    },
+    {
+      "id": "18190744288376453",
+      "type": "IMAGE",
+      "error": "{\"error\":{\"message\":\"The Media Insights API does not support the impressions metric for this media p"
+    },
+    {
+      "id": "17980059897028641",
+      "type": "VIDEO",
+      "error": "{\"error\":{\"message\":\"The Media Insights API does not support the impressions metric for this media p"
+    },
+    {
+      "id": "18138220756570197",
+      "type": "IMAGE",
+      "error": "{\"error\":{\"message\":\"The Media Insights API does not support the impressions metric for this media p"
+    },
+    {
+      "id": "18606264628031275",
+      "type": "VIDEO",
+      "error": "{\"error\":{\"message\":\"The Media Insights API does not support the impressions metric for this media p"
+    }
+  ],
+  "generated_at": "2026-07-17T10:13:41.406644+00:00"
 }
