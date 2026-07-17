@@ -198,3 +198,21 @@
 [2026-07-16 17:15 UTC]     → VIDEO PIN OK (media_id=3683944318258024576)
 [2026-07-16 17:15 UTC]   [3] OK VIDEO/STANDARD [Weight Loss Transformation]
 [2026-07-16 17:15 UTC] === Done: 3 published | 0 errors ===
+[2026-07-17 09:04 UTC] UTC 9h04 → next slot: 08h
+[2026-07-17 09:04 UTC] === Pinterest Publisher 2026-07-17 08h (6 pins/day mode) ===
+[2026-07-17 09:04 UTC]   [1] OK [Hormonal Belly Fat Tips]: Why Your Belly Gets Bigger Despite Eating Less
+[2026-07-17 09:04 UTC]   [2] OK [Menopause Weight Loss Tips]: Why Women in Their 50s Struggle More With Weight T
+[2026-07-17 09:04 UTC]   [3] VIDEO PIN [Fat Burning Smoothies for Women Over 40]
+[2026-07-17 09:04 UTC]     → searching Pexels video (real person): 'mature woman fitness workout'
+[2026-07-17 09:04 UTC]     → downloading Pexels video...
+[2026-07-17 09:04 UTC]     → downloaded 6834KB
+[2026-07-17 09:04 UTC]     → voiceover: Feel lighter, look younger, have more energy. This smoothie ...
+[2026-07-17 09:04 UTC]     → voiceover OK: 34KB
+[2026-07-17 09:05 UTC]     → ffmpeg 3-track OK: 5.9MB
+[2026-07-17 09:05 UTC]     → using mixed video (voiceover + music)
+[2026-07-17 09:05 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-07-17 09:05 UTC]     → uploading video (media_id=3685857663373221376, url=yes)…
+[2026-07-17 09:05 UTC]     → waiting for Pinterest to process video…
+[2026-07-17 09:06 UTC]     → VIDEO PIN OK (media_id=3685857663373221376)
+[2026-07-17 09:06 UTC]   [3] OK VIDEO/STANDARD [Fat Burning Smoothies for Women Over 40]
+[2026-07-17 09:06 UTC] === Done: 3 published | 0 errors ===
