@@ -1,18 +1,137 @@
 {
+  "pinterest_boards_count": 20,
+  "pinterest_boards": [
+    {
+      "board": "21-Day Smoothie Diet Recipes",
+      "id": "1029635602248374231",
+      "error": {
+        "status": "failure",
+        "code": 11,
+        "message": "API method not found.",
+        "endpoint_name": null,
+        "data": null
+      }
+    },
+    {
+      "board": "Anti-Inflammatory Diet Tips",
+      "id": "1029635602248341063",
+      "error": {
+        "status": "failure",
+        "code": 11,
+        "message": "API method not found.",
+        "endpoint_name": null,
+        "data": null
+      }
+    },
+    {
+      "board": "Before and After Transformations",
+      "id": "1029635602248341068",
+      "error": {
+        "status": "failure",
+        "code": 11,
+        "message": "API method not found.",
+        "endpoint_name": null,
+        "data": null
+      }
+    },
+    {
+      "board": "Energy Boosters for Women 40+",
+      "id": "1029635602248341069",
+      "error": {
+        "status": "failure",
+        "code": 11,
+        "message": "API method not found.",
+        "endpoint_name": null,
+        "data": null
+      }
+    },
+    {
+      "board": "Fat Burning Foods & Drinks",
+      "id": "1029635602248341061",
+      "error": {
+        "status": "failure",
+        "code": 11,
+        "message": "API method not found.",
+        "endpoint_name": null,
+        "data": null
+      }
+    }
+  ],
   "pinterest_30d": {
+    "scope_error": true,
+    "msg": "Your token does not have sufficient permissions to perform this operation. Please ensure your token is authorized with the correct set of scopes. Missing: ['user_accounts:read']"
+  },
+  "pinterest_token_info": {
     "error": "{\"code\":3,\"message\":\"Your token does not have sufficient permissions to perform this operation. Please ensure your token is authorized with the correct set of scopes. Missing: ['user_accounts:read']\"}"
   },
-  "pinterest_7d": {
-    "error": "{\"code\":3,\"message\":\"Your token does not have sufficient permissions to perform this operation. Please ensure your token is authorized with the correct set of scopes. Missing: ['user_accounts:read']\"}"
+  "instagram_7d_daily": {
+    "data": [
+      {
+        "name": "reach",
+        "period": "day",
+        "values": [
+          {
+            "value": 32,
+            "end_time": "2026-07-11T07:00:00+0000"
+          },
+          {
+            "value": 37,
+            "end_time": "2026-07-12T07:00:00+0000"
+          },
+          {
+            "value": 128,
+            "end_time": "2026-07-13T07:00:00+0000"
+          },
+          {
+            "value": 120,
+            "end_time": "2026-07-14T07:00:00+0000"
+          },
+          {
+            "value": 248,
+            "end_time": "2026-07-15T07:00:00+0000"
+          },
+          {
+            "value": 232,
+            "end_time": "2026-07-16T07:00:00+0000"
+          },
+          {
+            "value": 5,
+            "end_time": "2026-07-17T07:00:00+0000"
+          }
+        ],
+        "title": "Reach",
+        "description": "Total number of times the Business Account's media objects have been uniquely viewed",
+        "id": "17841447125795032/insights/reach/day"
+      }
+    ]
   },
-  "top_pins": {
-    "error": "{\"code\":3,\"message\":\"Your token does not have sufficient permissions to perform this operation. Please ensure your token is authorized with the correct set of scopes. Missing: ['user_accounts:read']\"}"
+  "instagram_followers": {
+    "data": [
+      {
+        "name": "follower_count",
+        "period": "week",
+        "values": [
+          {
+            "value": 0,
+            "end_time": "2026-07-16T07:00:00+0000"
+          },
+          {
+            "value": 0,
+            "end_time": "2026-07-17T07:00:00+0000"
+          }
+        ],
+        "title": "Follower Count",
+        "description": "Total number of unique accounts following this profile",
+        "id": "17841447125795032/insights/follower_count/week"
+      }
+    ]
   },
-  "pinterest_daily": {
-    "error": "{\"code\":3,\"message\":\"Your token does not have sufficient permissions to perform this operation. Please ensure your token is authorized with the correct set of scopes. Missing: ['user_accounts:read']\"}"
+  "instagram_account": {
+    "username": "weightlossusmindset",
+    "followers_count": 826,
+    "media_count": 167,
+    "biography": "Fat loss for women 40+ | Hormone reset\nSmoothie recipes that actually work\nPerimenopause & belly fat tips daily\n\u2193 Free 21-day smoothie plan",
+    "id": "27645316161821605"
   },
-  "instagram_7d": {
-    "error": "{\"error\":{\"message\":\"metric[0] must be one of the following values: reach, follower_count, website_clicks, profile_views, online_followers, accounts_engaged, total_interactions, likes, comments, shares, saves, replies, engaged_audience_demographics, reached_audience_demographics, follower_demographi"
-  },
-  "generated_at": "2026-07-17T10:03:51.375195+00:00"
+  "generated_at": "2026-07-17T10:06:35.018908+00:00"
 }
