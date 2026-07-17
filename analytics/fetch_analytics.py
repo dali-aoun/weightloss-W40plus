@@ -61,7 +61,13 @@ r_reach = requests.get(
     params={"metric": "reach", "period": "day", "since": since_ts, "until": until_ts, "access_token": ig_token}
 )
 print(f"Instagram reach: {r_reach.status_code}")
-result["instagram_reach_7d"] = r_reach.json().get("data", [{}])[0].get("values", []) if r_reach.ok else []
+def ig_metric(resp, key):
+    try:
+        return resp.json().get("data", [])[0].get("values", [])
+    except (IndexError, KeyError, AttributeError):
+        return []
+
+result["instagram_reach_7d"] = ig_metric(r_reach, "reach") if r_reach.ok else []
 
 # profile_views
 r_pv = requests.get(
@@ -69,7 +75,7 @@ r_pv = requests.get(
     params={"metric": "profile_views", "period": "day", "since": since_ts, "until": until_ts, "access_token": ig_token}
 )
 print(f"Instagram profile_views: {r_pv.status_code}")
-result["instagram_profile_views_7d"] = r_pv.json().get("data", [{}])[0].get("values", []) if r_pv.ok else []
+result["instagram_profile_views_7d"] = ig_metric(r_pv, "profile_views") if r_pv.ok else []
 
 # website_clicks
 r_wc = requests.get(
@@ -77,7 +83,7 @@ r_wc = requests.get(
     params={"metric": "website_clicks", "period": "day", "since": since_ts, "until": until_ts, "access_token": ig_token}
 )
 print(f"Instagram website_clicks: {r_wc.status_code}")
-result["instagram_website_clicks_7d"] = r_wc.json().get("data", [{}])[0].get("values", []) if r_wc.ok else []
+result["instagram_website_clicks_7d"] = ig_metric(r_wc, "website_clicks") if r_wc.ok else []
 
 # total_interactions (likes+comments+saves+shares)
 r_ti = requests.get(
@@ -85,7 +91,7 @@ r_ti = requests.get(
     params={"metric": "total_interactions", "period": "day", "since": since_ts, "until": until_ts, "access_token": ig_token}
 )
 print(f"Instagram interactions: {r_ti.status_code}")
-result["instagram_interactions_7d"] = r_ti.json().get("data", [{}])[0].get("values", []) if r_ti.ok else []
+result["instagram_interactions_7d"] = ig_metric(r_ti, "total_interactions") if r_ti.ok else []
 
 # ── Instagram: recent media with insights ───────────────────────────
 r_media = requests.get(
