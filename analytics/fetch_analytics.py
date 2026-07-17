@@ -7,88 +7,117 @@ ig_token = os.environ.get("LONG_LIVED_TOKEN", "")
 ig_id    = os.environ.get("INSTAGRAM_USER_ID", "")
 headers_p = {"Authorization": f"Bearer {pt}"}
 
-today   = datetime.now(timezone.utc).date()
-start7  = (today - timedelta(days=7)).strftime("%Y-%m-%d")
-start30 = (today - timedelta(days=30)).strftime("%Y-%m-%d")
-end     = today.strftime("%Y-%m-%d")
+today = datetime.now(timezone.utc).date()
+end   = today.strftime("%Y-%m-%d")
 
-# ── Pinterest: try boards list (pins:read scope) ─────────────────────
+# ── Pinterest: list boards (works with pins:read) ────────────────────
 r_boards = requests.get("https://api.pinterest.com/v5/boards",
     params={"page_size": 25}, headers=headers_p)
 print(f"Pinterest boards: {r_boards.status_code}")
 if r_boards.ok:
     boards = r_boards.json().get("items", [])
+    result["pinterest_boards"] = [{"id": b["id"], "name": b.get("name",""), "pin_count": b.get("pin_count", 0)} for b in boards]
     result["pinterest_boards_count"] = len(boards)
-    board_data = []
-    for b in boards[:5]:  # top 5 boards
-        bid = b["id"]
-        bname = b.get("name","?")
-        # board analytics (requires ads:read OR user_accounts:read — may fail)
-        ra = requests.get(
-            f"https://api.pinterest.com/v5/boards/{bid}/analytics",
-            params={"start_date": start7, "end_date": end,
-                    "metric_types": "IMPRESSION,OUTBOUND_CLICK,SAVE,PIN_CLICK"},
-            headers=headers_p)
-        if ra.ok:
-            board_data.append({"board": bname, "id": bid, "analytics": ra.json()})
-        else:
-            board_data.append({"board": bname, "id": bid, "error": ra.json()})
-    result["pinterest_boards"] = board_data
 else:
     result["pinterest_boards_error"] = r_boards.text[:300]
 
-# ── Pinterest: try user analytics (needs user_accounts:read) ─────────
-r_ua = requests.get("https://api.pinterest.com/v5/user_account/analytics",
-    params={"start_date": start30, "end_date": end,
-            "metric_types": "IMPRESSION,OUTBOUND_CLICK,SAVE,PIN_CLICK,ENGAGEMENT"},
-    headers=headers_p)
-print(f"Pinterest user analytics: {r_ua.status_code}")
-result["pinterest_30d"] = r_ua.json() if r_ua.ok else {"scope_error": True, "msg": r_ua.json().get("message","")}
+# ── Pinterest: recent pins via board ────────────────────────────────
+pin_ids = []
+if r_boards.ok:
+    for b in r_boards.json().get("items", [])[:3]:
+        rpins = requests.get(f"https://api.pinterest.com/v5/boards/{b['id']}/pins",
+            params={"page_size": 5}, headers=headers_p)
+        if rpins.ok:
+            for p in rpins.json().get("items", []):
+                pin_ids.append({"pin_id": p["id"], "board": b["name"], "title": p.get("note","")[:60]})
 
-# ── Pinterest: token info (what scopes do we have?) ──────────────────
-r_me = requests.get("https://api.pinterest.com/v5/user_account", headers=headers_p)
-print(f"Pinterest user_account: {r_me.status_code}")
-result["pinterest_token_info"] = r_me.json() if r_me.ok else {"error": r_me.text[:200]}
+result["recent_pin_ids_sample"] = pin_ids[:10]
 
-# ── Instagram: correct metrics ───────────────────────────────────────
-# Period=day metrics (7 days via since/until)
-r_ig = requests.get(
-    f"https://graph.instagram.com/v21.0/{ig_id}/insights",
-    params={
-        "metric": "reach,profile_views,website_clicks,total_interactions,accounts_engaged",
-        "period": "day",
-        "since": int((datetime.now(timezone.utc) - timedelta(days=7)).timestamp()),
-        "until": int(datetime.now(timezone.utc).timestamp()),
-        "access_token": ig_token
-    }
-)
-print(f"Instagram insights (day): {r_ig.status_code}")
-result["instagram_7d_daily"] = r_ig.json() if r_ig.ok else {"error": r_ig.text[:400]}
+# Try analytics on one pin
+if pin_ids:
+    start7 = (today - timedelta(days=7)).strftime("%Y-%m-%d")
+    rpa = requests.get(
+        f"https://api.pinterest.com/v5/pins/{pin_ids[0]['pin_id']}/analytics",
+        params={"start_date": start7, "end_date": end,
+                "metric_types": "IMPRESSION,OUTBOUND_CLICK,SAVE,PIN_CLICK"},
+        headers=headers_p)
+    print(f"Pin analytics test: {rpa.status_code}")
+    result["pin_analytics_test"] = rpa.json() if rpa.ok else {"error": rpa.text[:300]}
 
-# Follower count (period=week)
-r_fol = requests.get(
-    f"https://graph.instagram.com/v21.0/{ig_id}/insights",
-    params={
-        "metric": "follower_count",
-        "period": "week",
-        "access_token": ig_token
-    }
-)
-print(f"Instagram followers: {r_fol.status_code}")
-result["instagram_followers"] = r_fol.json() if r_fol.ok else {"error": r_fol.text[:300]}
-
-# Account summary
+# ── Instagram: account info ──────────────────────────────────────────
 r_acc = requests.get(
     f"https://graph.instagram.com/v21.0/{ig_id}",
-    params={"fields": "username,followers_count,media_count,biography", "access_token": ig_token}
+    params={"fields": "username,followers_count,media_count,biography,website", "access_token": ig_token}
 )
 print(f"Instagram account: {r_acc.status_code}")
 result["instagram_account"] = r_acc.json() if r_acc.ok else {"error": r_acc.text[:300]}
+
+# ── Instagram: daily reach (7 days) ─────────────────────────────────
+since_ts = int((datetime.now(timezone.utc) - timedelta(days=7)).timestamp())
+until_ts = int(datetime.now(timezone.utc).timestamp())
+
+r_reach = requests.get(
+    f"https://graph.instagram.com/v21.0/{ig_id}/insights",
+    params={"metric": "reach", "period": "day", "since": since_ts, "until": until_ts, "access_token": ig_token}
+)
+print(f"Instagram reach: {r_reach.status_code}")
+result["instagram_reach_7d"] = r_reach.json().get("data", [{}])[0].get("values", []) if r_reach.ok else []
+
+# profile_views
+r_pv = requests.get(
+    f"https://graph.instagram.com/v21.0/{ig_id}/insights",
+    params={"metric": "profile_views", "period": "day", "since": since_ts, "until": until_ts, "access_token": ig_token}
+)
+print(f"Instagram profile_views: {r_pv.status_code}")
+result["instagram_profile_views_7d"] = r_pv.json().get("data", [{}])[0].get("values", []) if r_pv.ok else []
+
+# website_clicks
+r_wc = requests.get(
+    f"https://graph.instagram.com/v21.0/{ig_id}/insights",
+    params={"metric": "website_clicks", "period": "day", "since": since_ts, "until": until_ts, "access_token": ig_token}
+)
+print(f"Instagram website_clicks: {r_wc.status_code}")
+result["instagram_website_clicks_7d"] = r_wc.json().get("data", [{}])[0].get("values", []) if r_wc.ok else []
+
+# total_interactions (likes+comments+saves+shares)
+r_ti = requests.get(
+    f"https://graph.instagram.com/v21.0/{ig_id}/insights",
+    params={"metric": "total_interactions", "period": "day", "since": since_ts, "until": until_ts, "access_token": ig_token}
+)
+print(f"Instagram interactions: {r_ti.status_code}")
+result["instagram_interactions_7d"] = r_ti.json().get("data", [{}])[0].get("values", []) if r_ti.ok else []
+
+# ── Instagram: recent media with insights ───────────────────────────
+r_media = requests.get(
+    f"https://graph.instagram.com/v21.0/{ig_id}/media",
+    params={"fields": "id,media_type,timestamp,like_count,comments_count", "limit": 12, "access_token": ig_token}
+)
+print(f"Instagram media: {r_media.status_code}")
+if r_media.ok:
+    media_items = r_media.json().get("data", [])
+    result["instagram_recent_media"] = media_items
+    # Get insights for top 5
+    media_insights = []
+    for m in media_items[:5]:
+        ri = requests.get(
+            f"https://graph.instagram.com/v21.0/{m['id']}/insights",
+            params={"metric": "reach,impressions,saved,shares", "access_token": ig_token}
+        )
+        if ri.ok:
+            vals = {v["name"]: v["values"][0]["value"] if v.get("values") else v.get("value",0)
+                    for v in ri.json().get("data", [])}
+            media_insights.append({"id": m["id"], "type": m["media_type"], "date": m["timestamp"][:10], **vals})
+        else:
+            media_insights.append({"id": m["id"], "type": m["media_type"], "error": ri.text[:100]})
+    result["instagram_media_insights"] = media_insights
 
 # ── Save ─────────────────────────────────────────────────────────────
 result["generated_at"] = datetime.now(timezone.utc).isoformat()
 os.makedirs("analytics", exist_ok=True)
 with open("analytics/snapshot.json", "w") as f:
     json.dump(result, f, indent=2)
-print("\n=== RESULT ===")
-print(json.dumps(result, indent=2)[:3000])
+print("\n=== KEY METRICS ===")
+print("Followers:", result.get("instagram_account", {}).get("followers_count", "?"))
+print("Reach 7d:", [v.get("value") for v in result.get("instagram_reach_7d", [])])
+print("Profile views 7d:", [v.get("value") for v in result.get("instagram_profile_views_7d", [])])
+print("Website clicks 7d:", [v.get("value") for v in result.get("instagram_website_clicks_7d", [])])
