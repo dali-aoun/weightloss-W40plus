@@ -27,7 +27,8 @@ jobs:
         run: |
           git config user.email "action@github.com"
           git config user.name "GitHub Actions"
+          git fetch origin main
+          git checkout origin/main -- analytics/snapshot.json 2>/dev/null || true
           git add analytics/snapshot.json
           git diff --cached --quiet || git commit -m "chore: analytics snapshot $(date -u +%Y-%m-%dT%H:%M)"
-          git pull --rebase origin main
-          git push
+          git push origin HEAD:main

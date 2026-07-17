@@ -107,7 +107,7 @@ if r_media.ok:
     for m in media_items[:5]:
         ri = requests.get(
             f"https://graph.instagram.com/v21.0/{m['id']}/insights",
-            params={"metric": "reach,impressions,saved,shares", "access_token": ig_token}
+            params={"metric": "reach,saved,shares", "access_token": ig_token}
         )
         if ri.ok:
             vals = {v["name"]: v["values"][0]["value"] if v.get("values") else v.get("value",0)
