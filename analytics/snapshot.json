@@ -157,18 +157,18 @@
   "pin_analytics_test": {
     "all": {
       "summary_metrics": {
-        "SAVE": 0,
-        "IMPRESSION": 1,
         "OUTBOUND_CLICK": 0,
-        "PIN_CLICK": 0
+        "SAVE": 0,
+        "PIN_CLICK": 0,
+        "IMPRESSION": 1
       },
       "daily_metrics": [
         {
           "date": "2026-07-10",
           "data_status": "BEFORE_PIN_CREATED",
           "metrics": {
-            "IMPRESSION": 0.0,
             "SAVE": 0.0,
+            "IMPRESSION": 0.0,
             "OUTBOUND_CLICK": 0.0,
             "PIN_CLICK": 0.0
           }
@@ -177,8 +177,8 @@
           "date": "2026-07-11",
           "data_status": "BEFORE_PIN_CREATED",
           "metrics": {
-            "IMPRESSION": 0.0,
             "SAVE": 0.0,
+            "IMPRESSION": 0.0,
             "OUTBOUND_CLICK": 0.0,
             "PIN_CLICK": 0.0
           }
@@ -187,8 +187,8 @@
           "date": "2026-07-12",
           "data_status": "BEFORE_PIN_CREATED",
           "metrics": {
-            "IMPRESSION": 0.0,
             "SAVE": 0.0,
+            "IMPRESSION": 0.0,
             "OUTBOUND_CLICK": 0.0,
             "PIN_CLICK": 0.0
           }
@@ -197,8 +197,8 @@
           "date": "2026-07-13",
           "data_status": "BEFORE_PIN_CREATED",
           "metrics": {
-            "IMPRESSION": 0.0,
             "SAVE": 0.0,
+            "IMPRESSION": 0.0,
             "OUTBOUND_CLICK": 0.0,
             "PIN_CLICK": 0.0
           }
@@ -207,28 +207,28 @@
           "date": "2026-07-14",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 0,
-            "IMPRESSION": 0,
             "OUTBOUND_CLICK": 0,
-            "PIN_CLICK": 0
+            "SAVE": 0,
+            "PIN_CLICK": 0,
+            "IMPRESSION": 0
           }
         },
         {
           "date": "2026-07-15",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 0,
-            "IMPRESSION": 1,
             "OUTBOUND_CLICK": 0,
-            "PIN_CLICK": 0
+            "SAVE": 0,
+            "PIN_CLICK": 0,
+            "IMPRESSION": 1
           }
         },
         {
           "date": "2026-07-16",
           "data_status": "PROCESSING",
           "metrics": {
-            "IMPRESSION": 0.0,
             "SAVE": 0.0,
+            "IMPRESSION": 0.0,
             "OUTBOUND_CLICK": 0.0,
             "PIN_CLICK": 0.0
           }
@@ -237,8 +237,8 @@
           "date": "2026-07-17",
           "data_status": "PROCESSING",
           "metrics": {
-            "IMPRESSION": 0.0,
             "SAVE": 0.0,
+            "IMPRESSION": 0.0,
             "OUTBOUND_CLICK": 0.0,
             "PIN_CLICK": 0.0
           }
@@ -281,7 +281,7 @@
       "end_time": "2026-07-16T07:00:00+0000"
     },
     {
-      "value": 5,
+      "value": 6,
       "end_time": "2026-07-17T07:00:00+0000"
     }
   ],
@@ -401,5 +401,5 @@
       "error": "{\"error\":{\"message\":\"The Media Insights API does not support the impressions metric for this media p"
     }
   ],
-  "generated_at": "2026-07-17T10:13:41.406644+00:00"
+  "generated_at": "2026-07-17T10:18:10.315374+00:00"
 }
