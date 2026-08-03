@@ -21,8 +21,8 @@ TZ_TUNIS = timezone(timedelta(hours=1))
 
 # Slots du jour en ordre : (heure Tunisia, type)
 SLOTS_ORDER = [
-    ("07h", "image"), ("10h", "reel"), ("13h", "image"),
-    ("16h", "reel"),  ("19h", "image"),
+    ("07h", "reel"), ("10h", "reel"), ("13h", "reel"),
+    ("16h", "reel"), ("19h", "reel"),
 ]
 
 IMAGE_KEYWORDS = [
