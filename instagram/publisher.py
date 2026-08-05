@@ -21,8 +21,9 @@ TZ_TUNIS = timezone(timedelta(hours=1))
 
 # Slots du jour en ordre : (heure Tunisia, type)
 SLOTS_ORDER = [
-    ("07h", "reel"), ("10h", "reel"), ("13h", "reel"),
-    ("16h", "reel"), ("19h", "reel"),
+    ("07h",   "reel"), ("08h30", "reel"), ("10h",   "reel"),
+    ("11h30", "reel"), ("13h",   "reel"), ("15h30", "reel"),
+    ("17h",   "reel"), ("19h",   "reel"),
 ]
 
 IMAGE_KEYWORDS = [
@@ -39,16 +40,21 @@ IMAGE_KEYWORDS = [
 ]
 
 REEL_KEYWORDS = [
-    "woman drinking smoothie close up",
-    "fitness woman morning routine kitchen",
-    "mature woman preparing healthy food",
-    "woman yoga morning wellness",
-    "woman blending green smoothie",
-    "healthy woman eating salad portrait",
-    "woman exercising at home",
-    "woman wellness lifestyle over 40",
-    "woman drinking green juice",
-    "fitness woman healthy breakfast",
+    "woman transformation happy healthy confident",
+    "mature woman glowing skin healthy lifestyle",
+    "woman drinking green smoothie morning light",
+    "woman fitness over 40 strong confident",
+    "woman blending fresh smoothie close up",
+    "woman yoga morning routine peaceful",
+    "woman laughing healthy vibrant energy",
+    "woman flat belly fitness healthy",
+    "woman preparing healthy food kitchen",
+    "woman running outdoors happy morning",
+    "mature woman healthy breakfast beautiful",
+    "woman wellness spa healthy glow",
+    "woman hiking nature active lifestyle",
+    "woman dancing happy carefree wellness",
+    "woman meditation morning routine calm",
 ]
 
 # Local royalty-free background music (Pixabay License - free commercial use)
@@ -56,16 +62,21 @@ MUSIC_DIR = os.path.join(BASE_DIR, "music")
 MUSIC_FILES = ["track_01.mp3", "track_02.mp3", "track_03.mp3"]
 
 VOICEOVER_SCRIPTS = [
-    "Ladies, this one smoothie changed everything. No gym, no crazy diets. Real results, starting now.",
-    "Struggling with stubborn belly fat? This powerful morning smoothie melts it naturally.",
-    "Women over 40 are finally losing weight with this one simple smoothie. Ready to transform?",
-    "Wake up and blend this. One smoothie boosts your metabolism all day long.",
-    "Your hormones might be blocking fat loss. This special smoothie resets everything naturally.",
-    "No more starving. This delicious smoothie fills you up and burns fat at the same time.",
-    "21 days, one smoothie recipe. Thousands of women already transformed. You could be next.",
-    "This ancient smoothie secret is going viral. Women everywhere are finally reaching their goal weight.",
-    "Feel lighter, look younger, have more energy. This smoothie does it all. Link in bio.",
-    "Cortisol is making you fat after 40. This smoothie fights it naturally. Try it free today.",
+    "Stop. If you're over 40 and can't lose belly fat no matter what you try, watch this. Your cortisol is blocking everything. This 2-minute smoothie resets it. Free protocol in bio.",
+    "I lost 17 pounds in 21 days without changing what I eat. Just added this one smoothie every morning. It targets the hormone that traps belly fat after 40. Link in bio.",
+    "Doctors don't tell you this: dieting after 40 actually raises cortisol and stores MORE belly fat. Stop dieting. Start this smoothie protocol instead. It's free in the bio.",
+    "Your belly fat isn't about food. It's about cortisol. High stress, poor sleep, hormone shifts — they all signal your body to store fat around your waist. This smoothie reverses that signal. Free guide in bio.",
+    "If you've tried everything and nothing works, you haven't tried fixing the root cause. After 40, it's always hormonal. This 21-day smoothie protocol is designed for your exact metabolism. Get it free — link in bio.",
+    "47,000 women over 40 used this smoothie to finally lose their belly fat. Not by starving. By working with their hormones, not against them. Your turn. Free plan in bio.",
+    "The first morning I made this smoothie I thought — this is too easy. Three weeks later I was 11 pounds lighter. No gym. No diet. Just this. Free 21-day protocol in my bio.",
+    "Here's what nobody tells you about weight loss after 40: less food equals more cortisol equals more belly fat. This smoothie breaks the cycle. Free guide is in my bio right now.",
+    "Perimenopause, cortisol, insulin resistance — all three make belly fat almost impossible to lose. Unless you address all three at once. That's exactly what this smoothie does. Free protocol in bio.",
+    "Wake up. Blend this smoothie. Drink it in under 2 minutes. That's the entire morning routine that helped thousands of women over 40 lose their stubborn belly fat. It's free. Bio link.",
+    "One smoothie. 21 days. Women over 40 are losing 10 to 20 pounds without starving, without the gym, without giving up the foods they love. The secret is in the ingredients. Free guide in bio.",
+    "You've been told your metabolism is slow. It's not. It shifted. And there's a specific nutritional approach that works with this shift instead of fighting it. This is it. Free in bio.",
+    "Every morning at 7am I blend this smoothie. It takes 90 seconds. It has reversed my hormonal belly fat completely. I'm sharing the exact recipe free in my bio. Go get it.",
+    "Stop blaming yourself for the belly fat. After 40 it's biological. Your estrogen dropped. Your cortisol rose. Your body is doing exactly what it's programmed to do. This smoothie reprograms it. Free link in bio.",
+    "The smoothie that 47,000 women are using to lose hormonal belly fat after 40. No gym required. No starvation. Just 2 minutes every morning. Free 21-day protocol — tap the link in my bio.",
 ]
 
 
