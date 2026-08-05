@@ -3,9 +3,12 @@ name: Instagram Publisher
 on:
   schedule:
     - cron: '0 6 * * *'
+    - cron: '30 7 * * *'
     - cron: '0 9 * * *'
+    - cron: '30 10 * * *'
     - cron: '0 12 * * *'
-    - cron: '0 15 * * *'
+    - cron: '30 14 * * *'
+    - cron: '0 16 * * *'
     - cron: '0 18 * * *'
   workflow_dispatch:
     inputs:
