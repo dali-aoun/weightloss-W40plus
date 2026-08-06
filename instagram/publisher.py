@@ -79,6 +79,25 @@ VOICEOVER_SCRIPTS = [
     "The smoothie that 47,000 women are using to lose hormonal belly fat after 40. No gym required. No starvation. Just 2 minutes every morning. Free 21-day protocol — tap the link in my bio.",
 ]
 
+TEXT_OVERLAYS = [
+    ("Lost 17 lbs in 21 days", "Free 21-day plan - link in bio"),
+    ("47000 women transformed", "Join them free - link in bio"),
+    ("Cortisol blocks fat after 40", "Fix it free - link in bio"),
+    ("No gym. No diet. Just this.", "Free protocol - link in bio"),
+    ("Your hormones blocked fat loss", "Reset them - link in bio"),
+    ("Works when nothing else does", "Free guide - link in bio"),
+    ("21 days to reset your body", "Start free - link in bio"),
+    ("The smoothie that works after 40", "Get it free - link in bio"),
+    ("Stop blaming yourself", "It is hormonal - fix it free"),
+    ("Dieting raises cortisol after 40", "This smoothie lowers it free"),
+    ("Lost 11 lbs without the gym", "Free 21-day plan - link in bio"),
+    ("One smoothie every morning", "47000 women already did this"),
+    ("Perimenopause belly fat fix", "Free protocol - link in bio"),
+    ("Hormonal belly fat is different", "This targets it free - bio"),
+    ("Your metabolism did not break", "It shifted - fix it free"),
+]
+
+
 
 def log(msg):
     ts = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
@@ -176,8 +195,28 @@ def merge_video_audio(video_path, audio_path, output_path):
         return False
 
 
-def merge_video_voiceover_music(video_path, voiceover_path, music_path, output_path, max_sec=30):
+def merge_video_voiceover_music(video_path, voiceover_path, music_path, output_path, max_sec=30, text_overlay=None):
     """Mix: video + voiceover (foreground) + background music (-20dB)."""
+    # Build text overlay filter for drawtext
+    def esc_text(t):
+        return t.replace("\\", "\\\\").replace("'", "\\'").replace(":", "\\:").replace("%", "\\%")
+
+    if text_overlay:
+        headline, subline = text_overlay
+        headline_safe = esc_text(headline)
+        subline_safe  = esc_text(subline)
+        vf_filter = (
+            f"drawtext=text=\'{headline_safe}\':"
+            f"fontcolor=white:fontsize=54:x=(w-text_w)/2:y=70:"
+            f"box=1:boxcolor=black@0.55:boxborderw=14,"
+            f"drawtext=text=\'{subline_safe}\':"
+            f"fontcolor=yellow:fontsize=38:x=(w-text_w)/2:y=h-90:"
+            f"box=1:boxcolor=black@0.55:boxborderw=10"
+        )
+        vf_args = ["-vf", vf_filter]
+    else:
+        vf_args = []
+
     cmd = [
         "ffmpeg", "-y",
         "-i", video_path,
@@ -187,6 +226,7 @@ def merge_video_voiceover_music(video_path, voiceover_path, music_path, output_p
         "-filter_complex",
         f"[1:a]atrim=end={max_sec},volume=-20dB[bg];[2:a]volume=1.2[vo];[bg][vo]amix=inputs=2:duration=first:dropout_transition=2[aout]",
         "-map", "[aout]",
+        *vf_args,
         "-c:v", "libx264", "-preset", "fast", "-crf", "23",
         "-c:a", "aac", "-b:a", "128k", "-ar", "44100",
         "-t", str(max_sec), "-shortest",
@@ -385,7 +425,7 @@ def get_with_fallback(keyword, all_keywords, fetch_fn):
     return None
 
 
-def build_reel_url(pexels_video_url_str, music_idx, vo_idx):
+def build_reel_url(pexels_video_url_str, music_idx, vo_idx, text_overlay=None):
     """Download Pexels video + voiceover + music, merge 3 tracks, upload."""
     with tempfile.TemporaryDirectory() as tmpdir:
         video_path  = os.path.join(tmpdir, "video.mp4")
@@ -407,7 +447,7 @@ def build_reel_url(pexels_video_url_str, music_idx, vo_idx):
         vo_ok = generate_voiceover(vo_text, vo_path)
 
         if vo_ok:
-            if not merge_video_voiceover_music(video_path, vo_path, audio_path, output_path):
+            if not merge_video_voiceover_music(video_path, vo_path, audio_path, output_path, text_overlay=text_overlay):
                 return None
         else:
             log("  Voiceover indisponible — fallback musique seule")
@@ -555,8 +595,11 @@ def main():
         log(f"Video Pexels: {raw_video_url[:80]}...")
 
         # Build reel: video + voiceover + background music
+        txt_idx = state.get("txt_idx", 0)
+        text_overlay = TEXT_OVERLAYS[txt_idx % len(TEXT_OVERLAYS)]
+        log(f"Text overlay: {text_overlay[0]}")
         log("Preparation reel (video + voiceover + musique)...")
-        hosted_url = build_reel_url(raw_video_url, music_idx, vo_idx)
+        hosted_url = build_reel_url(raw_video_url, music_idx, vo_idx, text_overlay=text_overlay)
         if not hosted_url:
             log("ERREUR: echec preparation reel")
             sys.exit(1)
@@ -583,6 +626,7 @@ def main():
         state["reel_kw"]   = (kw_idx + 1) % len(REEL_KEYWORDS)
         state["music_idx"] = (music_idx + 1) % len(MUSIC_FILES)
         state["vo_idx"]    = (vo_idx + 1) % len(VOICEOVER_SCRIPTS)
+        state["txt_idx"]   = (txt_idx + 1) % len(TEXT_OVERLAYS)
 
     state["published"].append({
         "slot":     slot_key,
