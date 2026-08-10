@@ -85,7 +85,7 @@ if r_media.ok:
     for m in media_items[:20]:
         mtype = m.get("media_type", "IMAGE")
         if mtype == "VIDEO":
-            metrics = "reach,saved,shares,plays"
+            metrics = "reach,saved,shares"
         else:
             metrics = "reach,saved,shares"
         ri = requests.get(
