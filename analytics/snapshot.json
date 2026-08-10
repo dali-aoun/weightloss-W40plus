@@ -2,9 +2,9 @@
   "pinterest_account_analytics": {
     "all": {
       "summary_metrics": {
-        "OUTBOUND_CLICK": 2,
         "IMPRESSION": 11937,
         "PIN_CLICK": 361,
+        "OUTBOUND_CLICK": 2,
         "SAVE": 13
       },
       "daily_metrics": [
@@ -12,9 +12,9 @@
           "date": "2026-07-11",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 0,
             "IMPRESSION": 102,
             "PIN_CLICK": 3,
+            "OUTBOUND_CLICK": 0,
             "SAVE": 0
           }
         },
@@ -22,9 +22,9 @@
           "date": "2026-07-12",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 0,
             "IMPRESSION": 119,
             "PIN_CLICK": 3,
+            "OUTBOUND_CLICK": 0,
             "SAVE": 0
           }
         },
@@ -32,9 +32,9 @@
           "date": "2026-07-13",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 0,
             "IMPRESSION": 140,
             "PIN_CLICK": 4,
+            "OUTBOUND_CLICK": 0,
             "SAVE": 0
           }
         },
@@ -42,9 +42,9 @@
           "date": "2026-07-14",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 0,
             "IMPRESSION": 177,
             "PIN_CLICK": 6,
+            "OUTBOUND_CLICK": 0,
             "SAVE": 1
           }
         },
@@ -52,9 +52,9 @@
           "date": "2026-07-15",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 0,
             "IMPRESSION": 146,
             "PIN_CLICK": 3,
+            "OUTBOUND_CLICK": 0,
             "SAVE": 1
           }
         },
@@ -62,9 +62,9 @@
           "date": "2026-07-16",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 0,
             "IMPRESSION": 172,
             "PIN_CLICK": 5,
+            "OUTBOUND_CLICK": 0,
             "SAVE": 0
           }
         },
@@ -72,9 +72,9 @@
           "date": "2026-07-17",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 0,
             "IMPRESSION": 149,
             "PIN_CLICK": 3,
+            "OUTBOUND_CLICK": 0,
             "SAVE": 0
           }
         },
@@ -82,9 +82,9 @@
           "date": "2026-07-18",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 0,
             "IMPRESSION": 92,
             "PIN_CLICK": 2,
+            "OUTBOUND_CLICK": 0,
             "SAVE": 0
           }
         },
@@ -92,9 +92,9 @@
           "date": "2026-07-19",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 0,
             "IMPRESSION": 133,
             "PIN_CLICK": 1,
+            "OUTBOUND_CLICK": 0,
             "SAVE": 0
           }
         },
@@ -102,9 +102,9 @@
           "date": "2026-07-20",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 0,
             "IMPRESSION": 146,
             "PIN_CLICK": 6,
+            "OUTBOUND_CLICK": 0,
             "SAVE": 1
           }
         },
@@ -112,9 +112,9 @@
           "date": "2026-07-21",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 0,
             "IMPRESSION": 136,
             "PIN_CLICK": 5,
+            "OUTBOUND_CLICK": 0,
             "SAVE": 1
           }
         },
@@ -122,9 +122,9 @@
           "date": "2026-07-22",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 0,
             "IMPRESSION": 142,
             "PIN_CLICK": 4,
+            "OUTBOUND_CLICK": 0,
             "SAVE": 0
           }
         },
@@ -132,9 +132,9 @@
           "date": "2026-07-23",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 0,
             "IMPRESSION": 114,
             "PIN_CLICK": 1,
+            "OUTBOUND_CLICK": 0,
             "SAVE": 0
           }
         },
@@ -142,9 +142,9 @@
           "date": "2026-07-24",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 0,
             "IMPRESSION": 154,
             "PIN_CLICK": 10,
+            "OUTBOUND_CLICK": 0,
             "SAVE": 0
           }
         },
@@ -152,9 +152,9 @@
           "date": "2026-07-25",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 0,
             "IMPRESSION": 282,
             "PIN_CLICK": 10,
+            "OUTBOUND_CLICK": 0,
             "SAVE": 1
           }
         },
@@ -162,9 +162,9 @@
           "date": "2026-07-26",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 0,
             "IMPRESSION": 193,
             "PIN_CLICK": 4,
+            "OUTBOUND_CLICK": 0,
             "SAVE": 0
           }
         },
@@ -172,9 +172,9 @@
           "date": "2026-07-27",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 0,
             "IMPRESSION": 459,
             "PIN_CLICK": 28,
+            "OUTBOUND_CLICK": 0,
             "SAVE": 0
           }
         },
@@ -182,9 +182,9 @@
           "date": "2026-07-28",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 0,
             "IMPRESSION": 419,
             "PIN_CLICK": 9,
+            "OUTBOUND_CLICK": 0,
             "SAVE": 0
           }
         },
@@ -192,9 +192,9 @@
           "date": "2026-07-29",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 0,
             "IMPRESSION": 454,
             "PIN_CLICK": 21,
+            "OUTBOUND_CLICK": 0,
             "SAVE": 0
           }
         },
@@ -202,9 +202,9 @@
           "date": "2026-07-30",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 0,
             "IMPRESSION": 348,
             "PIN_CLICK": 15,
+            "OUTBOUND_CLICK": 0,
             "SAVE": 0
           }
         },
@@ -212,9 +212,9 @@
           "date": "2026-07-31",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 1,
             "IMPRESSION": 1074,
             "PIN_CLICK": 24,
+            "OUTBOUND_CLICK": 1,
             "SAVE": 1
           }
         },
@@ -222,9 +222,9 @@
           "date": "2026-08-01",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 0,
             "IMPRESSION": 843,
             "PIN_CLICK": 30,
+            "OUTBOUND_CLICK": 0,
             "SAVE": 4
           }
         },
@@ -232,9 +232,9 @@
           "date": "2026-08-02",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 0,
             "IMPRESSION": 684,
             "PIN_CLICK": 13,
+            "OUTBOUND_CLICK": 0,
             "SAVE": 0
           }
         },
@@ -242,9 +242,9 @@
           "date": "2026-08-03",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 0,
             "IMPRESSION": 1280,
             "PIN_CLICK": 32,
+            "OUTBOUND_CLICK": 0,
             "SAVE": 0
           }
         },
@@ -252,9 +252,9 @@
           "date": "2026-08-04",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 0,
             "IMPRESSION": 1342,
             "PIN_CLICK": 30,
+            "OUTBOUND_CLICK": 0,
             "SAVE": 0
           }
         },
@@ -262,9 +262,9 @@
           "date": "2026-08-05",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 0,
             "IMPRESSION": 737,
             "PIN_CLICK": 25,
+            "OUTBOUND_CLICK": 0,
             "SAVE": 2
           }
         },
@@ -272,9 +272,9 @@
           "date": "2026-08-06",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 0,
             "IMPRESSION": 755,
             "PIN_CLICK": 23,
+            "OUTBOUND_CLICK": 0,
             "SAVE": 1
           }
         },
@@ -282,9 +282,9 @@
           "date": "2026-08-07",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 1,
             "IMPRESSION": 685,
             "PIN_CLICK": 24,
+            "OUTBOUND_CLICK": 1,
             "SAVE": 0
           }
         },
@@ -292,9 +292,9 @@
           "date": "2026-08-08",
           "data_status": "READY",
           "metrics": {
-            "OUTBOUND_CLICK": 0,
             "IMPRESSION": 460,
             "PIN_CLICK": 17,
+            "OUTBOUND_CLICK": 0,
             "SAVE": 0
           }
         },
@@ -322,9 +322,9 @@
     }
   },
   "pinterest_summary": {
-    "OUTBOUND_CLICK": 2,
     "IMPRESSION": 11937,
     "PIN_CLICK": 361,
+    "OUTBOUND_CLICK": 2,
     "SAVE": 13
   },
   "pinterest_boards": [
@@ -681,122 +681,202 @@
       "id": "18086255660646099",
       "type": "VIDEO",
       "date": "2026-08-10",
-      "error": "metric[3] must be one of the following values: impressions, shares, comments, li"
+      "likes": 0,
+      "comments": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0
     },
     {
       "id": "17890732578601206",
       "type": "VIDEO",
       "date": "2026-08-10",
-      "error": "metric[3] must be one of the following values: impressions, shares, comments, li"
+      "likes": 0,
+      "comments": 0,
+      "reach": 2,
+      "saved": 0,
+      "shares": 0
     },
     {
       "id": "17984289381021218",
       "type": "VIDEO",
       "date": "2026-08-10",
-      "error": "metric[3] must be one of the following values: impressions, shares, comments, li"
+      "likes": 0,
+      "comments": 0,
+      "reach": 1,
+      "saved": 0,
+      "shares": 0
     },
     {
       "id": "18110199823820237",
       "type": "VIDEO",
       "date": "2026-08-10",
-      "error": "metric[3] must be one of the following values: impressions, shares, comments, li"
+      "likes": 1,
+      "comments": 0,
+      "reach": 1,
+      "saved": 0,
+      "shares": 0
     },
     {
       "id": "18613759147038392",
       "type": "VIDEO",
       "date": "2026-08-09",
-      "error": "metric[3] must be one of the following values: impressions, shares, comments, li"
+      "likes": 1,
+      "comments": 0,
+      "reach": 4,
+      "saved": 0,
+      "shares": 0
     },
     {
       "id": "18349712731174638",
       "type": "VIDEO",
       "date": "2026-08-09",
-      "error": "metric[3] must be one of the following values: impressions, shares, comments, li"
+      "likes": 0,
+      "comments": 0,
+      "reach": 5,
+      "saved": 0,
+      "shares": 0
     },
     {
       "id": "17982479187059114",
       "type": "VIDEO",
       "date": "2026-08-09",
-      "error": "metric[3] must be one of the following values: impressions, shares, comments, li"
+      "likes": 0,
+      "comments": 0,
+      "reach": 22,
+      "saved": 0,
+      "shares": 0
     },
     {
       "id": "18098372387612582",
       "type": "VIDEO",
       "date": "2026-08-09",
-      "error": "metric[3] must be one of the following values: impressions, shares, comments, li"
+      "likes": 1,
+      "comments": 0,
+      "reach": 8,
+      "saved": 0,
+      "shares": 0
     },
     {
       "id": "18059976890773285",
       "type": "VIDEO",
       "date": "2026-08-09",
-      "error": "metric[3] must be one of the following values: impressions, shares, comments, li"
+      "likes": 0,
+      "comments": 0,
+      "reach": 9,
+      "saved": 0,
+      "shares": 0
     },
     {
       "id": "18225309052326029",
       "type": "VIDEO",
       "date": "2026-08-09",
-      "error": "metric[3] must be one of the following values: impressions, shares, comments, li"
+      "likes": 0,
+      "comments": 0,
+      "reach": 134,
+      "saved": 0,
+      "shares": 0
     },
     {
       "id": "18362824444245892",
       "type": "VIDEO",
       "date": "2026-08-09",
-      "error": "metric[3] must be one of the following values: impressions, shares, comments, li"
+      "likes": 1,
+      "comments": 0,
+      "reach": 7,
+      "saved": 0,
+      "shares": 0
     },
     {
       "id": "18116416825931337",
       "type": "VIDEO",
       "date": "2026-08-09",
-      "error": "metric[3] must be one of the following values: impressions, shares, comments, li"
+      "likes": 1,
+      "comments": 0,
+      "reach": 5,
+      "saved": 0,
+      "shares": 0
     },
     {
       "id": "18063376214741264",
       "type": "VIDEO",
       "date": "2026-08-08",
-      "error": "metric[3] must be one of the following values: impressions, shares, comments, li"
+      "likes": 1,
+      "comments": 0,
+      "reach": 42,
+      "saved": 0,
+      "shares": 0
     },
     {
       "id": "18211233862352130",
       "type": "VIDEO",
       "date": "2026-08-08",
-      "error": "metric[3] must be one of the following values: impressions, shares, comments, li"
+      "likes": 0,
+      "comments": 0,
+      "reach": 7,
+      "saved": 0,
+      "shares": 0
     },
     {
       "id": "18096294629365472",
       "type": "VIDEO",
       "date": "2026-08-08",
-      "error": "metric[3] must be one of the following values: impressions, shares, comments, li"
+      "likes": 1,
+      "comments": 1,
+      "reach": 108,
+      "saved": 1,
+      "shares": 0
     },
     {
       "id": "18110718283809276",
       "type": "VIDEO",
       "date": "2026-08-08",
-      "error": "metric[3] must be one of the following values: impressions, shares, comments, li"
+      "likes": 0,
+      "comments": 0,
+      "reach": 22,
+      "saved": 0,
+      "shares": 0
     },
     {
       "id": "17900018901560229",
       "type": "VIDEO",
       "date": "2026-08-08",
-      "error": "metric[3] must be one of the following values: impressions, shares, comments, li"
+      "likes": 1,
+      "comments": 0,
+      "reach": 9,
+      "saved": 0,
+      "shares": 0
     },
     {
       "id": "18171106894435294",
       "type": "VIDEO",
       "date": "2026-08-08",
-      "error": "metric[3] must be one of the following values: impressions, shares, comments, li"
+      "likes": 1,
+      "comments": 0,
+      "reach": 11,
+      "saved": 0,
+      "shares": 0
     },
     {
       "id": "18101046359264073",
       "type": "VIDEO",
       "date": "2026-08-08",
-      "error": "metric[3] must be one of the following values: impressions, shares, comments, li"
+      "likes": 0,
+      "comments": 0,
+      "reach": 5,
+      "saved": 0,
+      "shares": 0
     },
     {
       "id": "18323652718275784",
       "type": "VIDEO",
       "date": "2026-08-08",
-      "error": "metric[3] must be one of the following values: impressions, shares, comments, li"
+      "likes": 1,
+      "comments": 0,
+      "reach": 7,
+      "saved": 0,
+      "shares": 0
     }
   ],
-  "generated_at": "2026-08-10T13:16:27.588461+00:00"
+  "generated_at": "2026-08-10T13:21:58.442655+00:00"
 }
