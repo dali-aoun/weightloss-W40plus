@@ -57,7 +57,9 @@ def fetch_ig_metric(metric):
         params={"metric": metric, "period": "day", "since": since_ts, "until": until_ts, "access_token": ig_token}
     )
     if r.ok:
-        return r.json().get("data", [{}])[0].get("values", [])
+        data = r.json().get("data", [])
+        if data:
+            return data[0].get("values", [])
     return []
 
 result["instagram_reach_14d"]       = fetch_ig_metric("reach")
