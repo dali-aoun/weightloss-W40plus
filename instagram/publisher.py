@@ -249,10 +249,10 @@ def merge_video_voiceover_music(video_path, voiceover_path, music_path, output_p
 def upload_to_host(file_path):
     """Upload video to a public host. Tries multiple services as fallback."""
     hosters = [
-        ("litterbox.catbox.moe", _upload_litterbox),
         ("uguu.se", _upload_uguu),
+        ("0x0.st", _upload_0x0),
         ("oshi.at", _upload_oshi),
-        ("catbox.moe", _upload_catbox),
+        ("litterbox.catbox.moe", _upload_litterbox),
         ("tmpfiles.org", _upload_tmpfiles),
     ]
     for name, fn in hosters:
@@ -262,6 +262,22 @@ def upload_to_host(file_path):
             log(f"  URL publique: {url}")
             return url
         log(f"  {name} echec, essai suivant...")
+    return None
+
+
+def _upload_0x0(file_path):
+    try:
+        with open(file_path, "rb") as f:
+            r = requests.post(
+                "https://0x0.st",
+                files={"file": ("reel.mp4", f, "video/mp4")},
+                timeout=120
+            )
+        if r.status_code == 200 and r.text.strip().startswith("https://"):
+            return r.text.strip()
+        log(f"  0x0.st: {r.status_code} {r.text[:100]}")
+    except Exception as e:
+        log(f"  0x0.st exception: {e}")
     return None
 
 
@@ -308,7 +324,8 @@ def _upload_oshi(file_path):
                 "https://oshi.at",
                 files={"f": ("reel.mp4", f, "video/mp4")},
                 data={"expire": "1440"},
-                timeout=300
+                timeout=120,
+                verify=False
             )
         if r.status_code == 200:
             for line in r.text.split("\n"):
@@ -322,21 +339,6 @@ def _upload_oshi(file_path):
     return None
 
 
-def _upload_catbox(file_path):
-    try:
-        with open(file_path, "rb") as f:
-            r = requests.post(
-                "https://catbox.moe/user/api.php",
-                data={"reqtype": "fileupload"},
-                files={"fileToUpload": ("reel.mp4", f, "video/mp4")},
-                timeout=300
-            )
-        if r.status_code == 200 and r.text.strip().startswith("https://"):
-            return r.text.strip()
-        log(f"  catbox: {r.status_code} {r.text[:100]}")
-    except Exception as e:
-        log(f"  catbox exception: {e}")
-    return None
 
 
 def _upload_tmpfiles(file_path):
