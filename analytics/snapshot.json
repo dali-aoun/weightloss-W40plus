@@ -2,300 +2,300 @@
   "pinterest_account_analytics": {
     "all": {
       "summary_metrics": {
-        "SAVE": 13,
-        "IMPRESSION": 11835,
-        "PIN_CLICK": 358,
-        "OUTBOUND_CLICK": 2
+        "PIN_CLICK": 378,
+        "OUTBOUND_CLICK": 2,
+        "SAVE": 14,
+        "IMPRESSION": 12174
       },
       "daily_metrics": [
         {
           "date": "2026-07-12",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 0,
-            "IMPRESSION": 119,
             "PIN_CLICK": 3,
-            "OUTBOUND_CLICK": 0
+            "OUTBOUND_CLICK": 0,
+            "SAVE": 0,
+            "IMPRESSION": 119
           }
         },
         {
           "date": "2026-07-13",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 0,
-            "IMPRESSION": 140,
             "PIN_CLICK": 4,
-            "OUTBOUND_CLICK": 0
+            "OUTBOUND_CLICK": 0,
+            "SAVE": 0,
+            "IMPRESSION": 140
           }
         },
         {
           "date": "2026-07-14",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 1,
-            "IMPRESSION": 177,
             "PIN_CLICK": 6,
-            "OUTBOUND_CLICK": 0
+            "OUTBOUND_CLICK": 0,
+            "SAVE": 1,
+            "IMPRESSION": 177
           }
         },
         {
           "date": "2026-07-15",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 1,
-            "IMPRESSION": 146,
             "PIN_CLICK": 3,
-            "OUTBOUND_CLICK": 0
+            "OUTBOUND_CLICK": 0,
+            "SAVE": 1,
+            "IMPRESSION": 146
           }
         },
         {
           "date": "2026-07-16",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 0,
-            "IMPRESSION": 172,
             "PIN_CLICK": 5,
-            "OUTBOUND_CLICK": 0
+            "OUTBOUND_CLICK": 0,
+            "SAVE": 0,
+            "IMPRESSION": 172
           }
         },
         {
           "date": "2026-07-17",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 0,
-            "IMPRESSION": 149,
             "PIN_CLICK": 3,
-            "OUTBOUND_CLICK": 0
+            "OUTBOUND_CLICK": 0,
+            "SAVE": 0,
+            "IMPRESSION": 149
           }
         },
         {
           "date": "2026-07-18",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 0,
-            "IMPRESSION": 92,
             "PIN_CLICK": 2,
-            "OUTBOUND_CLICK": 0
+            "OUTBOUND_CLICK": 0,
+            "SAVE": 0,
+            "IMPRESSION": 92
           }
         },
         {
           "date": "2026-07-19",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 0,
-            "IMPRESSION": 133,
             "PIN_CLICK": 1,
-            "OUTBOUND_CLICK": 0
+            "OUTBOUND_CLICK": 0,
+            "SAVE": 0,
+            "IMPRESSION": 133
           }
         },
         {
           "date": "2026-07-20",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 1,
-            "IMPRESSION": 146,
             "PIN_CLICK": 6,
-            "OUTBOUND_CLICK": 0
+            "OUTBOUND_CLICK": 0,
+            "SAVE": 1,
+            "IMPRESSION": 146
           }
         },
         {
           "date": "2026-07-21",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 1,
-            "IMPRESSION": 136,
             "PIN_CLICK": 5,
-            "OUTBOUND_CLICK": 0
+            "OUTBOUND_CLICK": 0,
+            "SAVE": 1,
+            "IMPRESSION": 136
           }
         },
         {
           "date": "2026-07-22",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 0,
-            "IMPRESSION": 142,
             "PIN_CLICK": 4,
-            "OUTBOUND_CLICK": 0
+            "OUTBOUND_CLICK": 0,
+            "SAVE": 0,
+            "IMPRESSION": 142
           }
         },
         {
           "date": "2026-07-23",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 0,
-            "IMPRESSION": 114,
             "PIN_CLICK": 1,
-            "OUTBOUND_CLICK": 0
+            "OUTBOUND_CLICK": 0,
+            "SAVE": 0,
+            "IMPRESSION": 114
           }
         },
         {
           "date": "2026-07-24",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 0,
-            "IMPRESSION": 154,
             "PIN_CLICK": 10,
-            "OUTBOUND_CLICK": 0
+            "OUTBOUND_CLICK": 0,
+            "SAVE": 0,
+            "IMPRESSION": 154
           }
         },
         {
           "date": "2026-07-25",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 1,
-            "IMPRESSION": 282,
             "PIN_CLICK": 10,
-            "OUTBOUND_CLICK": 0
+            "OUTBOUND_CLICK": 0,
+            "SAVE": 1,
+            "IMPRESSION": 282
           }
         },
         {
           "date": "2026-07-26",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 0,
-            "IMPRESSION": 193,
             "PIN_CLICK": 4,
-            "OUTBOUND_CLICK": 0
+            "OUTBOUND_CLICK": 0,
+            "SAVE": 0,
+            "IMPRESSION": 193
           }
         },
         {
           "date": "2026-07-27",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 0,
-            "IMPRESSION": 459,
             "PIN_CLICK": 28,
-            "OUTBOUND_CLICK": 0
+            "OUTBOUND_CLICK": 0,
+            "SAVE": 0,
+            "IMPRESSION": 459
           }
         },
         {
           "date": "2026-07-28",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 0,
-            "IMPRESSION": 419,
             "PIN_CLICK": 9,
-            "OUTBOUND_CLICK": 0
+            "OUTBOUND_CLICK": 0,
+            "SAVE": 0,
+            "IMPRESSION": 419
           }
         },
         {
           "date": "2026-07-29",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 0,
-            "IMPRESSION": 454,
             "PIN_CLICK": 21,
-            "OUTBOUND_CLICK": 0
+            "OUTBOUND_CLICK": 0,
+            "SAVE": 0,
+            "IMPRESSION": 454
           }
         },
         {
           "date": "2026-07-30",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 0,
-            "IMPRESSION": 348,
             "PIN_CLICK": 15,
-            "OUTBOUND_CLICK": 0
+            "OUTBOUND_CLICK": 0,
+            "SAVE": 0,
+            "IMPRESSION": 348
           }
         },
         {
           "date": "2026-07-31",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 1,
-            "IMPRESSION": 1074,
             "PIN_CLICK": 24,
-            "OUTBOUND_CLICK": 1
+            "OUTBOUND_CLICK": 1,
+            "SAVE": 1,
+            "IMPRESSION": 1074
           }
         },
         {
           "date": "2026-08-01",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 4,
-            "IMPRESSION": 843,
             "PIN_CLICK": 30,
-            "OUTBOUND_CLICK": 0
+            "OUTBOUND_CLICK": 0,
+            "SAVE": 4,
+            "IMPRESSION": 843
           }
         },
         {
           "date": "2026-08-02",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 0,
-            "IMPRESSION": 684,
             "PIN_CLICK": 13,
-            "OUTBOUND_CLICK": 0
+            "OUTBOUND_CLICK": 0,
+            "SAVE": 0,
+            "IMPRESSION": 684
           }
         },
         {
           "date": "2026-08-03",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 0,
-            "IMPRESSION": 1280,
             "PIN_CLICK": 32,
-            "OUTBOUND_CLICK": 0
+            "OUTBOUND_CLICK": 0,
+            "SAVE": 0,
+            "IMPRESSION": 1280
           }
         },
         {
           "date": "2026-08-04",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 0,
-            "IMPRESSION": 1342,
             "PIN_CLICK": 30,
-            "OUTBOUND_CLICK": 0
+            "OUTBOUND_CLICK": 0,
+            "SAVE": 0,
+            "IMPRESSION": 1342
           }
         },
         {
           "date": "2026-08-05",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 2,
-            "IMPRESSION": 737,
             "PIN_CLICK": 25,
-            "OUTBOUND_CLICK": 0
+            "OUTBOUND_CLICK": 0,
+            "SAVE": 2,
+            "IMPRESSION": 737
           }
         },
         {
           "date": "2026-08-06",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 1,
-            "IMPRESSION": 755,
             "PIN_CLICK": 23,
-            "OUTBOUND_CLICK": 0
+            "OUTBOUND_CLICK": 0,
+            "SAVE": 1,
+            "IMPRESSION": 755
           }
         },
         {
           "date": "2026-08-07",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 0,
-            "IMPRESSION": 685,
             "PIN_CLICK": 24,
-            "OUTBOUND_CLICK": 1
+            "OUTBOUND_CLICK": 1,
+            "SAVE": 0,
+            "IMPRESSION": 685
           }
         },
         {
           "date": "2026-08-08",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 0,
-            "IMPRESSION": 460,
             "PIN_CLICK": 17,
-            "OUTBOUND_CLICK": 0
+            "OUTBOUND_CLICK": 0,
+            "SAVE": 0,
+            "IMPRESSION": 460
           }
         },
         {
           "date": "2026-08-09",
-          "data_status": "PROCESSING",
+          "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 0.0,
-            "OUTBOUND_CLICK": 0.0,
-            "PIN_CLICK": 0.0,
-            "SAVE": 0.0
+            "PIN_CLICK": 20,
+            "OUTBOUND_CLICK": 0,
+            "SAVE": 1,
+            "IMPRESSION": 339
           }
         },
         {
@@ -322,10 +322,10 @@
     }
   },
   "pinterest_summary": {
-    "SAVE": 13,
-    "IMPRESSION": 11835,
-    "PIN_CLICK": 358,
-    "OUTBOUND_CLICK": 2
+    "PIN_CLICK": 378,
+    "OUTBOUND_CLICK": 2,
+    "SAVE": 14,
+    "IMPRESSION": 12174
   },
   "pinterest_boards": [
     {
@@ -433,7 +433,7 @@
   "instagram_account": {
     "username": "weightlossusmindset",
     "followers_count": 819,
-    "media_count": 304,
+    "media_count": 306,
     "biography": "Fat loss for women 40+ \ud83d\udd25\n47,000+ women reset their hormones\nCortisol belly? This smoothie fixes it\n\ud83d\udc47 FREE 21-day plan \u2014 tap the link",
     "website": "https://smoothie.thehappy-healthy-life.com/",
     "id": "27645316161821605"
@@ -492,7 +492,7 @@
       "end_time": "2026-08-10T07:00:00+0000"
     },
     {
-      "value": 6,
+      "value": 47,
       "end_time": "2026-08-11T07:00:00+0000"
     }
   ],
@@ -500,6 +500,20 @@
   "instagram_website_clicks_14d": [],
   "instagram_interactions_14d": [],
   "instagram_recent_media": [
+    {
+      "id": "18453487732186505",
+      "media_type": "VIDEO",
+      "timestamp": "2026-08-11T11:13:31+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "18150596905508056",
+      "media_type": "VIDEO",
+      "timestamp": "2026-08-11T09:50:10+0000",
+      "like_count": 1,
+      "comments_count": 0
+    },
     {
       "id": "18117821626910526",
       "media_type": "VIDEO",
@@ -511,7 +525,7 @@
       "id": "17900577138487913",
       "media_type": "VIDEO",
       "timestamp": "2026-08-11T07:01:10+0000",
-      "like_count": 0,
+      "like_count": 1,
       "comments_count": 0
     },
     {
@@ -660,30 +674,36 @@
       "timestamp": "2026-08-08T09:27:23+0000",
       "like_count": 1,
       "comments_count": 0
-    },
-    {
-      "id": "18101046359264073",
-      "media_type": "VIDEO",
-      "timestamp": "2026-08-08T08:06:10+0000",
-      "like_count": 0,
-      "comments_count": 0
-    },
-    {
-      "id": "18323652718275784",
-      "media_type": "VIDEO",
-      "timestamp": "2026-08-08T06:45:07+0000",
-      "like_count": 1,
-      "comments_count": 0
     }
   ],
   "instagram_media_insights": [
+    {
+      "id": "18453487732186505",
+      "type": "VIDEO",
+      "date": "2026-08-11",
+      "likes": 0,
+      "comments": 0,
+      "reach": 2,
+      "saved": 0,
+      "shares": 0
+    },
+    {
+      "id": "18150596905508056",
+      "type": "VIDEO",
+      "date": "2026-08-11",
+      "likes": 1,
+      "comments": 0,
+      "reach": 3,
+      "saved": 0,
+      "shares": 0
+    },
     {
       "id": "18117821626910526",
       "type": "VIDEO",
       "date": "2026-08-11",
       "likes": 0,
       "comments": 0,
-      "reach": 0,
+      "reach": 7,
       "saved": 0,
       "shares": 0
     },
@@ -691,9 +711,9 @@
       "id": "17900577138487913",
       "type": "VIDEO",
       "date": "2026-08-11",
-      "likes": 0,
+      "likes": 1,
       "comments": 0,
-      "reach": 0,
+      "reach": 2,
       "saved": 0,
       "shares": 0
     },
@@ -723,7 +743,7 @@
       "date": "2026-08-10",
       "likes": 0,
       "comments": 0,
-      "reach": 23,
+      "reach": 48,
       "saved": 0,
       "shares": 0
     },
@@ -733,7 +753,7 @@
       "date": "2026-08-10",
       "likes": 0,
       "comments": 0,
-      "reach": 8,
+      "reach": 16,
       "saved": 0,
       "shares": 0
     },
@@ -793,7 +813,7 @@
       "date": "2026-08-09",
       "likes": 0,
       "comments": 0,
-      "reach": 24,
+      "reach": 25,
       "saved": 0,
       "shares": 0
     },
@@ -803,7 +823,7 @@
       "date": "2026-08-09",
       "likes": 1,
       "comments": 0,
-      "reach": 8,
+      "reach": 9,
       "saved": 0,
       "shares": 0
     },
@@ -856,27 +876,7 @@
       "reach": 42,
       "saved": 0,
       "shares": 0
-    },
-    {
-      "id": "18211233862352130",
-      "type": "VIDEO",
-      "date": "2026-08-08",
-      "likes": 0,
-      "comments": 0,
-      "reach": 7,
-      "saved": 0,
-      "shares": 0
-    },
-    {
-      "id": "18096294629365472",
-      "type": "VIDEO",
-      "date": "2026-08-08",
-      "likes": 1,
-      "comments": 1,
-      "reach": 108,
-      "saved": 1,
-      "shares": 0
     }
   ],
-  "generated_at": "2026-08-11T08:49:31.662993+00:00"
+  "generated_at": "2026-08-11T12:26:21.869815+00:00"
 }
