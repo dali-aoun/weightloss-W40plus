@@ -30,7 +30,7 @@ jobs:
         with:
           python-version: '3.11'
       - name: Install deps
-        run: run: pip install requests edge-tts Pillow
+        run: pip install requests edge-tts Pillow
       - name: Install ffmpeg
         run: sudo apt-get install -y ffmpeg
       - name: Publish
