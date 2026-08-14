@@ -1296,3 +1296,23 @@
 [2026-08-13 16:57 UTC]   [3] ERROR 401: {'code': 3, 'message': "Your token does not have sufficient permissions to perform this operation. Please ensure your token is authorized with the correct set of scopes. Missing: ['boards:write']"}
 [2026-08-13 16:57 UTC] WARNING: 0 pins published — slot NOT marked done (will retry)
 [2026-08-13 16:57 UTC] === Done: 0 published | 3 errors ===
+[2026-08-14 08:09 UTC] UTC 8h09 → next slot: 08h
+[2026-08-14 08:09 UTC] === Pinterest Publisher 2026-08-14 08h (6 pins/day mode) ===
+[2026-08-14 08:09 UTC]   [1] ERROR 401: {'code': 3, 'message': "Your token does not have sufficient permissions to perform this operation. Please ensure your token is authorized with the correct set of scopes. Missing: ['boards:write']"}
+[2026-08-14 08:09 UTC]   [2] ERROR 401: {'code': 3, 'message': "Your token does not have sufficient permissions to perform this operation. Please ensure your token is authorized with the correct set of scopes. Missing: ['boards:write']"}
+[2026-08-14 08:09 UTC]   [3] VIDEO PIN [Before and After Transformations]
+[2026-08-14 08:09 UTC]     → searching Pexels video (real person): 'woman wellness morning routine'
+[2026-08-14 08:09 UTC]     → downloading Pexels video...
+[2026-08-14 08:09 UTC]     → downloaded 8705KB
+[2026-08-14 08:09 UTC]     → voiceover: Wake up and blend this. One smoothie boosts your metabolism ...
+[2026-08-14 08:09 UTC]     → voiceover OK: 34KB
+[2026-08-14 08:09 UTC]     → ffmpeg 3-track OK: 7.0MB
+[2026-08-14 08:09 UTC]     → using mixed video (voiceover + music)
+[2026-08-14 08:09 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-08-14 08:09 UTC]     → uploading video (media_id=3766920682241533184, url=yes)…
+[2026-08-14 08:09 UTC]     → waiting for Pinterest to process video…
+[2026-08-14 08:10 UTC]     → video pin create error 401: {"code":3,"message":"Your token does not have sufficient permissions to perform this operation. Please ensure your token is authorized with the correct set of scopes. Missing: ['boards:write']"}
+[2026-08-14 08:10 UTC]     → video fallback → standard pin
+[2026-08-14 08:10 UTC]   [3] ERROR 401: {'code': 3, 'message': "Your token does not have sufficient permissions to perform this operation. Please ensure your token is authorized with the correct set of scopes. Missing: ['boards:write']"}
+[2026-08-14 08:10 UTC] WARNING: 0 pins published — slot NOT marked done (will retry)
+[2026-08-14 08:10 UTC] === Done: 0 published | 3 errors ===
