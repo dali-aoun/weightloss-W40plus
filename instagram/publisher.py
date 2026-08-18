@@ -21,9 +21,7 @@ FONT_CACHE  = "/tmp/recipe_font.ttf"
 TZ_TUNIS = timezone(timedelta(hours=1))
 
 SLOTS_ORDER = [
-    ("07h",   "reel"), ("08h30", "reel"), ("10h",   "reel"),
-    ("11h30", "reel"), ("13h",   "reel"), ("15h30", "reel"),
-    ("17h",   "reel"), ("19h",   "reel"),
+    ("07h", "reel"), ("13h", "reel"), ("19h", "reel"),
 ]
 
 IMAGE_KEYWORDS = [
