@@ -4,28 +4,18 @@
       "summary_metrics": {
         "OUTBOUND_CLICK": 3,
         "SAVE": 22,
-        "PIN_CLICK": 557,
-        "IMPRESSION": 18131
+        "IMPRESSION": 17989,
+        "PIN_CLICK": 553
       },
       "daily_metrics": [
-        {
-          "date": "2026-07-22",
-          "data_status": "READY",
-          "metrics": {
-            "OUTBOUND_CLICK": 0,
-            "SAVE": 0,
-            "PIN_CLICK": 4,
-            "IMPRESSION": 142
-          }
-        },
         {
           "date": "2026-07-23",
           "data_status": "READY",
           "metrics": {
             "OUTBOUND_CLICK": 0,
             "SAVE": 0,
-            "PIN_CLICK": 1,
-            "IMPRESSION": 114
+            "IMPRESSION": 114,
+            "PIN_CLICK": 1
           }
         },
         {
@@ -34,8 +24,8 @@
           "metrics": {
             "OUTBOUND_CLICK": 0,
             "SAVE": 0,
-            "PIN_CLICK": 10,
-            "IMPRESSION": 154
+            "IMPRESSION": 154,
+            "PIN_CLICK": 10
           }
         },
         {
@@ -44,8 +34,8 @@
           "metrics": {
             "OUTBOUND_CLICK": 0,
             "SAVE": 1,
-            "PIN_CLICK": 10,
-            "IMPRESSION": 282
+            "IMPRESSION": 282,
+            "PIN_CLICK": 10
           }
         },
         {
@@ -54,8 +44,8 @@
           "metrics": {
             "OUTBOUND_CLICK": 0,
             "SAVE": 0,
-            "PIN_CLICK": 4,
-            "IMPRESSION": 193
+            "IMPRESSION": 193,
+            "PIN_CLICK": 4
           }
         },
         {
@@ -64,8 +54,8 @@
           "metrics": {
             "OUTBOUND_CLICK": 0,
             "SAVE": 0,
-            "PIN_CLICK": 28,
-            "IMPRESSION": 459
+            "IMPRESSION": 459,
+            "PIN_CLICK": 28
           }
         },
         {
@@ -74,8 +64,8 @@
           "metrics": {
             "OUTBOUND_CLICK": 0,
             "SAVE": 0,
-            "PIN_CLICK": 9,
-            "IMPRESSION": 419
+            "IMPRESSION": 419,
+            "PIN_CLICK": 9
           }
         },
         {
@@ -84,8 +74,8 @@
           "metrics": {
             "OUTBOUND_CLICK": 0,
             "SAVE": 0,
-            "PIN_CLICK": 21,
-            "IMPRESSION": 454
+            "IMPRESSION": 454,
+            "PIN_CLICK": 21
           }
         },
         {
@@ -94,8 +84,8 @@
           "metrics": {
             "OUTBOUND_CLICK": 0,
             "SAVE": 0,
-            "PIN_CLICK": 15,
-            "IMPRESSION": 348
+            "IMPRESSION": 348,
+            "PIN_CLICK": 15
           }
         },
         {
@@ -104,8 +94,8 @@
           "metrics": {
             "OUTBOUND_CLICK": 1,
             "SAVE": 1,
-            "PIN_CLICK": 24,
-            "IMPRESSION": 1074
+            "IMPRESSION": 1074,
+            "PIN_CLICK": 24
           }
         },
         {
@@ -114,8 +104,8 @@
           "metrics": {
             "OUTBOUND_CLICK": 0,
             "SAVE": 4,
-            "PIN_CLICK": 30,
-            "IMPRESSION": 843
+            "IMPRESSION": 843,
+            "PIN_CLICK": 30
           }
         },
         {
@@ -124,8 +114,8 @@
           "metrics": {
             "OUTBOUND_CLICK": 0,
             "SAVE": 0,
-            "PIN_CLICK": 13,
-            "IMPRESSION": 684
+            "IMPRESSION": 684,
+            "PIN_CLICK": 13
           }
         },
         {
@@ -134,8 +124,8 @@
           "metrics": {
             "OUTBOUND_CLICK": 0,
             "SAVE": 0,
-            "PIN_CLICK": 32,
-            "IMPRESSION": 1280
+            "IMPRESSION": 1280,
+            "PIN_CLICK": 32
           }
         },
         {
@@ -144,8 +134,8 @@
           "metrics": {
             "OUTBOUND_CLICK": 0,
             "SAVE": 0,
-            "PIN_CLICK": 30,
-            "IMPRESSION": 1342
+            "IMPRESSION": 1342,
+            "PIN_CLICK": 30
           }
         },
         {
@@ -154,8 +144,8 @@
           "metrics": {
             "OUTBOUND_CLICK": 0,
             "SAVE": 2,
-            "PIN_CLICK": 25,
-            "IMPRESSION": 737
+            "IMPRESSION": 737,
+            "PIN_CLICK": 25
           }
         },
         {
@@ -164,8 +154,8 @@
           "metrics": {
             "OUTBOUND_CLICK": 0,
             "SAVE": 1,
-            "PIN_CLICK": 23,
-            "IMPRESSION": 755
+            "IMPRESSION": 755,
+            "PIN_CLICK": 23
           }
         },
         {
@@ -174,8 +164,8 @@
           "metrics": {
             "OUTBOUND_CLICK": 1,
             "SAVE": 0,
-            "PIN_CLICK": 24,
-            "IMPRESSION": 685
+            "IMPRESSION": 685,
+            "PIN_CLICK": 24
           }
         },
         {
@@ -184,8 +174,8 @@
           "metrics": {
             "OUTBOUND_CLICK": 0,
             "SAVE": 0,
-            "PIN_CLICK": 17,
-            "IMPRESSION": 460
+            "IMPRESSION": 460,
+            "PIN_CLICK": 17
           }
         },
         {
@@ -194,8 +184,8 @@
           "metrics": {
             "OUTBOUND_CLICK": 0,
             "SAVE": 1,
-            "PIN_CLICK": 20,
-            "IMPRESSION": 339
+            "IMPRESSION": 339,
+            "PIN_CLICK": 20
           }
         },
         {
@@ -204,8 +194,8 @@
           "metrics": {
             "OUTBOUND_CLICK": 0,
             "SAVE": 5,
-            "PIN_CLICK": 27,
-            "IMPRESSION": 744
+            "IMPRESSION": 744,
+            "PIN_CLICK": 27
           }
         },
         {
@@ -214,8 +204,8 @@
           "metrics": {
             "OUTBOUND_CLICK": 0,
             "SAVE": 1,
-            "PIN_CLICK": 18,
-            "IMPRESSION": 766
+            "IMPRESSION": 766,
+            "PIN_CLICK": 18
           }
         },
         {
@@ -224,8 +214,8 @@
           "metrics": {
             "OUTBOUND_CLICK": 0,
             "SAVE": 1,
-            "PIN_CLICK": 23,
-            "IMPRESSION": 655
+            "IMPRESSION": 655,
+            "PIN_CLICK": 23
           }
         },
         {
@@ -234,8 +224,8 @@
           "metrics": {
             "OUTBOUND_CLICK": 0,
             "SAVE": 1,
-            "PIN_CLICK": 21,
-            "IMPRESSION": 712
+            "IMPRESSION": 712,
+            "PIN_CLICK": 21
           }
         },
         {
@@ -244,8 +234,8 @@
           "metrics": {
             "OUTBOUND_CLICK": 0,
             "SAVE": 0,
-            "PIN_CLICK": 10,
-            "IMPRESSION": 606
+            "IMPRESSION": 606,
+            "PIN_CLICK": 10
           }
         },
         {
@@ -254,8 +244,8 @@
           "metrics": {
             "OUTBOUND_CLICK": 0,
             "SAVE": 1,
-            "PIN_CLICK": 19,
-            "IMPRESSION": 400
+            "IMPRESSION": 400,
+            "PIN_CLICK": 19
           }
         },
         {
@@ -264,8 +254,8 @@
           "metrics": {
             "OUTBOUND_CLICK": 0,
             "SAVE": 0,
-            "PIN_CLICK": 21,
-            "IMPRESSION": 558
+            "IMPRESSION": 558,
+            "PIN_CLICK": 21
           }
         },
         {
@@ -274,8 +264,8 @@
           "metrics": {
             "OUTBOUND_CLICK": 1,
             "SAVE": 1,
-            "PIN_CLICK": 26,
-            "IMPRESSION": 854
+            "IMPRESSION": 854,
+            "PIN_CLICK": 26
           }
         },
         {
@@ -284,8 +274,8 @@
           "metrics": {
             "OUTBOUND_CLICK": 0,
             "SAVE": 1,
-            "PIN_CLICK": 28,
-            "IMPRESSION": 1016
+            "IMPRESSION": 1016,
+            "PIN_CLICK": 28
           }
         },
         {
@@ -294,8 +284,8 @@
           "metrics": {
             "OUTBOUND_CLICK": 0,
             "SAVE": 1,
-            "PIN_CLICK": 24,
-            "IMPRESSION": 1056
+            "IMPRESSION": 1056,
+            "PIN_CLICK": 24
           }
         },
         {
@@ -317,6 +307,16 @@
             "PIN_CLICK": 0.0,
             "SAVE": 0.0
           }
+        },
+        {
+          "date": "2026-08-22",
+          "data_status": "PROCESSING",
+          "metrics": {
+            "IMPRESSION": 0.0,
+            "OUTBOUND_CLICK": 0.0,
+            "PIN_CLICK": 0.0,
+            "SAVE": 0.0
+          }
         }
       ]
     }
@@ -324,8 +324,8 @@
   "pinterest_summary": {
     "OUTBOUND_CLICK": 3,
     "SAVE": 22,
-    "PIN_CLICK": 557,
-    "IMPRESSION": 18131
+    "IMPRESSION": 17989,
+    "PIN_CLICK": 553
   },
   "pinterest_boards": [
     {
@@ -406,7 +406,7 @@
     {
       "id": "1029635602248402049",
       "name": "Social",
-      "pin_count": 274
+      "pin_count": 282
     },
     {
       "id": "1029635602248341054",
@@ -432,17 +432,13 @@
   "pinterest_boards_count": 20,
   "instagram_account": {
     "username": "weightlossusmindset",
-    "followers_count": 820,
-    "media_count": 367,
+    "followers_count": 821,
+    "media_count": 370,
     "biography": "Fat loss for women 40+ \ud83d\udd25\n47,000+ women reset their hormones\nCortisol belly? This smoothie fixes it\n\ud83d\udc47 FREE 21-day plan \u2014 tap the link",
     "website": "https://smoothie.thehappy-healthy-life.com/",
     "id": "27645316161821605"
   },
   "instagram_reach_14d": [
-    {
-      "value": 145,
-      "end_time": "2026-08-08T07:00:00+0000"
-    },
     {
       "value": 206,
       "end_time": "2026-08-09T07:00:00+0000"
@@ -492,14 +488,39 @@
       "end_time": "2026-08-20T07:00:00+0000"
     },
     {
-      "value": 2,
+      "value": 36,
       "end_time": "2026-08-21T07:00:00+0000"
+    },
+    {
+      "value": 3,
+      "end_time": "2026-08-22T07:00:00+0000"
     }
   ],
   "instagram_profile_views_14d": [],
   "instagram_website_clicks_14d": [],
   "instagram_interactions_14d": [],
   "instagram_recent_media": [
+    {
+      "id": "17951172084250261",
+      "media_type": "VIDEO",
+      "timestamp": "2026-08-22T06:43:07+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "18242857231313832",
+      "media_type": "VIDEO",
+      "timestamp": "2026-08-21T18:19:55+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "18336784552248348",
+      "media_type": "VIDEO",
+      "timestamp": "2026-08-21T12:33:37+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
     {
       "id": "18090899246151707",
       "media_type": "VIDEO",
@@ -653,37 +674,46 @@
       "timestamp": "2026-08-16T10:49:42+0000",
       "like_count": 0,
       "comments_count": 0
-    },
-    {
-      "id": "18134586451616182",
-      "media_type": "VIDEO",
-      "timestamp": "2026-08-16T09:23:30+0000",
-      "like_count": 0,
-      "comments_count": 0
-    },
-    {
-      "id": "18131509516630871",
-      "media_type": "VIDEO",
-      "timestamp": "2026-08-16T07:54:38+0000",
-      "like_count": 1,
-      "comments_count": 0
-    },
-    {
-      "id": "18367558819242095",
-      "media_type": "VIDEO",
-      "timestamp": "2026-08-16T06:44:09+0000",
-      "like_count": 0,
-      "comments_count": 0
     }
   ],
   "instagram_media_insights": [
+    {
+      "id": "17951172084250261",
+      "type": "VIDEO",
+      "date": "2026-08-22",
+      "likes": 0,
+      "comments": 0,
+      "reach": 3,
+      "saved": 0,
+      "shares": 0
+    },
+    {
+      "id": "18242857231313832",
+      "type": "VIDEO",
+      "date": "2026-08-21",
+      "likes": 0,
+      "comments": 0,
+      "reach": 28,
+      "saved": 0,
+      "shares": 0
+    },
+    {
+      "id": "18336784552248348",
+      "type": "VIDEO",
+      "date": "2026-08-21",
+      "likes": 0,
+      "comments": 0,
+      "reach": 2,
+      "saved": 0,
+      "shares": 0
+    },
     {
       "id": "18090899246151707",
       "type": "VIDEO",
       "date": "2026-08-21",
       "likes": 0,
       "comments": 0,
-      "reach": 1,
+      "reach": 5,
       "saved": 0,
       "shares": 0
     },
@@ -693,7 +723,7 @@
       "date": "2026-08-20",
       "likes": 0,
       "comments": 0,
-      "reach": 133,
+      "reach": 134,
       "saved": 0,
       "shares": 0
     },
@@ -703,7 +733,7 @@
       "date": "2026-08-20",
       "likes": 1,
       "comments": 0,
-      "reach": 46,
+      "reach": 47,
       "saved": 0,
       "shares": 0
     },
@@ -713,7 +743,7 @@
       "date": "2026-08-20",
       "likes": 0,
       "comments": 0,
-      "reach": 142,
+      "reach": 143,
       "saved": 2,
       "shares": 0
     },
@@ -723,7 +753,7 @@
       "date": "2026-08-19",
       "likes": 0,
       "comments": 0,
-      "reach": 128,
+      "reach": 130,
       "saved": 0,
       "shares": 0
     },
@@ -733,7 +763,7 @@
       "date": "2026-08-19",
       "likes": 0,
       "comments": 0,
-      "reach": 11,
+      "reach": 12,
       "saved": 0,
       "shares": 0
     },
@@ -773,7 +803,7 @@
       "date": "2026-08-18",
       "likes": 1,
       "comments": 0,
-      "reach": 98,
+      "reach": 99,
       "saved": 0,
       "shares": 0
     },
@@ -823,7 +853,7 @@
       "date": "2026-08-17",
       "likes": 0,
       "comments": 0,
-      "reach": 112,
+      "reach": 113,
       "saved": 0,
       "shares": 0
     },
@@ -846,37 +876,7 @@
       "reach": 103,
       "saved": 0,
       "shares": 0
-    },
-    {
-      "id": "18388100650206800",
-      "type": "VIDEO",
-      "date": "2026-08-16",
-      "likes": 0,
-      "comments": 0,
-      "reach": 150,
-      "saved": 0,
-      "shares": 0
-    },
-    {
-      "id": "17954886378208379",
-      "type": "VIDEO",
-      "date": "2026-08-16",
-      "likes": 0,
-      "comments": 0,
-      "reach": 29,
-      "saved": 0,
-      "shares": 0
-    },
-    {
-      "id": "18072773282716031",
-      "type": "VIDEO",
-      "date": "2026-08-16",
-      "likes": 1,
-      "comments": 0,
-      "reach": 124,
-      "saved": 0,
-      "shares": 0
     }
   ],
-  "generated_at": "2026-08-21T08:35:14.425067+00:00"
+  "generated_at": "2026-08-22T08:23:39.417331+00:00"
 }
