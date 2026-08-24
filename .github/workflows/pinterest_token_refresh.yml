@@ -1,0 +1,87 @@
+name: Pinterest Token Auto-Refresh
+
+on:
+  schedule:
+    - cron: '0 9 1 * *'
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Refresh Pinterest token
+        env:
+          CLIENT_ID:     ${{ secrets.PINTEREST_CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.PINTEREST_CLIENT_SECRET }}
+          REFRESH_TOKEN: ${{ secrets.PINTEREST_REFRESH_TOKEN }}
+        run: |
+          python3 - << 'PYEOF'
+          import urllib.request, urllib.parse, json, base64, os, sys
+
+          client_id     = os.environ["CLIENT_ID"]
+          client_secret = os.environ["CLIENT_SECRET"]
+          refresh_token = os.environ["REFRESH_TOKEN"]
+
+          credentials = base64.b64encode(f"{client_id}:{client_secret}".encode()).decode()
+
+          data = urllib.parse.urlencode({
+              "grant_type":    "refresh_token",
+              "refresh_token": refresh_token,
+          }).encode()
+
+          req = urllib.request.Request(
+              "https://api.pinterest.com/v5/oauth/token",
+              data=data,
+              headers={
+                  "Authorization": f"Basic {credentials}",
+                  "Content-Type":  "application/x-www-form-urlencoded",
+              },
+              method="POST"
+          )
+
+          try:
+              with urllib.request.urlopen(req) as resp:
+                  result = json.loads(resp.read())
+          except urllib.error.HTTPError as e:
+              print(f"ERREUR Pinterest API: {e.code} {e.read().decode()}", file=sys.stderr)
+              sys.exit(1)
+
+          new_access  = result.get("access_token")
+          new_refresh = result.get("refresh_token")
+
+          if not new_access:
+              print(f"Réponse inattendue: {result}", file=sys.stderr)
+              sys.exit(1)
+
+          print(f"Nouveau access_token obtenu (expire dans {result.get('expires_in',0)//86400}j)")
+          print(f"Nouveau refresh_token: {'OK' if new_refresh else 'ABSENT'}")
+
+          with open("/tmp/new_access_token.txt", "w") as f: f.write(new_access)
+          if new_refresh:
+              with open("/tmp/new_refresh_token.txt", "w") as f: f.write(new_refresh)
+          PYEOF
+
+      - name: Update secrets — weightloss-W40plus
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT_SECRETS }}
+        run: |
+          gh secret set PINTEREST_ACCESS_TOKEN \
+            --body "$(cat /tmp/new_access_token.txt)" \
+            --repo dali-aoun/weightloss-W40plus
+
+          if [ -f /tmp/new_refresh_token.txt ]; then
+            gh secret set PINTEREST_REFRESH_TOKEN \
+              --body "$(cat /tmp/new_refresh_token.txt)" \
+              --repo dali-aoun/weightloss-W40plus
+          fi
+
+      - name: Update secrets — pinterest-scheduler
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT_SECRETS }}
+        run: |
+          gh secret set PINTEREST_ACCESS_TOKEN \
+            --body "$(cat /tmp/new_access_token.txt)" \
+            --repo dali-aoun/pinterest-scheduler
+
+      - name: Confirmation
+        run: echo "Token Pinterest renouvelé. Prochain renouvellement : 1er du mois prochain."
