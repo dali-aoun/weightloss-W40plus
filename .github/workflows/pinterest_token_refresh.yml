@@ -61,21 +61,20 @@ jobs:
               with open("/tmp/new_refresh_token.txt", "w") as f: f.write(new_refresh)
           PYEOF
 
-      - name: Update secrets — weightloss-W40plus
+      - name: Update secrets weightloss-W40plus
         env:
           GH_TOKEN: ${{ secrets.GH_PAT_SECRETS }}
         run: |
           gh secret set PINTEREST_ACCESS_TOKEN \
             --body "$(cat /tmp/new_access_token.txt)" \
             --repo dali-aoun/weightloss-W40plus
-
           if [ -f /tmp/new_refresh_token.txt ]; then
             gh secret set PINTEREST_REFRESH_TOKEN \
               --body "$(cat /tmp/new_refresh_token.txt)" \
               --repo dali-aoun/weightloss-W40plus
           fi
 
-      - name: Update secrets — pinterest-scheduler
+      - name: Update secrets pinterest-scheduler
         env:
           GH_TOKEN: ${{ secrets.GH_PAT_SECRETS }}
         run: |
@@ -83,5 +82,5 @@ jobs:
             --body "$(cat /tmp/new_access_token.txt)" \
             --repo dali-aoun/pinterest-scheduler
 
-      - name: Confirmation
-        run: echo "Token Pinterest renouvelé. Prochain renouvellement : 1er du mois prochain."
+      - name: Done
+        run: echo "Token Pinterest renouvelé — $(date)"
