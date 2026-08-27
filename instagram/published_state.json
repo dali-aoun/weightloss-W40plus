@@ -1,8 +1,8 @@
 {
   "image_idx": 60,
-  "reel_idx": 15,
+  "reel_idx": 16,
   "img_kw": 5,
-  "reel_kw": 13,
+  "reel_kw": 14,
   "published": [
     {
       "slot": "2026-06-19_10h",
@@ -2043,10 +2043,16 @@
       "type": "reel",
       "media_id": "18168487438458514",
       "at": "2026-08-26T19:30:31.115221+00:00"
+    },
+    {
+      "slot": "2026-08-27_07h",
+      "type": "reel",
+      "media_id": "18112308226995238",
+      "at": "2026-08-27T17:26:19.738005+00:00"
     }
   ],
-  "music_idx": 1,
-  "vo_idx": 8,
-  "txt_idx": 11,
-  "recipe_idx": 3
+  "music_idx": 2,
+  "vo_idx": 9,
+  "txt_idx": 12,
+  "recipe_idx": 4
 }
