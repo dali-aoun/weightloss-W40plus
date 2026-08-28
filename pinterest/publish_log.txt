@@ -1852,3 +1852,21 @@
 [2026-08-28 00:47 UTC]     → VIDEO PIN OK (media_id=3806613707624809024)
 [2026-08-28 00:47 UTC]   [3] OK VIDEO/STANDARD [Menopause Weight Loss Tips]
 [2026-08-28 00:47 UTC] === Done: 3 published | 0 errors ===
+[2026-08-28 19:11 UTC] UTC 19h11 → next slot: 17h
+[2026-08-28 19:11 UTC] === Pinterest Publisher 2026-08-28 17h (6 pins/day mode) ===
+[2026-08-28 19:11 UTC]   [1] OK [Fat Burning Smoothies for Women Over 40]: Why Your Green Smoothie Isn't Working (And the Fix
+[2026-08-28 19:11 UTC]   [2] OK [Morning Routines for Weight Loss]: This 15-Minute Morning Changes Everything After 40
+[2026-08-28 19:11 UTC]   [3] VIDEO PIN [Weight Loss for Women Over 40]
+[2026-08-28 19:11 UTC]     → searching Pexels video (real person): 'woman drinking green smoothie'
+[2026-08-28 19:11 UTC]     → downloading Pexels video...
+[2026-08-28 19:11 UTC]     → downloaded 4373KB
+[2026-08-28 19:11 UTC]     → voiceover: Struggling with stubborn belly fat? This powerful morning sm...
+[2026-08-28 19:11 UTC]     → voiceover OK: 36KB
+[2026-08-28 19:11 UTC]     → ffmpeg 3-track OK: 3.0MB
+[2026-08-28 19:11 UTC]     → using mixed video (voiceover + music)
+[2026-08-28 19:11 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-08-28 19:11 UTC]     → uploading video (media_id=3808841082628790016, url=yes)…
+[2026-08-28 19:11 UTC]     → waiting for Pinterest to process video…
+[2026-08-28 19:12 UTC]     → VIDEO PIN OK (media_id=3808841082628790016)
+[2026-08-28 19:12 UTC]   [3] OK VIDEO/STANDARD [Weight Loss for Women Over 40]
+[2026-08-28 19:12 UTC] === Done: 3 published | 0 errors ===
