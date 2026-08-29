@@ -1906,3 +1906,4 @@
 [2026-08-29 12:56 UTC]     → VIDEO PIN OK (media_id=3810982290725643072)
 [2026-08-29 12:56 UTC]   [3] OK VIDEO/STANDARD [Motivation & Mindset]
 [2026-08-29 12:56 UTC] === Done: 3 published | 0 errors ===
+[2026-08-29 19:12 UTC] Both slots for 2026-08-29 already published — skip
