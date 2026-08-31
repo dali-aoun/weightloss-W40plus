@@ -1961,3 +1961,21 @@
 [2026-08-31 14:43 UTC]     → VIDEO PIN OK (media_id=3816997188177921984)
 [2026-08-31 14:43 UTC]   [3] OK VIDEO/STANDARD [Hormonal Belly Fat Tips]
 [2026-08-31 14:43 UTC] === Done: 3 published | 0 errors ===
+[2026-08-31 21:18 UTC] UTC 21h18 → next slot: 17h
+[2026-08-31 21:18 UTC] === Pinterest Publisher 2026-08-31 17h (6 pins/day mode) ===
+[2026-08-31 21:18 UTC]   [1] OK [Menopause Weight Loss Tips]: Perimenopause Weight Gain Explained Simply
+[2026-08-31 21:18 UTC]   [2] OK [Fat Burning Smoothies for Women Over 40]: The 3-Ingredient Smoothie That Blocks Fat Storage
+[2026-08-31 21:18 UTC]   [3] VIDEO PIN [Morning Routines for Weight Loss]
+[2026-08-31 21:18 UTC]     → searching Pexels video (real person): 'fitness woman healthy lifestyle'
+[2026-08-31 21:18 UTC]     → downloading Pexels video...
+[2026-08-31 21:18 UTC]     → downloaded 13048KB
+[2026-08-31 21:18 UTC]     → voiceover: This ancient smoothie secret is going viral. Women everywher...
+[2026-08-31 21:18 UTC]     → voiceover OK: 40KB
+[2026-08-31 21:18 UTC]     → ffmpeg 3-track OK: 8.0MB
+[2026-08-31 21:18 UTC]     → using mixed video (voiceover + music)
+[2026-08-31 21:18 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-08-31 21:18 UTC]     → uploading video (media_id=3817794362999525888, url=yes)…
+[2026-08-31 21:18 UTC]     → waiting for Pinterest to process video…
+[2026-08-31 21:20 UTC]     → VIDEO PIN OK (media_id=3817794362999525888)
+[2026-08-31 21:20 UTC]   [3] OK VIDEO/STANDARD [Morning Routines for Weight Loss]
+[2026-08-31 21:20 UTC] === Done: 3 published | 0 errors ===
