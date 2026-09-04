@@ -1997,3 +1997,21 @@
 [2026-09-01 12:17 UTC]     → VIDEO PIN OK (media_id=3819602389410214016)
 [2026-09-01 12:17 UTC]   [3] OK VIDEO/STANDARD [21-Day Smoothie Diet Recipes]
 [2026-09-01 12:17 UTC] === Done: 3 published | 0 errors ===
+[2026-09-04 11:55 UTC] UTC 11h55 → next slot: 08h
+[2026-09-04 11:55 UTC] === Pinterest Publisher 2026-09-04 08h (6 pins/day mode) ===
+[2026-09-04 11:55 UTC]   [1] OK [Anti-Inflammatory Diet Tips]: Inflammation Is Making You Gain Weight Silently
+[2026-09-04 11:55 UTC]   [2] OK [Green Smoothie Detox for Women]: Detox Your Body in 7 Days With Green Smoothies
+[2026-09-04 11:55 UTC]   [3] VIDEO PIN [Natural Supplements & Wellness]
+[2026-09-04 11:55 UTC]     → searching Pexels video (real person): 'woman wellness morning routine'
+[2026-09-04 11:55 UTC]     → downloading Pexels video...
+[2026-09-04 11:55 UTC]     → downloaded 11848KB
+[2026-09-04 11:55 UTC]     → voiceover: Cortisol is making you fat after 40. This smoothie fights it...
+[2026-09-04 11:55 UTC]     → voiceover OK: 45KB
+[2026-09-04 11:56 UTC]     → ffmpeg 3-track OK: 8.0MB
+[2026-09-04 11:56 UTC]     → using mixed video (voiceover + music)
+[2026-09-04 11:56 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-09-04 11:56 UTC]     → uploading video (media_id=3828257730415755840, url=yes)…
+[2026-09-04 11:56 UTC]     → waiting for Pinterest to process video…
+[2026-09-04 11:57 UTC]     → VIDEO PIN OK (media_id=3828257730415755840)
+[2026-09-04 11:57 UTC]   [3] OK VIDEO/STANDARD [Natural Supplements & Wellness]
+[2026-09-04 11:57 UTC] === Done: 3 published | 0 errors ===
