@@ -2015,3 +2015,21 @@
 [2026-09-04 11:57 UTC]     → VIDEO PIN OK (media_id=3828257730415755840)
 [2026-09-04 11:57 UTC]   [3] OK VIDEO/STANDARD [Natural Supplements & Wellness]
 [2026-09-04 11:57 UTC] === Done: 3 published | 0 errors ===
+[2026-09-04 18:48 UTC] UTC 18h48 → next slot: 17h
+[2026-09-04 18:48 UTC] === Pinterest Publisher 2026-09-04 17h (6 pins/day mode) ===
+[2026-09-04 18:48 UTC]   [1] OK [Motivation & Mindset]: You Don't Need Another Diet. You Need a Reset.
+[2026-09-04 18:49 UTC]   [2] OK [Energy Boosters for Women 40+]: Sugar Cravings at 3pm? Here's the Real Cause
+[2026-09-04 18:49 UTC]   [3] VIDEO PIN [Weight Loss Tips for Women Over 40]
+[2026-09-04 18:49 UTC]     → searching Pexels video (real person): 'woman yoga morning routine'
+[2026-09-04 18:49 UTC]     → downloading Pexels video...
+[2026-09-04 18:49 UTC]     → downloaded 5613KB
+[2026-09-04 18:49 UTC]     → voiceover: Ladies, this one smoothie changed everything. No gym, no cra...
+[2026-09-04 18:49 UTC]     → voiceover OK: 53KB
+[2026-09-04 18:49 UTC]     → ffmpeg 3-track OK: 3.4MB
+[2026-09-04 18:49 UTC]     → using mixed video (voiceover + music)
+[2026-09-04 18:49 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-09-04 18:49 UTC]     → uploading video (media_id=3829090348748943936, url=yes)…
+[2026-09-04 18:49 UTC]     → waiting for Pinterest to process video…
+[2026-09-04 18:50 UTC]     → VIDEO PIN OK (media_id=3829090348748943936)
+[2026-09-04 18:50 UTC]   [3] OK VIDEO/STANDARD [Weight Loss Tips for Women Over 40]
+[2026-09-04 18:50 UTC] === Done: 3 published | 0 errors ===
