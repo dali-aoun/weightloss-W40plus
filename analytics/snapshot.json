@@ -2,22 +2,12 @@
   "pinterest_account_analytics": {
     "all": {
       "summary_metrics": {
-        "PIN_CLICK": 654,
+        "PIN_CLICK": 650,
         "OUTBOUND_CLICK": 5,
-        "IMPRESSION": 19560,
+        "IMPRESSION": 18822,
         "SAVE": 31
       },
       "daily_metrics": [
-        {
-          "date": "2026-08-04",
-          "data_status": "READY",
-          "metrics": {
-            "PIN_CLICK": 30,
-            "OUTBOUND_CLICK": 0,
-            "IMPRESSION": 1342,
-            "SAVE": 0
-          }
-        },
         {
           "date": "2026-08-05",
           "data_status": "READY",
@@ -290,12 +280,12 @@
         },
         {
           "date": "2026-09-01",
-          "data_status": "PROCESSING",
+          "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 0.0,
-            "OUTBOUND_CLICK": 0.0,
-            "PIN_CLICK": 0.0,
-            "SAVE": 0.0
+            "PIN_CLICK": 26,
+            "OUTBOUND_CLICK": 0,
+            "IMPRESSION": 604,
+            "SAVE": 0
           }
         },
         {
@@ -317,14 +307,24 @@
             "PIN_CLICK": 0.0,
             "SAVE": 0.0
           }
+        },
+        {
+          "date": "2026-09-04",
+          "data_status": "PROCESSING",
+          "metrics": {
+            "IMPRESSION": 0.0,
+            "OUTBOUND_CLICK": 0.0,
+            "PIN_CLICK": 0.0,
+            "SAVE": 0.0
+          }
         }
       ]
     }
   },
   "pinterest_summary": {
-    "PIN_CLICK": 654,
+    "PIN_CLICK": 650,
     "OUTBOUND_CLICK": 5,
-    "IMPRESSION": 19560,
+    "IMPRESSION": 18822,
     "SAVE": 31
   },
   "pinterest_boards": [
@@ -336,22 +336,22 @@
     {
       "id": "1029635602248341063",
       "name": "Anti-Inflammatory Diet Tips",
-      "pin_count": 91
+      "pin_count": 92
     },
     {
       "id": "1029635602248341068",
       "name": "Before and After Transformations",
-      "pin_count": 68
+      "pin_count": 69
     },
     {
       "id": "1029635602248341069",
       "name": "Energy Boosters for Women 40+",
-      "pin_count": 49
+      "pin_count": 50
     },
     {
       "id": "1029635602248341061",
       "name": "Fat Burning Foods & Drinks",
-      "pin_count": 47
+      "pin_count": 48
     },
     {
       "id": "1029635602246753716",
@@ -361,12 +361,12 @@
     {
       "id": "1029635602248374232",
       "name": "Green Smoothie Detox for Women",
-      "pin_count": 37
+      "pin_count": 39
     },
     {
       "id": "1029635602248341064",
       "name": "High Protein Meals for Women",
-      "pin_count": 43
+      "pin_count": 44
     },
     {
       "id": "1029635602248341055",
@@ -386,7 +386,7 @@
     {
       "id": "1029635602246765608",
       "name": "Metabolism Boosting Drinks Women Over 40",
-      "pin_count": 43
+      "pin_count": 44
     },
     {
       "id": "1029635602248341062",
@@ -396,17 +396,17 @@
     {
       "id": "1029635602248341071",
       "name": "Motivation & Mindset",
-      "pin_count": 80
+      "pin_count": 81
     },
     {
       "id": "1029635602248341070",
       "name": "Natural Supplements & Wellness",
-      "pin_count": 72
+      "pin_count": 74
     },
     {
       "id": "1029635602248402049",
       "name": "Social",
-      "pin_count": 319
+      "pin_count": 321
     },
     {
       "id": "1029635602248341054",
@@ -416,12 +416,12 @@
     {
       "id": "1029635602246762118",
       "name": "Weight Loss Meal Recipes for Women Over 40",
-      "pin_count": 40
+      "pin_count": 41
     },
     {
       "id": "1029635602247093057",
       "name": "Weight Loss Tips for Women Over 40",
-      "pin_count": 65
+      "pin_count": 66
     },
     {
       "id": "1029635602246752436",
@@ -433,16 +433,12 @@
   "instagram_account": {
     "username": "weightlossusmindset",
     "followers_count": 817,
-    "media_count": 412,
+    "media_count": 417,
     "biography": "Fat loss for women 40+ \ud83d\udd25\n47,000+ women reset their hormones\nCortisol belly? This smoothie fixes it\n\ud83d\udc47 FREE 21-day plan \u2014 tap the link",
     "website": "https://smoothie.thehappy-healthy-life.com/",
     "id": "27645316161821605"
   },
   "instagram_reach_14d": [
-    {
-      "value": 36,
-      "end_time": "2026-08-21T07:00:00+0000"
-    },
     {
       "value": 73,
       "end_time": "2026-08-22T07:00:00+0000"
@@ -492,14 +488,53 @@
       "end_time": "2026-09-02T07:00:00+0000"
     },
     {
-      "value": 7,
+      "value": 15,
       "end_time": "2026-09-03T07:00:00+0000"
+    },
+    {
+      "value": 3,
+      "end_time": "2026-09-04T07:00:00+0000"
     }
   ],
   "instagram_profile_views_14d": [],
   "instagram_website_clicks_14d": [],
   "instagram_interactions_14d": [],
   "instagram_recent_media": [
+    {
+      "id": "18095043539452161",
+      "media_type": "IMAGE",
+      "timestamp": "2026-09-04T10:56:07+0000",
+      "like_count": 0,
+      "comments_count": 1
+    },
+    {
+      "id": "18626041540006035",
+      "media_type": "VIDEO",
+      "timestamp": "2026-09-04T10:52:29+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "18104444612192506",
+      "media_type": "VIDEO",
+      "timestamp": "2026-09-03T20:54:33+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "18151099408525584",
+      "media_type": "IMAGE",
+      "timestamp": "2026-09-03T18:24:46+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "17969234358141846",
+      "media_type": "VIDEO",
+      "timestamp": "2026-09-03T15:38:30+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
     {
       "id": "18131935621726768",
       "media_type": "IMAGE",
@@ -639,51 +674,66 @@
       "timestamp": "2026-08-29T12:28:44+0000",
       "like_count": 0,
       "comments_count": 0
-    },
-    {
-      "id": "18066616868757005",
-      "media_type": "VIDEO",
-      "timestamp": "2026-08-29T01:15:14+0000",
-      "like_count": 0,
-      "comments_count": 0
-    },
-    {
-      "id": "18159839023427905",
-      "media_type": "IMAGE",
-      "timestamp": "2026-08-28T23:54:46+0000",
-      "like_count": 0,
-      "comments_count": 0
-    },
-    {
-      "id": "18132118051631402",
-      "media_type": "VIDEO",
-      "timestamp": "2026-08-28T21:39:26+0000",
-      "like_count": 0,
-      "comments_count": 0
-    },
-    {
-      "id": "17943525825313763",
-      "media_type": "VIDEO",
-      "timestamp": "2026-08-28T18:21:57+0000",
-      "like_count": 0,
-      "comments_count": 0
-    },
-    {
-      "id": "18119004430929506",
-      "media_type": "IMAGE",
-      "timestamp": "2026-08-28T10:55:19+0000",
-      "like_count": 1,
-      "comments_count": 0
     }
   ],
   "instagram_media_insights": [
+    {
+      "id": "18095043539452161",
+      "type": "IMAGE",
+      "date": "2026-09-04",
+      "likes": 0,
+      "comments": 1,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0
+    },
+    {
+      "id": "18626041540006035",
+      "type": "VIDEO",
+      "date": "2026-09-04",
+      "likes": 0,
+      "comments": 0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0
+    },
+    {
+      "id": "18104444612192506",
+      "type": "VIDEO",
+      "date": "2026-09-03",
+      "likes": 0,
+      "comments": 0,
+      "reach": 6,
+      "saved": 0,
+      "shares": 0
+    },
+    {
+      "id": "18151099408525584",
+      "type": "IMAGE",
+      "date": "2026-09-03",
+      "likes": 0,
+      "comments": 0,
+      "reach": 4,
+      "saved": 0,
+      "shares": 0
+    },
+    {
+      "id": "17969234358141846",
+      "type": "VIDEO",
+      "date": "2026-09-03",
+      "likes": 0,
+      "comments": 0,
+      "reach": 5,
+      "saved": 0,
+      "shares": 0
+    },
     {
       "id": "18131935621726768",
       "type": "IMAGE",
       "date": "2026-09-02",
       "likes": 1,
       "comments": 0,
-      "reach": 10,
+      "reach": 13,
       "saved": 0,
       "shares": 0
     },
@@ -703,7 +753,7 @@
       "date": "2026-09-01",
       "likes": 1,
       "comments": 0,
-      "reach": 4,
+      "reach": 6,
       "saved": 0,
       "shares": 0
     },
@@ -743,7 +793,7 @@
       "date": "2026-08-31",
       "likes": 0,
       "comments": 0,
-      "reach": 7,
+      "reach": 8,
       "saved": 0,
       "shares": 0
     },
@@ -753,7 +803,7 @@
       "date": "2026-08-31",
       "likes": 0,
       "comments": 0,
-      "reach": 11,
+      "reach": 12,
       "saved": 0,
       "shares": 0
     },
@@ -783,7 +833,7 @@
       "date": "2026-08-31",
       "likes": 0,
       "comments": 0,
-      "reach": 6,
+      "reach": 7,
       "saved": 0,
       "shares": 0
     },
@@ -793,7 +843,7 @@
       "date": "2026-08-31",
       "likes": 1,
       "comments": 0,
-      "reach": 3,
+      "reach": 4,
       "saved": 0,
       "shares": 0
     },
@@ -826,57 +876,7 @@
       "reach": 32,
       "saved": 0,
       "shares": 0
-    },
-    {
-      "id": "18102818308968021",
-      "type": "VIDEO",
-      "date": "2026-08-30",
-      "likes": 0,
-      "comments": 0,
-      "reach": 47,
-      "saved": 0,
-      "shares": 0
-    },
-    {
-      "id": "18179968576424954",
-      "type": "IMAGE",
-      "date": "2026-08-30",
-      "likes": 0,
-      "comments": 0,
-      "reach": 13,
-      "saved": 0,
-      "shares": 0
-    },
-    {
-      "id": "18023367866855874",
-      "type": "VIDEO",
-      "date": "2026-08-30",
-      "likes": 0,
-      "comments": 0,
-      "reach": 31,
-      "saved": 0,
-      "shares": 0
-    },
-    {
-      "id": "18004400147992765",
-      "type": "VIDEO",
-      "date": "2026-08-29",
-      "likes": 0,
-      "comments": 0,
-      "reach": 8,
-      "saved": 0,
-      "shares": 0
-    },
-    {
-      "id": "18620820427039870",
-      "type": "VIDEO",
-      "date": "2026-08-29",
-      "likes": 0,
-      "comments": 0,
-      "reach": 8,
-      "saved": 0,
-      "shares": 0
     }
   ],
-  "generated_at": "2026-09-03T12:31:46.396391+00:00"
+  "generated_at": "2026-09-04T12:27:41.904630+00:00"
 }
