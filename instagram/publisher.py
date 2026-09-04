@@ -1,7 +1,7 @@
 """
 publisher.py — Instagram auto-publisher (GitHub Actions)
-8 reels/jour, espaces reguliers
-Tunisia UTC+1 : 07h 08h30 10h 11h30 13h 15h30 17h 19h
+5 reels/jour, horaires varies
+Tunisia UTC+1 : 07h 10h 13h 16h 19h
 Reels: Pexels video (blurred bg) + recipe card overlay (Pillow) + voiceover + music
 """
 
@@ -21,7 +21,7 @@ FONT_CACHE  = "/tmp/recipe_font.ttf"
 TZ_TUNIS = timezone(timedelta(hours=1))
 
 SLOTS_ORDER = [
-    ("07h", "reel"), ("13h", "reel"), ("19h", "reel"),
+    ("07h", "reel"), ("10h", "reel"), ("13h", "reel"), ("16h", "reel"), ("19h", "reel"),
 ]
 
 IMAGE_KEYWORDS = [
@@ -74,6 +74,20 @@ VOICEOVER_SCRIPTS = [
     "Every morning at 7am I blend this smoothie. It takes 90 seconds. It has reversed my hormonal belly fat completely. I'm sharing the exact recipe free in my bio. Go get it.",
     "Stop blaming yourself for the belly fat. After 40 it's biological. Your estrogen dropped. Your cortisol rose. Your body is doing exactly what it's programmed to do. This smoothie reprograms it. Free link in bio.",
     "The smoothie that 47,000 women are using to lose hormonal belly fat after 40. No gym required. No starvation. Just 2 minutes every morning. Free 21-day protocol — tap the link in my bio.",
+    "Close this video if you already have a flat stomach after 40. Still here? Good. This smoothie is for you. Two minutes every morning. Free plan in bio.",
+    "I need you to hear something. You are not lazy. You are not broken. Your hormones shifted and nobody told you what to do about it. This smoothie is the answer. Free in bio.",
+    "My doctor said I had to take medication for my belly fat. I tried this smoothie for 3 weeks first. I never needed the medication. Free protocol is in my bio.",
+    "Warning. This smoothie actually works and once you see results you will not be able to stop. 47,000 women warned you. Free 21-day plan in bio.",
+    "What if I told you the diet keeping you stuck is also raising your cortisol. One smoothie every morning breaks the cycle in 21 days. Free plan in bio.",
+    "She cried when her jeans fit again at 54. Three weeks of this smoothie protocol. Your turn. Free guide in bio.",
+    "Your morning coffee is destroying your weight loss after 40. Here is what to drink instead. Two minutes. Free recipe in bio.",
+    "If nothing has worked for your belly fat after 40, cortisol is the problem. Not your willpower. This smoothie targets it specifically. Free guide in bio.",
+    "I replaced breakfast with this smoothie for 21 days and lost my belly fat without trying. Real results at 47. Free 21-day plan in bio.",
+    "The moment you understand that belly fat after 40 is a hormone problem not a calorie problem, everything changes. This smoothie is the solution. Free in bio.",
+    "Stop starving yourself. Stop over-exercising. Stop fighting your biology. Start this 2-minute morning smoothie. 21 days. Free plan in bio.",
+    "My mom lost 22 pounds at 58 with this smoothie protocol. She said it was the easiest thing she had ever done. Free plan in my bio.",
+    "This is the only weight loss content you need to save today. The 21-day smoothie protocol for women over 40. Free. Link in bio. Save this video.",
+    "Three ingredients in this smoothie lower cortisol by morning. Ashwagandha, flaxseed, and cinnamon. Blend them every day. Free full recipe in bio.",
 ]
 
 # ── Recipe cards — the core save-worthy content ──────────────────────────────
@@ -909,7 +923,7 @@ def main():
                 slot_key, slot_type = key, stype
                 break
         if not slot_key:
-            log(f"Les 8 slots de {slot_date} sont deja publies - skip")
+            log(f"Les 5 slots de {slot_date} sont deja publies - skip")
             sys.exit(0)
         log(f"UTC {now_utc.hour}h{now_utc.minute:02d} -> prochain slot: {slot_key} type={slot_type}")
 
