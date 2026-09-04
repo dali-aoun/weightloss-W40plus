@@ -3,7 +3,9 @@ name: Instagram Publisher
 on:
   schedule:
     - cron: '0 6 * * *'
+    - cron: '0 9 * * *'
     - cron: '0 12 * * *'
+    - cron: '0 15 * * *'
     - cron: '0 18 * * *'
   workflow_dispatch:
     inputs:
@@ -27,7 +29,9 @@ jobs:
       - name: Install deps
         run: pip install requests edge-tts Pillow
       - name: Install ffmpeg
-        run: sudo apt-get install -y ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
       - name: Publish
         env:
           LONG_LIVED_TOKEN: ${{ secrets.LONG_LIVED_TOKEN }}
