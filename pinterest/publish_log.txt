@@ -2087,3 +2087,21 @@
 [2026-09-06 11:30 UTC]     → VIDEO PIN OK (media_id=3834000744761781376)
 [2026-09-06 11:30 UTC]   [3] OK VIDEO/STANDARD [Fat Burning Smoothies for Women Over 40]
 [2026-09-06 11:30 UTC] === Done: 3 published | 0 errors ===
+[2026-09-06 18:01 UTC] UTC 18h01 → next slot: 17h
+[2026-09-06 18:01 UTC] === Pinterest Publisher 2026-09-06 17h (6 pins/day mode) ===
+[2026-09-06 18:01 UTC]   [1] OK [Morning Routines for Weight Loss]: The Morning Mistake 90% of Women Over 40 Make
+[2026-09-06 18:01 UTC]   [2] OK [Weight Loss for Women Over 40]: How She Lost 23 lbs After Failing Every Diet for 5
+[2026-09-06 18:01 UTC]   [3] VIDEO PIN [Metabolism Boost After 40]
+[2026-09-06 18:01 UTC]     → searching Pexels video (real person): 'fitness woman healthy lifestyle'
+[2026-09-06 18:01 UTC]     → downloading Pexels video...
+[2026-09-06 18:01 UTC]     → downloaded 12661KB
+[2026-09-06 18:01 UTC]     → voiceover: Your hormones might be blocking fat loss. This special smoot...
+[2026-09-06 18:01 UTC]     → voiceover OK: 39KB
+[2026-09-06 18:01 UTC]     → ffmpeg 3-track OK: 8.5MB
+[2026-09-06 18:01 UTC]     → using mixed video (voiceover + music)
+[2026-09-06 18:01 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-09-06 18:01 UTC]     → uploading video (media_id=3834791971790442752, url=yes)…
+[2026-09-06 18:01 UTC]     → waiting for Pinterest to process video…
+[2026-09-06 18:03 UTC]     → VIDEO PIN OK (media_id=3834791971790442752)
+[2026-09-06 18:03 UTC]   [3] OK VIDEO/STANDARD [Metabolism Boost After 40]
+[2026-09-06 18:03 UTC] === Done: 3 published | 0 errors ===
