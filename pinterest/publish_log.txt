@@ -2069,3 +2069,21 @@
 [2026-09-05 17:56 UTC]     → VIDEO PIN OK (media_id=3831880593244033472)
 [2026-09-05 17:56 UTC]   [3] OK VIDEO/STANDARD [Weight Loss Transformation]
 [2026-09-05 17:56 UTC] === Done: 3 published | 0 errors ===
+[2026-09-06 11:28 UTC] UTC 11h28 → next slot: 08h
+[2026-09-06 11:28 UTC] === Pinterest Publisher 2026-09-06 08h (6 pins/day mode) ===
+[2026-09-06 11:28 UTC]   [1] OK [Hormonal Belly Fat Tips]: The Cortisol-Belly Fat Connection
+[2026-09-06 11:28 UTC]   [2] OK [Menopause Weight Loss Tips]: What Every Woman Over 50 Should Eat for Breakfast
+[2026-09-06 11:28 UTC]   [3] VIDEO PIN [Fat Burning Smoothies for Women Over 40]
+[2026-09-06 11:28 UTC]     → searching Pexels video (real person): 'woman drinking green smoothie'
+[2026-09-06 11:28 UTC]     → downloading Pexels video...
+[2026-09-06 11:28 UTC]     → downloaded 4072KB
+[2026-09-06 11:28 UTC]     → voiceover: Wake up and blend this. One smoothie boosts your metabolism ...
+[2026-09-06 11:28 UTC]     → voiceover OK: 34KB
+[2026-09-06 11:28 UTC]     → ffmpeg 3-track OK: 3.0MB
+[2026-09-06 11:28 UTC]     → using mixed video (voiceover + music)
+[2026-09-06 11:28 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-09-06 11:28 UTC]     → uploading video (media_id=3834000744761781376, url=yes)…
+[2026-09-06 11:28 UTC]     → waiting for Pinterest to process video…
+[2026-09-06 11:30 UTC]     → VIDEO PIN OK (media_id=3834000744761781376)
+[2026-09-06 11:30 UTC]   [3] OK VIDEO/STANDARD [Fat Burning Smoothies for Women Over 40]
+[2026-09-06 11:30 UTC] === Done: 3 published | 0 errors ===
