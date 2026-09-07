@@ -2105,3 +2105,21 @@
 [2026-09-06 18:03 UTC]     → VIDEO PIN OK (media_id=3834791971790442752)
 [2026-09-06 18:03 UTC]   [3] OK VIDEO/STANDARD [Metabolism Boost After 40]
 [2026-09-06 18:03 UTC] === Done: 3 published | 0 errors ===
+[2026-09-07 13:12 UTC] UTC 13h12 → next slot: 08h
+[2026-09-07 13:12 UTC] === Pinterest Publisher 2026-09-07 08h (6 pins/day mode) ===
+[2026-09-07 13:12 UTC]   [1] OK [21-Day Smoothie Diet Recipes]: Before Starting the 21-Day Reset — Read This First
+[2026-09-07 13:12 UTC]   [2] OK [Anti-Inflammatory Diet Tips]: The Anti-Inflammatory Shopping List for Women 40+
+[2026-09-07 13:12 UTC]   [3] VIDEO PIN [Green Smoothie Detox for Women]
+[2026-09-07 13:12 UTC]     → searching Pexels video (real person): 'woman drinking detox juice'
+[2026-09-07 13:12 UTC]     → downloading Pexels video...
+[2026-09-07 13:12 UTC]     → downloaded 22838KB
+[2026-09-07 13:12 UTC]     → voiceover: No more starving. This delicious smoothie fills you up and b...
+[2026-09-07 13:12 UTC]     → voiceover OK: 36KB
+[2026-09-07 13:12 UTC]     → ffmpeg 3-track OK: 21.1MB
+[2026-09-07 13:12 UTC]     → using mixed video (voiceover + music)
+[2026-09-07 13:12 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-09-07 13:12 UTC]     → uploading video (media_id=3837109626907238400, url=yes)…
+[2026-09-07 13:12 UTC]     → waiting for Pinterest to process video…
+[2026-09-07 13:14 UTC]     → VIDEO PIN OK (media_id=3837109626907238400)
+[2026-09-07 13:14 UTC]   [3] OK VIDEO/STANDARD [Green Smoothie Detox for Women]
+[2026-09-07 13:14 UTC] === Done: 3 published | 0 errors ===
