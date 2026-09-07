@@ -2123,3 +2123,21 @@
 [2026-09-07 13:14 UTC]     → VIDEO PIN OK (media_id=3837109626907238400)
 [2026-09-07 13:14 UTC]   [3] OK VIDEO/STANDARD [Green Smoothie Detox for Women]
 [2026-09-07 13:14 UTC] === Done: 3 published | 0 errors ===
+[2026-09-07 19:35 UTC] UTC 19h35 → next slot: 17h
+[2026-09-07 19:35 UTC] === Pinterest Publisher 2026-09-07 17h (6 pins/day mode) ===
+[2026-09-07 19:35 UTC]   [1] OK [Natural Supplements & Wellness]: Magnesium: The Most Underrated Weight Loss Supplem
+[2026-09-07 19:35 UTC]   [2] OK [Motivation & Mindset]: It's Not Too Late at 52, 57, or 63
+[2026-09-07 19:35 UTC]   [3] VIDEO PIN [Energy Boosters for Women 40+]
+[2026-09-07 19:35 UTC]     → searching Pexels video (real person): 'woman blending fresh fruits'
+[2026-09-07 19:35 UTC]     → downloading Pexels video...
+[2026-09-07 19:35 UTC]     → downloaded 4373KB
+[2026-09-07 19:35 UTC]     → voiceover: 21 days, one smoothie recipe. Thousands of women already tra...
+[2026-09-07 19:35 UTC]     → voiceover OK: 48KB
+[2026-09-07 19:35 UTC]     → ffmpeg 3-track OK: 3.0MB
+[2026-09-07 19:35 UTC]     → using mixed video (voiceover + music)
+[2026-09-07 19:35 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-09-07 19:35 UTC]     → uploading video (media_id=3837880689164920320, url=yes)…
+[2026-09-07 19:35 UTC]     → waiting for Pinterest to process video…
+[2026-09-07 19:36 UTC]     → VIDEO PIN OK (media_id=3837880689164920320)
+[2026-09-07 19:36 UTC]   [3] OK VIDEO/STANDARD [Energy Boosters for Women 40+]
+[2026-09-07 19:36 UTC] === Done: 3 published | 0 errors ===
