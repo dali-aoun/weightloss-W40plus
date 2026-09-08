@@ -2141,3 +2141,21 @@
 [2026-09-07 19:36 UTC]     → VIDEO PIN OK (media_id=3837880689164920320)
 [2026-09-07 19:36 UTC]   [3] OK VIDEO/STANDARD [Energy Boosters for Women 40+]
 [2026-09-07 19:36 UTC] === Done: 3 published | 0 errors ===
+[2026-09-08 11:55 UTC] UTC 11h55 → next slot: 08h
+[2026-09-08 11:55 UTC] === Pinterest Publisher 2026-09-08 08h (6 pins/day mode) ===
+[2026-09-08 11:55 UTC]   [1] OK [Weight Loss Tips for Women Over 40]: The Scale vs Your Clothes After 40
+[2026-09-08 11:55 UTC]   [2] OK [Fat Burning Foods & Drinks]: The Prebiotic Foods That Feed Your Fat-Burning Bac
+[2026-09-08 11:55 UTC]   [3] VIDEO PIN [High Protein Meals for Women]
+[2026-09-08 11:55 UTC]     → searching Pexels video (real person): 'woman healthy meal preparation'
+[2026-09-08 11:55 UTC]     → downloading Pexels video...
+[2026-09-08 11:55 UTC]     → downloaded 11611KB
+[2026-09-08 11:55 UTC]     → voiceover: This ancient smoothie secret is going viral. Women everywher...
+[2026-09-08 11:55 UTC]     → voiceover OK: 40KB
+[2026-09-08 11:56 UTC]     → ffmpeg 3-track OK: 8.2MB
+[2026-09-08 11:56 UTC]     → using mixed video (voiceover + music)
+[2026-09-08 11:56 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-09-08 11:56 UTC]     → uploading video (media_id=3839853944981884032, url=yes)…
+[2026-09-08 11:56 UTC]     → waiting for Pinterest to process video…
+[2026-09-08 11:56 UTC]     → VIDEO PIN OK (media_id=3839853944981884032)
+[2026-09-08 11:56 UTC]   [3] OK VIDEO/STANDARD [High Protein Meals for Women]
+[2026-09-08 11:56 UTC] === Done: 3 published | 0 errors ===
