@@ -2195,3 +2195,21 @@
 [2026-09-09 12:06 UTC]     → VIDEO PIN OK (media_id=3842772690301661504)
 [2026-09-09 12:06 UTC]   [3] OK VIDEO/STANDARD [Menopause Weight Loss Tips]
 [2026-09-09 12:06 UTC] === Done: 3 published | 0 errors ===
+[2026-09-09 19:04 UTC] UTC 19h04 → next slot: 17h
+[2026-09-09 19:04 UTC] === Pinterest Publisher 2026-09-09 17h (6 pins/day mode) ===
+[2026-09-09 19:04 UTC]   [1] OK [Fat Burning Smoothies for Women Over 40]: 5 Ingredients That Lower Cortisol
+[2026-09-09 19:04 UTC]   [2] OK [Morning Routines for Weight Loss]: Morning Protein: The Weight Loss Secret
+[2026-09-09 19:05 UTC]   [3] VIDEO PIN [Weight Loss for Women Over 40]
+[2026-09-09 19:05 UTC]     → searching Pexels video (real person): 'woman healthy meal preparation'
+[2026-09-09 19:05 UTC]     → downloading Pexels video...
+[2026-09-09 19:05 UTC]     → downloaded 11611KB
+[2026-09-09 19:05 UTC]     → voiceover: Ladies, this one smoothie changed everything. No gym, no cra...
+[2026-09-09 19:05 UTC]     → voiceover OK: 53KB
+[2026-09-09 19:05 UTC]     → ffmpeg 3-track OK: 8.2MB
+[2026-09-09 19:05 UTC]     → using mixed video (voiceover + music)
+[2026-09-09 19:05 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-09-09 19:05 UTC]     → uploading video (media_id=3843617355850949504, url=yes)…
+[2026-09-09 19:05 UTC]     → waiting for Pinterest to process video…
+[2026-09-09 19:06 UTC]     → VIDEO PIN OK (media_id=3843617355850949504)
+[2026-09-09 19:06 UTC]   [3] OK VIDEO/STANDARD [Weight Loss for Women Over 40]
+[2026-09-09 19:06 UTC] === Done: 3 published | 0 errors ===
