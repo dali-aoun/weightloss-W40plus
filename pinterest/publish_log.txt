@@ -2177,3 +2177,21 @@
 [2026-09-08 19:17 UTC]     → VIDEO PIN OK (media_id=3840739671592460160)
 [2026-09-08 19:17 UTC]   [3] OK VIDEO/STANDARD [Metabolism Boosting Drinks Women Over 40]
 [2026-09-08 19:17 UTC] === Done: 3 published | 0 errors ===
+[2026-09-09 12:05 UTC] UTC 12h05 → next slot: 08h
+[2026-09-09 12:05 UTC] === Pinterest Publisher 2026-09-09 08h (6 pins/day mode) ===
+[2026-09-09 12:05 UTC]   [1] OK [Weight Loss Transformation]: The Timeline Nobody Shows You
+[2026-09-09 12:05 UTC]   [2] OK [Hormonal Belly Fat Tips]: Why Every Diet You've Tried Has Failed After 40
+[2026-09-09 12:05 UTC]   [3] VIDEO PIN [Menopause Weight Loss Tips]
+[2026-09-09 12:05 UTC]     → searching Pexels video (real person): 'mature woman fitness workout'
+[2026-09-09 12:05 UTC]     → downloading Pexels video...
+[2026-09-09 12:05 UTC]     → downloaded 5503KB
+[2026-09-09 12:05 UTC]     → voiceover: Cortisol is making you fat after 40. This smoothie fights it...
+[2026-09-09 12:05 UTC]     → voiceover OK: 45KB
+[2026-09-09 12:05 UTC]     → ffmpeg 3-track OK: 5.1MB
+[2026-09-09 12:05 UTC]     → using mixed video (voiceover + music)
+[2026-09-09 12:05 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-09-09 12:05 UTC]     → uploading video (media_id=3842772690301661504, url=yes)…
+[2026-09-09 12:05 UTC]     → waiting for Pinterest to process video…
+[2026-09-09 12:06 UTC]     → VIDEO PIN OK (media_id=3842772690301661504)
+[2026-09-09 12:06 UTC]   [3] OK VIDEO/STANDARD [Menopause Weight Loss Tips]
+[2026-09-09 12:06 UTC] === Done: 3 published | 0 errors ===
