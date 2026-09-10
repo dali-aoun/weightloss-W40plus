@@ -1,38 +1,22 @@
 name: geo-check
 on:
   push:
-    branches: [main, master]
-    paths:
-      - '.github/workflows/geo_check.yml'
+    branches: [main]
+    paths: [.github/workflows/geo_check.yml]
   workflow_dispatch:
 jobs:
   geo:
     runs-on: ubuntu-latest
     steps:
-      - name: Fetch Instagram audience geography
+      - name: follower_demographics country
         env:
           TOKEN: ${{ secrets.LONG_LIVED_TOKEN }}
           UID: ${{ secrets.INSTAGRAM_USER_ID }}
         run: |
-          pip install requests -q
-          python3 << 'EOF'
-import requests, json, os
-T = os.environ['TOKEN']
-U = os.environ['UID']
-B = 'https://graph.facebook.com/v21.0'
-for m in ['follower_demographics', 'reached_audience_demographics']:
-    for b in ['country', 'city']:
-        r = requests.get(f'{B}/{U}/insights', params={
-            'metric': m, 'period': 'lifetime',
-            'metric_type': 'total_value', 'breakdown': b, 'access_token': T
-        })
-        d = r.json()
-        print(f'=== {m} / {b} ===')
-        if 'data' in d:
-            vals = d['data'][0].get('total_value', {}).get('breakdowns', [{}])[0].get('results', [])
-            vals.sort(key=lambda x: x.get('value', 0), reverse=True)
-            for v in vals[:15]:
-                print(f"  {v.get('dimension_values', ['?'])[0]}: {v.get('value', 0)}")
-        else:
-            print(json.dumps(d)[:500])
-EOF
+          curl -s "https://graph.facebook.com/v21.0/${UID}/insights?metric=follower_demographics&period=lifetime&metric_type=total_value&breakdown=country&access_token=${TOKEN}" | python3 -m json.tool
+      - name: reached_audience_demographics country
+        env:
+          TOKEN: ${{ secrets.LONG_LIVED_TOKEN }}
+          UID: ${{ secrets.INSTAGRAM_USER_ID }}
+        run: |
+          curl -s "https://graph.facebook.com/v21.0/${UID}/insights?metric=reached_audience_demographics&period=lifetime&metric_type=total_value&breakdown=country&access_token=${TOKEN}" | python3 -m json.tool
