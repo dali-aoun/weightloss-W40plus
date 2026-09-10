@@ -1,0 +1,29 @@
+name: geo-check
+on:
+  workflow_dispatch:
+jobs:
+  geo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run
+        env:
+          TOKEN: ${{ secrets.LONG_LIVED_TOKEN }}
+          UID: ${{ secrets.INSTAGRAM_USER_ID }}
+        run: |
+          pip install requests -q
+          python3 -c "
+import requests,json,os
+T=os.environ['TOKEN']
+U=os.environ['UID']
+B='https://graph.facebook.com/v21.0'
+for m in ['follower_demographics','reached_audience_demographics']:
+    for b in ['country','city']:
+        r=requests.get(f'{B}/{U}/insights',params={'metric':m,'period':'lifetime','metric_type':'total_value','breakdown':b,'access_token':T})
+        d=r.json()
+        print(f'=== {m} / {b} ===')
+        if 'data' in d:
+            vals=d['data'][0].get('total_value',{}).get('breakdowns',[{}])[0].get('results',[])
+            vals.sort(key=lambda x:x.get('value',0),reverse=True)
+            for v in vals[:10]:print(f\"  {v.get('dimension_values',['?'])[0]}: {v.get('value',0)}\")
+        else:print(json.dumps(d)[:300])
+"
