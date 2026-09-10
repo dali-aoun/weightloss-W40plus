@@ -2231,3 +2231,21 @@
 [2026-09-10 12:01 UTC]     → VIDEO PIN OK (media_id=3845661134863982656)
 [2026-09-10 12:01 UTC]   [3] OK VIDEO/STANDARD [Anti-Inflammatory Diet Tips]
 [2026-09-10 12:01 UTC] === Done: 3 published | 0 errors ===
+[2026-09-10 18:57 UTC] UTC 18h57 → next slot: 17h
+[2026-09-10 18:57 UTC] === Pinterest Publisher 2026-09-10 17h (6 pins/day mode) ===
+[2026-09-10 18:57 UTC]   [1] OK [Natural Supplements & Wellness]: Java Burn vs Other Metabolism Supplements: Honest 
+[2026-09-10 18:57 UTC]   [2] OK [Motivation & Mindset]: You Haven't Failed at Weight Loss — You Were Given
+[2026-09-10 18:57 UTC]   [3] VIDEO PIN [Energy Boosters for Women 40+]
+[2026-09-10 18:57 UTC]     → searching Pexels video (real person): 'woman wellness morning routine'
+[2026-09-10 18:57 UTC]     → downloading Pexels video...
+[2026-09-10 18:57 UTC]     → downloaded 10656KB
+[2026-09-10 18:57 UTC]     → voiceover: Women over 40 are finally losing weight with this one simple...
+[2026-09-10 18:57 UTC]     → voiceover OK: 39KB
+[2026-09-10 18:57 UTC]     → ffmpeg 3-track OK: 8.6MB
+[2026-09-10 18:57 UTC]     → using mixed video (voiceover + music)
+[2026-09-10 18:57 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-09-10 18:57 UTC]     → uploading video (media_id=3846500969044345792, url=yes)…
+[2026-09-10 18:57 UTC]     → waiting for Pinterest to process video…
+[2026-09-10 18:58 UTC]     → VIDEO PIN OK (media_id=3846500969044345792)
+[2026-09-10 18:58 UTC]   [3] OK VIDEO/STANDARD [Energy Boosters for Women 40+]
+[2026-09-10 18:58 UTC] === Done: 3 published | 0 errors ===
