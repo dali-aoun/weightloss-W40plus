@@ -1,0 +1,39 @@
+name: audience-demographics-check
+on:
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch audience demographics
+        env:
+          LONG_LIVED_TOKEN: ${{ secrets.LONG_LIVED_TOKEN }}
+          INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
+        run: |
+          python3 << 'PYEOF'
+import requests, json, os
+TOKEN = os.environ['LONG_LIVED_TOKEN']
+USER_ID = os.environ['INSTAGRAM_USER_ID']
+BASE = "https://graph.facebook.com/v21.0"
+
+for breakdown in ['country', 'city']:
+    r = requests.get(f"{BASE}/{USER_ID}/insights", params={
+        "metric": "follower_demographics",
+        "period": "lifetime",
+        "metric_type": "total_value",
+        "breakdown": breakdown,
+        "access_token": TOKEN
+    })
+    print(f"=== FOLLOWERS by {breakdown.upper()} ===")
+    print(json.dumps(r.json(), indent=2)[:2000])
+    
+    r2 = requests.get(f"{BASE}/{USER_ID}/insights", params={
+        "metric": "reached_audience_demographics",
+        "period": "lifetime",
+        "metric_type": "total_value",
+        "breakdown": breakdown,
+        "access_token": TOKEN
+    })
+    print(f"=== REACHED AUDIENCE by {breakdown.upper()} ===")
+    print(json.dumps(r2.json(), indent=2)[:2000])
+PYEOF
