@@ -2267,3 +2267,21 @@
 [2026-09-11 12:00 UTC]     → VIDEO PIN OK (media_id=3848556759133978368)
 [2026-09-11 12:00 UTC]   [3] OK VIDEO/STANDARD [High Protein Meals for Women]
 [2026-09-11 12:00 UTC] === Done: 3 published | 0 errors ===
+[2026-09-11 18:59 UTC] UTC 18h59 → next slot: 17h
+[2026-09-11 18:59 UTC] === Pinterest Publisher 2026-09-11 17h (6 pins/day mode) ===
+[2026-09-11 18:59 UTC]   [1] OK [Before and After Transformations]: She Was Told Menopause Weight Gain Was Permanent. 
+[2026-09-11 18:59 UTC]   [2] OK [Weight Loss Meal Recipes for Women Over 40]: Budget-Friendly Meals for Women on the Java Burn P
+[2026-09-11 18:59 UTC]   [3] VIDEO PIN [Metabolism Boosting Drinks Women Over 40]
+[2026-09-11 18:59 UTC]     → searching Pexels video (real person): 'woman preparing healthy breakfast'
+[2026-09-11 18:59 UTC]     → downloading Pexels video...
+[2026-09-11 18:59 UTC]     → downloaded 9857KB
+[2026-09-11 18:59 UTC]     → voiceover: Your hormones might be blocking fat loss. This special smoot...
+[2026-09-11 18:59 UTC]     → voiceover OK: 39KB
+[2026-09-11 18:59 UTC]     → ffmpeg 3-track OK: 6.8MB
+[2026-09-11 18:59 UTC]     → using mixed video (voiceover + music)
+[2026-09-11 18:59 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-09-11 18:59 UTC]     → uploading video (media_id=3849404067496847168, url=yes)…
+[2026-09-11 18:59 UTC]     → waiting for Pinterest to process video…
+[2026-09-11 19:00 UTC]     → VIDEO PIN OK (media_id=3849404067496847168)
+[2026-09-11 19:00 UTC]   [3] OK VIDEO/STANDARD [Metabolism Boosting Drinks Women Over 40]
+[2026-09-11 19:00 UTC] === Done: 3 published | 0 errors ===
