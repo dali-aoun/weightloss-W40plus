@@ -2339,3 +2339,21 @@
 [2026-09-13 12:30 UTC]     → VIDEO PIN OK (media_id=3854416834926568256)
 [2026-09-13 12:30 UTC]   [3] OK VIDEO/STANDARD [Anti-Inflammatory Diet Tips]
 [2026-09-13 12:30 UTC] === Done: 2 published | 1 errors ===
+[2026-09-13 18:32 UTC] UTC 18h32 → next slot: 17h
+[2026-09-13 18:32 UTC] === Pinterest Publisher 2026-09-13 17h (6 pins/day mode) ===
+[2026-09-13 18:32 UTC]   [1] OK [Natural Supplements & Wellness]: Chlorogenic Acid: The Coffee Compound That Kills B
+[2026-09-13 18:32 UTC]   [2] OK [Motivation & Mindset]: Why Starting Small With Your Morning Coffee Is the
+[2026-09-13 18:32 UTC]   [3] VIDEO PIN [Energy Boosters for Women 40+]
+[2026-09-13 18:32 UTC]     → searching Pexels video (real person): 'mature woman fitness workout'
+[2026-09-13 18:32 UTC]     → downloading Pexels video...
+[2026-09-13 18:32 UTC]     → downloaded 3378KB
+[2026-09-13 18:32 UTC]     → voiceover: Feel lighter, look younger, have more energy. This smoothie ...
+[2026-09-13 18:32 UTC]     → voiceover OK: 34KB
+[2026-09-13 18:32 UTC]     → ffmpeg 3-track OK: 2.5MB
+[2026-09-13 18:32 UTC]     → using mixed video (voiceover + music)
+[2026-09-13 18:32 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-09-13 18:32 UTC]     → uploading video (media_id=3855147813697744128, url=yes)…
+[2026-09-13 18:32 UTC]     → waiting for Pinterest to process video…
+[2026-09-13 18:32 UTC]     → VIDEO PIN OK (media_id=3855147813697744128)
+[2026-09-13 18:32 UTC]   [3] OK VIDEO/STANDARD [Energy Boosters for Women 40+]
+[2026-09-13 18:32 UTC] === Done: 3 published | 0 errors ===
