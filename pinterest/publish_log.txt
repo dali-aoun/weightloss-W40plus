@@ -2357,3 +2357,21 @@
 [2026-09-13 18:32 UTC]     → VIDEO PIN OK (media_id=3855147813697744128)
 [2026-09-13 18:32 UTC]   [3] OK VIDEO/STANDARD [Energy Boosters for Women 40+]
 [2026-09-13 18:32 UTC] === Done: 3 published | 0 errors ===
+[2026-09-14 13:33 UTC] UTC 13h33 → next slot: 08h
+[2026-09-14 13:33 UTC] === Pinterest Publisher 2026-09-14 08h (6 pins/day mode) ===
+[2026-09-14 13:33 UTC]   [1] OK [Weight Loss Tips for Women Over 40]: The Weight Loss Tip That Actually Works After 40 (
+[2026-09-14 13:33 UTC]   [2] OK [Fat Burning Foods & Drinks]: Foods That Boost Metabolism After 40 (Ranked by Ef
+[2026-09-14 13:33 UTC]   [3] VIDEO PIN [High Protein Meals for Women]
+[2026-09-14 13:33 UTC]     → searching Pexels video (real person): 'woman healthy meal preparation'
+[2026-09-14 13:33 UTC]     → downloading Pexels video...
+[2026-09-14 13:33 UTC]     → downloaded 11611KB
+[2026-09-14 13:33 UTC]     → voiceover: Cortisol is making you fat after 40. This smoothie fights it...
+[2026-09-14 13:33 UTC]     → voiceover OK: 45KB
+[2026-09-14 13:34 UTC]     → ffmpeg 3-track OK: 8.2MB
+[2026-09-14 13:34 UTC]     → using mixed video (voiceover + music)
+[2026-09-14 13:34 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-09-14 13:34 UTC]     → uploading video (media_id=3857446117470373312, url=yes)…
+[2026-09-14 13:34 UTC]     → waiting for Pinterest to process video…
+[2026-09-14 13:35 UTC]     → VIDEO PIN OK (media_id=3857446117470373312)
+[2026-09-14 13:35 UTC]   [3] OK VIDEO/STANDARD [High Protein Meals for Women]
+[2026-09-14 13:35 UTC] === Done: 3 published | 0 errors ===
