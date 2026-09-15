@@ -2393,3 +2393,21 @@
 [2026-09-14 20:10 UTC]     → VIDEO PIN OK (media_id=3858241590678737856)
 [2026-09-14 20:10 UTC]   [3] OK VIDEO/STANDARD [Metabolism Boosting Drinks Women Over 40]
 [2026-09-14 20:10 UTC] === Done: 3 published | 0 errors ===
+[2026-09-15 12:23 UTC] UTC 12h23 → next slot: 08h
+[2026-09-15 12:23 UTC] === Pinterest Publisher 2026-09-15 08h (6 pins/day mode) ===
+[2026-09-15 12:23 UTC]   [1] OK [Weight Loss Transformation]: What Sustainable Weight Loss Actually Looks Like a
+[2026-09-15 12:24 UTC]   [2] OK [Hormonal Belly Fat Tips]: Belly Fat After Menopause: What Actually Works
+[2026-09-15 12:24 UTC]   [3] VIDEO PIN [Menopause Weight Loss Tips]
+[2026-09-15 12:24 UTC]     → searching Pexels video (real person): 'woman running outdoor exercise'
+[2026-09-15 12:24 UTC]     → downloading Pexels video...
+[2026-09-15 12:24 UTC]     → downloaded 3774KB
+[2026-09-15 12:24 UTC]     → voiceover: Struggling with stubborn belly fat? This powerful morning sm...
+[2026-09-15 12:24 UTC]     → voiceover OK: 36KB
+[2026-09-15 12:24 UTC]     → ffmpeg 3-track OK: 3.1MB
+[2026-09-15 12:24 UTC]     → using mixed video (voiceover + music)
+[2026-09-15 12:24 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-09-15 12:24 UTC]     → uploading video (media_id=3860204327953938624, url=yes)…
+[2026-09-15 12:24 UTC]     → waiting for Pinterest to process video…
+[2026-09-15 12:24 UTC]     → VIDEO PIN OK (media_id=3860204327953938624)
+[2026-09-15 12:24 UTC]   [3] OK VIDEO/STANDARD [Menopause Weight Loss Tips]
+[2026-09-15 12:24 UTC] === Done: 3 published | 0 errors ===
