@@ -2429,3 +2429,21 @@
 [2026-09-15 19:32 UTC]     → VIDEO PIN OK (media_id=3861064947593332928)
 [2026-09-15 19:32 UTC]   [3] OK VIDEO/STANDARD [Weight Loss for Women Over 40]
 [2026-09-15 19:32 UTC] === Done: 3 published | 0 errors ===
+[2026-09-16 12:20 UTC] UTC 12h20 → next slot: 08h
+[2026-09-16 12:20 UTC] === Pinterest Publisher 2026-09-16 08h (6 pins/day mode) ===
+[2026-09-16 12:21 UTC]   [1] OK [Metabolism Boost After 40]: Why Your Metabolism 'Stopped Working' at 40 (And t
+[2026-09-16 12:21 UTC]   [2] OK [Java Burn Coffee Ritual Recipes]: What NOT to Add to Your Java Burn Coffee (Reduces 
+[2026-09-16 12:21 UTC]   [3] VIDEO PIN [Anti-Inflammatory Diet Tips]
+[2026-09-16 12:21 UTC]     → searching Pexels video (real person): 'woman preparing healthy breakfast'
+[2026-09-16 12:21 UTC]     → downloading Pexels video...
+[2026-09-16 12:21 UTC]     → downloaded 9857KB
+[2026-09-16 12:21 UTC]     → voiceover: Wake up and blend this. One smoothie boosts your metabolism ...
+[2026-09-16 12:21 UTC]     → voiceover OK: 34KB
+[2026-09-16 12:21 UTC]     → ffmpeg 3-track OK: 6.8MB
+[2026-09-16 12:21 UTC]     → using mixed video (voiceover + music)
+[2026-09-16 12:21 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-09-16 12:21 UTC]     → uploading video (media_id=3863097824033083456, url=yes)…
+[2026-09-16 12:21 UTC]     → waiting for Pinterest to process video…
+[2026-09-16 12:22 UTC]     → VIDEO PIN OK (media_id=3863097824033083456)
+[2026-09-16 12:22 UTC]   [3] OK VIDEO/STANDARD [Anti-Inflammatory Diet Tips]
+[2026-09-16 12:22 UTC] === Done: 3 published | 0 errors ===
