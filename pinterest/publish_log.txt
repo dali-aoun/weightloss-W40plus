@@ -2501,3 +2501,21 @@
 [2026-09-17 19:34 UTC]     → VIDEO PIN OK (media_id=3866866978145053824)
 [2026-09-17 19:34 UTC]   [3] OK VIDEO/STANDARD [Metabolism Boosting Drinks Women Over 40]
 [2026-09-17 19:34 UTC] === Done: 3 published | 0 errors ===
+[2026-09-18 12:00 UTC] UTC 12h00 → next slot: 08h
+[2026-09-18 12:00 UTC] === Pinterest Publisher 2026-09-18 08h (6 pins/day mode) ===
+[2026-09-18 12:00 UTC]   [1] OK [Weight Loss Transformation]: The Real Weight Loss Transformation Timeline for W
+[2026-09-18 12:00 UTC]   [2] OK [Hormonal Belly Fat Tips]: Why Restricting Calories Makes Hormonal Belly Fat 
+[2026-09-18 12:00 UTC]   [3] VIDEO PIN [Menopause Weight Loss Tips]
+[2026-09-18 12:00 UTC]     → searching Pexels video (real person): 'woman wellness morning routine'
+[2026-09-18 12:00 UTC]     → downloading Pexels video...
+[2026-09-18 12:00 UTC]     → downloaded 10219KB
+[2026-09-18 12:00 UTC]     → voiceover: This ancient smoothie secret is going viral. Women everywher...
+[2026-09-18 12:00 UTC]     → voiceover OK: 40KB
+[2026-09-18 12:00 UTC]     → ffmpeg 3-track OK: 7.1MB
+[2026-09-18 12:00 UTC]     → using mixed video (voiceover + music)
+[2026-09-18 12:00 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-09-18 12:00 UTC]     → uploading video (media_id=3868854524661529664, url=yes)…
+[2026-09-18 12:00 UTC]     → waiting for Pinterest to process video…
+[2026-09-18 12:01 UTC]     → VIDEO PIN OK (media_id=3868854524661529664)
+[2026-09-18 12:01 UTC]   [3] OK VIDEO/STANDARD [Menopause Weight Loss Tips]
+[2026-09-18 12:01 UTC] === Done: 3 published | 0 errors ===
