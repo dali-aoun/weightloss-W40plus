@@ -2591,3 +2591,21 @@
 [2026-09-20 11:58 UTC]     → VIDEO PIN OK (media_id=3874645295551767296)
 [2026-09-20 11:58 UTC]   [3] OK VIDEO/STANDARD [High Protein Meals for Women]
 [2026-09-20 11:58 UTC] === Done: 3 published | 0 errors ===
+[2026-09-20 18:29 UTC] UTC 18h29 → next slot: 17h
+[2026-09-20 18:29 UTC] === Pinterest Publisher 2026-09-20 17h (6 pins/day mode) ===
+[2026-09-20 18:29 UTC]   [1] OK [Before and After Transformations]: The Real Cost of NOT Addressing Hormonal Weight Ga
+[2026-09-20 18:29 UTC]   [2] OK [Weight Loss Meal Recipes for Women Over 40]: The Complete Java Burn Morning Protocol Meal Plan
+[2026-09-20 18:29 UTC]   [3] VIDEO PIN [Metabolism Boosting Drinks Women Over 40]
+[2026-09-20 18:29 UTC]     → searching Pexels video (real person): 'woman drinking detox juice'
+[2026-09-20 18:29 UTC]     → downloading Pexels video...
+[2026-09-20 18:29 UTC]     → downloaded 11516KB
+[2026-09-20 18:29 UTC]     → voiceover: Women over 40 are finally losing weight with this one simple...
+[2026-09-20 18:29 UTC]     → voiceover OK: 39KB
+[2026-09-20 18:29 UTC]     → ffmpeg 3-track OK: 8.9MB
+[2026-09-20 18:29 UTC]     → using mixed video (voiceover + music)
+[2026-09-20 18:29 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-09-20 18:29 UTC]     → uploading video (media_id=3875436003964609600, url=yes)…
+[2026-09-20 18:29 UTC]     → waiting for Pinterest to process video…
+[2026-09-20 18:31 UTC]     → VIDEO PIN OK (media_id=3875436003964609600)
+[2026-09-20 18:31 UTC]   [3] OK VIDEO/STANDARD [Metabolism Boosting Drinks Women Over 40]
+[2026-09-20 18:31 UTC] === Done: 3 published | 0 errors ===
