@@ -2699,3 +2699,21 @@
 [2026-09-23 12:30 UTC]     → VIDEO PIN OK (media_id=3883407472627350144)
 [2026-09-23 12:30 UTC]   [3] OK VIDEO/STANDARD [High Protein Meals for Women]
 [2026-09-23 12:30 UTC] === Done: 3 published | 0 errors ===
+[2026-09-23 19:26 UTC] UTC 19h26 → next slot: 17h
+[2026-09-23 19:26 UTC] === Pinterest Publisher 2026-09-23 17h (6 pins/day mode) ===
+[2026-09-23 19:26 UTC]   [1] OK [Before and After Transformations]: She Gave Up on Weight Loss at 52 — Then Had This T
+[2026-09-23 19:26 UTC]   [2] OK [Weight Loss Meal Recipes for Women Over 40]: Women Over 40 Are Eating These 5 Foods Daily and L
+[2026-09-23 19:26 UTC]   [3] VIDEO PIN [Metabolism Boosting Drinks Women Over 40]
+[2026-09-23 19:26 UTC]     → searching Pexels video (real person): 'woman healthy meal preparation'
+[2026-09-23 19:26 UTC]     → downloading Pexels video...
+[2026-09-23 19:26 UTC]     → downloaded 11611KB
+[2026-09-23 19:26 UTC]     → voiceover: Feel lighter, look younger, have more energy. This smoothie ...
+[2026-09-23 19:26 UTC]     → voiceover OK: 34KB
+[2026-09-23 19:27 UTC]     → ffmpeg 3-track OK: 8.2MB
+[2026-09-23 19:27 UTC]     → using mixed video (voiceover + music)
+[2026-09-23 19:27 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-09-23 19:27 UTC]     → uploading video (media_id=3884248613753176320, url=yes)…
+[2026-09-23 19:27 UTC]     → waiting for Pinterest to process video…
+[2026-09-23 19:28 UTC]     → VIDEO PIN OK (media_id=3884248613753176320)
+[2026-09-23 19:28 UTC]   [3] OK VIDEO/STANDARD [Metabolism Boosting Drinks Women Over 40]
+[2026-09-23 19:28 UTC] === Done: 3 published | 0 errors ===
