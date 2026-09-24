@@ -2,15 +2,13 @@ name: Instagram Publisher
 
 on:
   schedule:
-    - cron: '0 6 * * *'
-    - cron: '0 9 * * *'
-    - cron: '0 12 * * *'
-    - cron: '0 15 * * *'
-    - cron: '0 18 * * *'
+    - cron: '0 16 * * *'   # 8 AM PST  (morning)
+    - cron: '0 20 * * *'   # 12 PM PST (noon)
+    - cron: '0 2 * * *'    # 6 PM PST  (evening)
   workflow_dispatch:
     inputs:
       force_slot:
-        description: 'Force slot (ex: 2026-07-01_07h:image)'
+        description: 'Force slot (ex: 2026-07-01_08h_pst:reel)'
         required: false
         default: ''
 
