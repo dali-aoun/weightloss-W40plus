@@ -1,7 +1,7 @@
 """
 publisher.py — Instagram auto-publisher (GitHub Actions)
-5 reels/jour, horaires varies
-Tunisia UTC+1 : 07h 10h 13h 16h 19h
+3 reels/jour, ciblage audience US PST
+PST: 8h matin / 12h midi / 18h soir  (UTC: 16h / 20h / 02h)
 Reels: Pexels video (blurred bg) + recipe card overlay (Pillow) + voiceover + music
 """
 
@@ -21,7 +21,9 @@ FONT_CACHE  = "/tmp/recipe_font.ttf"
 TZ_TUNIS = timezone(timedelta(hours=1))
 
 SLOTS_ORDER = [
-    ("07h", "reel"), ("10h", "reel"), ("13h", "reel"), ("16h", "reel"), ("19h", "reel"),
+    ("08h_pst", "reel"),   # 8 AM PST  = 16:00 UTC
+    ("12h_pst", "reel"),   # 12 PM PST = 20:00 UTC
+    ("18h_pst", "reel"),   # 6 PM PST  = 02:00 UTC
 ]
 
 IMAGE_KEYWORDS = [
@@ -903,7 +905,7 @@ def main():
                 slot_key, slot_type = key, stype
                 break
         if not slot_key:
-            log(f"Les 5 slots de {slot_date} sont deja publies - skip")
+            log(f"Les 3 slots de {slot_date} sont deja publies - skip")
             sys.exit(0)
         log(f"UTC {now_utc.hour}h{now_utc.minute:02d} -> prochain slot: {slot_key} type={slot_type}")
 
