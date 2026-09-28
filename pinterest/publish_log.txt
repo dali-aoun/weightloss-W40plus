@@ -2879,3 +2879,22 @@
 [2026-09-28 14:50 UTC]     → VIDEO PIN OK (media_id=3898185140295967424)
 [2026-09-28 14:50 UTC]   [3] OK VIDEO/STANDARD [Anti-Inflammatory Diet Tips]
 [2026-09-28 14:50 UTC] === Done: 3 published | 0 errors ===
+[2026-09-28 21:35 UTC] UTC 21h35 → next slot: 17h
+[2026-09-28 21:35 UTC] === Pinterest Publisher 2026-09-28 17h (6 pins/day mode) ===
+[2026-09-28 21:35 UTC]   [1] OK [Natural Supplements & Wellness]: The Wellness Ritual That's Replacing Expensive Sup
+[2026-09-28 21:35 UTC]   [2] OK [Motivation & Mindset]: Your Body Isn't the Problem — Your Morning Routine
+[2026-09-28 21:35 UTC]   [3] VIDEO PIN [Energy Boosters for Women 40+]
+[2026-09-28 21:35 UTC]     → searching Pexels video (real person): 'woman running outdoor exercise'
+[2026-09-28 21:35 UTC]     → downloading Pexels video...
+[2026-09-28 21:35 UTC]     → downloaded 6347KB
+[2026-09-28 21:35 UTC]     → voiceover: I'm 51. I stopped dieting in March. I added this to my coffe...
+[2026-09-28 21:35 UTC]     → voiceover OK: 77KB
+[2026-09-28 21:36 UTC]     → ffmpeg 3-track OK: 4.5MB
+[2026-09-28 21:36 UTC]     → using mixed video (voiceover + music)
+[2026-09-28 21:36 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-09-28 21:36 UTC]     → uploading video (media_id=3899003548261208192, url=yes)…
+[2026-09-28 21:36 UTC]     → waiting for Pinterest to process video…
+[2026-09-28 21:36 UTC]     → video pin create error 400: {"code":2786,"message":"Unable to reach the URL. Please check the URL is correct and try again.","details":{"method":17}}
+[2026-09-28 21:36 UTC]     → video fallback → standard pin
+[2026-09-28 21:36 UTC]   [3] OK VIDEO/STANDARD [Energy Boosters for Women 40+]
+[2026-09-28 21:36 UTC] === Done: 3 published | 0 errors ===
