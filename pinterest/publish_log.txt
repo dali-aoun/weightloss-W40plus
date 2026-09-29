@@ -2898,3 +2898,21 @@
 [2026-09-28 21:36 UTC]     → video fallback → standard pin
 [2026-09-28 21:36 UTC]   [3] OK VIDEO/STANDARD [Energy Boosters for Women 40+]
 [2026-09-28 21:36 UTC] === Done: 3 published | 0 errors ===
+[2026-09-29 13:38 UTC] UTC 13h38 → next slot: 08h
+[2026-09-29 13:38 UTC] === Pinterest Publisher 2026-09-29 08h (6 pins/day mode) ===
+[2026-09-29 13:38 UTC]   [1] OK [Weight Loss Tips for Women Over 40]: The Weight Loss Tip That Actually Works After 40 (
+[2026-09-29 13:38 UTC]   [2] OK [Fat Burning Foods & Drinks]: What to Add to Your Coffee to Turn It Into a Fat-B
+[2026-09-29 13:38 UTC]   [3] VIDEO PIN [High Protein Meals for Women]
+[2026-09-29 13:38 UTC]     → searching Pexels video (real person): 'woman wellness morning routine healthy'
+[2026-09-29 13:38 UTC]     → downloading Pexels video...
+[2026-09-29 13:38 UTC]     → downloaded 19780KB
+[2026-09-29 13:38 UTC]     → voiceover: Before this coffee ritual she was stuck at the same weight f...
+[2026-09-29 13:38 UTC]     → voiceover OK: 75KB
+[2026-09-29 13:39 UTC]     → ffmpeg 3-track OK: 16.4MB
+[2026-09-29 13:39 UTC]     → using mixed video (voiceover + music)
+[2026-09-29 13:39 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-09-29 13:39 UTC]     → uploading video (media_id=3900942494065763136, url=yes)…
+[2026-09-29 13:39 UTC]     → waiting for Pinterest to process video…
+[2026-09-29 13:40 UTC]     → VIDEO PIN OK (media_id=3900942494065763136)
+[2026-09-29 13:40 UTC]   [3] OK VIDEO/STANDARD [High Protein Meals for Women]
+[2026-09-29 13:40 UTC] === Done: 3 published | 0 errors ===
