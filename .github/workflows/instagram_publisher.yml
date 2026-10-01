@@ -2,9 +2,10 @@ name: Instagram Publisher
 
 on:
   schedule:
-    - cron: '0 16 * * *'   # 8 AM PST  (morning)
-    - cron: '0 20 * * *'   # 12 PM PST (noon)
-    - cron: '0 2 * * *'    # 6 PM PST  (evening)
+    - cron: '0 15 * * *'   # 7 AM PST  (morning routine / cafe)
+    - cron: '0 19 * * *'   # 11 AM PST (pause mid-morning)
+    - cron: '0 0 * * *'    # 4 PM PST  (apres boulot)
+    - cron: '0 4 * * *'    # 8 PM PST  (soiree prime time)
   workflow_dispatch:
     inputs:
       force_slot:

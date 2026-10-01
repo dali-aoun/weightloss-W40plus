@@ -21,9 +21,10 @@ FONT_CACHE  = "/tmp/recipe_font.ttf"
 TZ_TUNIS = timezone(timedelta(hours=1))
 
 SLOTS_ORDER = [
-    ("08h_pst", "reel"),   # 8 AM PST  = 16:00 UTC
-    ("12h_pst", "reel"),   # 12 PM PST = 20:00 UTC
-    ("18h_pst", "reel"),   # 6 PM PST  = 02:00 UTC
+    ("07h_pst", "reel"),   # 7 AM PST  = 15:00 UTC  (morning routine / cafe)
+    ("11h_pst", "reel"),   # 11 AM PST = 19:00 UTC  (pause mid-morning)
+    ("16h_pst", "reel"),   # 4 PM PST  = 00:00 UTC  (apres boulot)
+    ("20h_pst", "reel"),   # 8 PM PST  = 04:00 UTC  (soiree prime time)
 ]
 
 IMAGE_KEYWORDS = [
