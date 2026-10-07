@@ -3185,3 +3185,21 @@
 [2026-10-06 20:49 UTC]     → VIDEO PIN OK (media_id=3922100789476110656)
 [2026-10-06 20:49 UTC]   [3] OK VIDEO/STANDARD [Weight Loss for Women Over 40]
 [2026-10-06 20:49 UTC] === Done: 3 published | 0 errors ===
+[2026-10-07 14:07 UTC] UTC 14h07 → next slot: 08h
+[2026-10-07 14:07 UTC] === Pinterest Publisher 2026-10-07 08h (6 pins/day mode) ===
+[2026-10-07 14:07 UTC]   [1] OK [Metabolism Boost After 40]: Your Metabolism Isn't Broken — It's Just Missing T
+[2026-10-07 14:07 UTC]   [2] OK [Java Burn Coffee Ritual Recipes]: I Switched to This Coffee Ritual 30 Days Ago — Her
+[2026-10-07 14:07 UTC]   [3] VIDEO PIN [Anti-Inflammatory Diet Tips]
+[2026-10-07 14:07 UTC]     → searching Pexels video (real person): 'woman drinking morning coffee'
+[2026-10-07 14:07 UTC]     → downloading Pexels video...
+[2026-10-07 14:07 UTC]     → downloaded 3693KB
+[2026-10-07 14:07 UTC]     → voiceover: Your morning coffee is spiking cortisol. That cortisol is st...
+[2026-10-07 14:07 UTC]     → voiceover OK: 81KB
+[2026-10-07 14:07 UTC]     → ffmpeg 3-track OK: 3.6MB
+[2026-10-07 14:07 UTC]     → using mixed video (voiceover + music)
+[2026-10-07 14:07 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-10-07 14:07 UTC]     → uploading video (media_id=3924193114067885120, url=yes)…
+[2026-10-07 14:07 UTC]     → waiting for Pinterest to process video…
+[2026-10-07 14:09 UTC]     → VIDEO PIN OK (media_id=3924193114067885120)
+[2026-10-07 14:09 UTC]   [3] OK VIDEO/STANDARD [Anti-Inflammatory Diet Tips]
+[2026-10-07 14:09 UTC] === Done: 3 published | 0 errors ===
