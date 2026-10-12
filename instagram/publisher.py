@@ -62,57 +62,57 @@ MUSIC_DIR   = os.path.join(BASE_DIR, "music")
 MUSIC_FILES = ["track_01.mp3", "track_02.mp3", "track_03.mp3"]
 
 VOICEOVER_SCRIPTS = [
-    "She cried when her jeans fit again at 54. Three weeks of this coffee ritual. No smoothies. No gym. Just her morning cup done right. Your turn. Free guide in bio.",
-    "My sister turned 49 last month. She texted me a photo in her old jeans. She hadn't worn them in six years. This coffee ritual. Three weeks. That's it. Free plan in bio.",
-    "Her husband came home from a business trip and didn't recognize her from behind. She was 52. She had added this to her morning coffee for 28 days. Free ritual in bio.",
-    "She almost didn't go to her daughter's graduation. She didn't fit in anything. Then she tried this for 21 days. She wore a dress she bought twelve years ago. Free guide in bio.",
-    "I'm 51. I stopped weighing myself in April. Then I added this to my coffee every morning. By June my doctor asked what I had changed. Free ritual in bio.",
-    "She gave away her scale at 53 because it only made her cry. Then she found this coffee ritual. She bought a new scale four weeks later. Free plan in bio.",
-    "My mom called me crying at 58. Not because she was sad. Because she had just put on a pair of jeans she bought before I was born. Three weeks of this morning coffee ritual. Free in bio.",
-    "What if I told you the coffee you drink every morning is keeping you stuck. One tasteless addition changes everything in 21 days. Free plan in bio.",
-    "Close this video if you already have a flat stomach after 40. Still here? Good. Your morning coffee is the problem and the solution. Free ritual in bio.",
-    "Don't skip the next 30 seconds if you've tried everything for belly fat and nothing has worked. This is the thing you missed. Free guide in bio.",
-    "Not a diet. Not a gym plan. One thing added to your morning coffee. Women over 40 are calling it the only thing that finally worked. Free ritual in bio.",
-    "The thing you are drinking every single morning is either storing your belly fat or burning it. Most women over 40 have no idea which. Free plan in bio.",
-    "There is a reason some women lose belly fat after 40 without trying and others don't. It is their morning coffee ritual. This is the difference. Free in bio.",
-    "Warning. Once you fix your morning coffee ritual you will not be able to stop losing weight. 47,000 women warned you. Free 21-day plan in bio.",
-    "Your morning coffee is spiking cortisol at the worst possible time. Here is what to add to it instead. 10 seconds. Free ritual in bio.",
-    "Stop. Your morning coffee is storing belly fat right now. Not because of caffeine. Because of when you drink it and what is missing from it. This addition changes that. Free plan in bio.",
-    "If nothing has worked for your belly fat after 40, cortisol is the problem and your morning coffee is making it worse. This addition targets it specifically. Free guide in bio.",
-    "The reason calorie cutting makes belly fat worse after 40. Your cortisol rises. Your coffee amplifies it. This one addition stops that loop. Free in bio.",
-    "Doctors don't tell you this: your morning coffee spikes cortisol in women over 40, which directly stores belly fat. One ingredient added to your cup reverses this. Free ritual in bio.",
-    "I need you to hear something. You are not lazy. You are not broken. Your hormones shifted and your morning coffee is making it worse without you knowing. This fixes it. Free in bio.",
-    "Stop blaming yourself for the belly fat. After 40 it's biological. Your estrogen dropped. Your cortisol rose. Your morning coffee is amplifying it. This fixes it. Free link in bio.",
-    "You are not failing at weight loss. The diet rules you were given do not apply to your body after 40. Your morning coffee, done right, is the real fix. Free plan in bio.",
-    "For every woman over 40 who has tried everything and thinks it is her fault — it is not your fault. Your hormones changed. Here is what to add to your morning coffee. Free in bio.",
-    "My doctor said I had to take medication for my belly fat. I added this to my morning coffee for 3 weeks first. I never needed the medication. Free ritual is in my bio.",
-    "My nutritionist told me to cut carbs. I tried for four months. Nothing worked. Then she told me what my morning coffee was doing to my cortisol. This changed everything. Free in bio.",
-    "She was told weight gain at 50 was just aging. Three doctors said so. Then she found this morning coffee ritual. Twelve weeks later she called them back. Free plan in bio.",
-    "My gynecologist finally said it. Belly fat after 40 is a cortisol and estrogen problem, not a calorie problem. And your morning coffee is either helping or making it much worse. Free in bio.",
-    "What happens to your belly fat when you add this to your morning coffee for 21 days. The answer surprised 214,000 women. Free plan in bio.",
-    "There is one thing your morning coffee is missing. Women over 40 who found it stopped losing sleep over their weight. Free guide in bio.",
-    "The reason your belly fat responds differently than it did at 35. And the morning coffee adjustment that accounts for that difference. Free plan in bio.",
-    "What if belly fat after 40 was never about how much you ate. Women who discovered this morning coffee ritual would agree with you now. Free plan in bio.",
-    "The moment you understand that belly fat after 40 is a hormone problem, not a calorie problem, everything changes. And your morning coffee is the easiest fix. Free in bio.",
-    "This is for the woman who has been dieting since January and is still in the same body. Not your fault. Your morning coffee is working against you. Here is the fix. Free in bio.",
-    "If you are over 40 and frustrated that nothing is working for your belly fat, this message is for you. Your cortisol is spiking every morning and this addition stops it. Free plan in bio.",
-    "For the woman who gave up. Who decided this is just what my body looks like now. Please try this first. One thing added to your morning coffee. 21 days. Free guide in bio.",
-    "I see you skipping meals, over-exercising, cutting carbs, feeling exhausted. I did all of that. Then I fixed my morning coffee instead. Free plan in bio.",
-    "I added this to my morning coffee every day for 21 days and lost my belly fat without trying. Real results at 47. Free 21-day plan in bio.",
-    "48 years old. 22 pounds gone in 8 weeks. One change to my morning coffee. No diet. No gym. Just the thing I had been missing. Free ritual in bio.",
-    "Before this coffee ritual I was stuck at 178 pounds for two years. After three weeks I was 163. I had not changed a single meal. Free ritual in bio.",
-    "My mom called me after five weeks. She said she had to share a photo with me. She was 58 and had lost 19 pounds just by changing her morning coffee ritual. Free plan in bio.",
-    "She wore a bikini at 55 for the first time in 14 years. Not because she dieted. Because she changed what she added to her morning coffee every day. Free plan in bio.",
-    "Stop starving yourself. Stop over-exercising. Start fixing your morning coffee. 21 days. This tasteless powder does the rest. Free plan in bio.",
-    "You have permission to stop dieting. After 40 the old rules do not apply. The new rule is this morning coffee ritual. 21 days. Free plan in bio.",
-    "Eat the pasta. Skip the 5am run. Just add this to your morning coffee instead. Women over 40 are losing more weight doing this than they ever did dieting. Free plan in bio.",
-    "She stopped trying to lose weight. She just started fixing her morning coffee. The weight came off without her chasing it. Free ritual in bio.",
-    "The first 90 minutes after you wake up determine how your body stores or burns fat for the rest of the day. Your morning coffee changes everything during that window. Free plan in bio.",
-    "Cortisol peaks within 30 minutes of waking. Adding this to your morning coffee during that window changes everything that happens to your belly fat that day. Free plan in bio.",
-    "Your body has a metabolic window every morning between 6am and 9am. This addition to your morning coffee activates it. Women over 40 are finally losing stubborn fat because of this. Free plan in bio.",
-    "Every morning you have a 21-minute window when your cortisol is highest. This one addition to your coffee during that window makes fat burning possible for the rest of the day. Free in bio.",
-    "The morning coffee ritual that 47,000 women are using to lose hormonal belly fat after 40. No gym. No starvation. Just your coffee, done differently. Free ritual — tap the link in my bio.",
-    "Here is what nobody tells you about coffee and weight loss after 40. Your cortisol peaks in the morning. Coffee amplifies it. This one addition blocks that response. Free in bio.",
+    "She cried when her jeans fit again at 54. Three weeks of this coffee ritual. No smoothies. No gym. Just her morning cup done right. Your turn. The link is below in the video.",
+    "My sister turned 49 last month. She texted me a photo in her old jeans. She hadn't worn them in six years. This coffee ritual. Three weeks. That's it. The link is below in the video.",
+    "Her husband came home from a business trip and didn't recognize her from behind. She was 52. She had added this to her morning coffee for 28 days. See the site below in this video.",
+    "She almost didn't go to her daughter's graduation. She didn't fit in anything. Then she tried this for 21 days. She wore a dress she bought twelve years ago. The link is below in the video.",
+    "I'm 51. I stopped weighing myself in April. Then I added this to my coffee every morning. By June my doctor asked what I had changed. See the site below in this video.",
+    "She gave away her scale at 53 because it only made her cry. Then she found this coffee ritual. She bought a new scale four weeks later. The link is below in the video.",
+    "My mom called me crying at 58. Not because she was sad. Because she had just put on a pair of jeans she bought before I was born. Three weeks of this morning coffee ritual. The link is below in the video.",
+    "What if I told you the coffee you drink every morning is keeping you stuck. One tasteless addition changes everything in 21 days. The link is below in the video.",
+    "Close this video if you already have a flat stomach after 40. Still here? Good. Your morning coffee is the problem and the solution. See the site below in this video.",
+    "Don't skip the next 30 seconds if you've tried everything for belly fat and nothing has worked. This is the thing you missed. The link is below in the video.",
+    "Not a diet. Not a gym plan. One thing added to your morning coffee. Women over 40 are calling it the only thing that finally worked. See the site below in this video.",
+    "The thing you are drinking every single morning is either storing your belly fat or burning it. Most women over 40 have no idea which. The link is below in the video.",
+    "There is a reason some women lose belly fat after 40 without trying and others don't. It is their morning coffee ritual. This is the difference. The link is below in the video.",
+    "Warning. Once you fix your morning coffee ritual you will not be able to stop losing weight. 47,000 women warned you. The free 21-day plan is below in the video.",
+    "Your morning coffee is spiking cortisol at the worst possible time. Here is what to add to it instead. 10 seconds. See the site below in this video.",
+    "Stop. Your morning coffee is storing belly fat right now. Not because of caffeine. Because of when you drink it and what is missing from it. This addition changes that. The link is below in the video.",
+    "If nothing has worked for your belly fat after 40, cortisol is the problem and your morning coffee is making it worse. This addition targets it specifically. The link is below in the video.",
+    "The reason calorie cutting makes belly fat worse after 40. Your cortisol rises. Your coffee amplifies it. This one addition stops that loop. The link is below in the video.",
+    "Doctors don't tell you this: your morning coffee spikes cortisol in women over 40, which directly stores belly fat. One ingredient added to your cup reverses this. See the site below in this video.",
+    "I need you to hear something. You are not lazy. You are not broken. Your hormones shifted and your morning coffee is making it worse without you knowing. This fixes it. The link is below in the video.",
+    "Stop blaming yourself for the belly fat. After 40 it's biological. Your estrogen dropped. Your cortisol rose. Your morning coffee is amplifying it. This fixes it. The link is below in the video.",
+    "You are not failing at weight loss. The diet rules you were given do not apply to your body after 40. Your morning coffee, done right, is the real fix. The link is below in the video.",
+    "For every woman over 40 who has tried everything and thinks it is her fault — it is not your fault. Your hormones changed. Here is what to add to your morning coffee. The link is below in the video.",
+    "My doctor said I had to take medication for my belly fat. I added this to my morning coffee for 3 weeks first. I never needed the medication. The site is shown below in this video.",
+    "My nutritionist told me to cut carbs. I tried for four months. Nothing worked. Then she told me what my morning coffee was doing to my cortisol. This changed everything. The link is below in the video.",
+    "She was told weight gain at 50 was just aging. Three doctors said so. Then she found this morning coffee ritual. Twelve weeks later she called them back. The link is below in the video.",
+    "My gynecologist finally said it. Belly fat after 40 is a cortisol and estrogen problem, not a calorie problem. And your morning coffee is either helping or making it much worse. The link is below in the video.",
+    "What happens to your belly fat when you add this to your morning coffee for 21 days. The answer surprised 214,000 women. The link is below in the video.",
+    "There is one thing your morning coffee is missing. Women over 40 who found it stopped losing sleep over their weight. The link is below in the video.",
+    "The reason your belly fat responds differently than it did at 35. And the morning coffee adjustment that accounts for that difference. The link is below in the video.",
+    "What if belly fat after 40 was never about how much you ate. Women who discovered this morning coffee ritual would agree with you now. The link is below in the video.",
+    "The moment you understand that belly fat after 40 is a hormone problem, not a calorie problem, everything changes. And your morning coffee is the easiest fix. The link is below in the video.",
+    "This is for the woman who has been dieting since January and is still in the same body. Not your fault. Your morning coffee is working against you. Here is the fix. The link is below in the video.",
+    "If you are over 40 and frustrated that nothing is working for your belly fat, this message is for you. Your cortisol is spiking every morning and this addition stops it. The link is below in the video.",
+    "For the woman who gave up. Who decided this is just what my body looks like now. Please try this first. One thing added to your morning coffee. 21 days. The link is below in the video.",
+    "I see you skipping meals, over-exercising, cutting carbs, feeling exhausted. I did all of that. Then I fixed my morning coffee instead. The link is below in the video.",
+    "I added this to my morning coffee every day for 21 days and lost my belly fat without trying. Real results at 47. The free 21-day plan is below in the video.",
+    "48 years old. 22 pounds gone in 8 weeks. One change to my morning coffee. No diet. No gym. Just the thing I had been missing. See the site below in this video.",
+    "Before this coffee ritual I was stuck at 178 pounds for two years. After three weeks I was 163. I had not changed a single meal. See the site below in this video.",
+    "My mom called me after five weeks. She said she had to share a photo with me. She was 58 and had lost 19 pounds just by changing her morning coffee ritual. The link is below in the video.",
+    "She wore a bikini at 55 for the first time in 14 years. Not because she dieted. Because she changed what she added to her morning coffee every day. The link is below in the video.",
+    "Stop starving yourself. Stop over-exercising. Start fixing your morning coffee. 21 days. This tasteless powder does the rest. The link is below in the video.",
+    "You have permission to stop dieting. After 40 the old rules do not apply. The new rule is this morning coffee ritual. 21 days. The link is below in the video.",
+    "Eat the pasta. Skip the 5am run. Just add this to your morning coffee instead. Women over 40 are losing more weight doing this than they ever did dieting. The link is below in the video.",
+    "She stopped trying to lose weight. She just started fixing her morning coffee. The weight came off without her chasing it. See the site below in this video.",
+    "The first 90 minutes after you wake up determine how your body stores or burns fat for the rest of the day. Your morning coffee changes everything during that window. The link is below in the video.",
+    "Cortisol peaks within 30 minutes of waking. Adding this to your morning coffee during that window changes everything that happens to your belly fat that day. The link is below in the video.",
+    "Your body has a metabolic window every morning between 6am and 9am. This addition to your morning coffee activates it. Women over 40 are finally losing stubborn fat because of this. The link is below in the video.",
+    "Every morning you have a 21-minute window when your cortisol is highest. This one addition to your coffee during that window makes fat burning possible for the rest of the day. The link is below in the video.",
+    "The morning coffee ritual that 47,000 women are using to lose hormonal belly fat after 40. No gym. No starvation. Just your coffee, done differently. The free ritual is shown below in this video.",
+    "Here is what nobody tells you about coffee and weight loss after 40. Your cortisol peaks in the morning. Coffee amplifies it. This one addition blocks that response. The link is below in the video.",
 ]
 
 # ── Coffee ritual cards — the core save-worthy content ───────────────────────
@@ -127,7 +127,7 @@ RECIPE_CARDS = [
             "* One addition blocks this response",
         ],
         "instruction": "Add Java Burn to your morning coffee. 10 sec.",
-        "benefit": "47,000 women fixed this. Free plan → link in bio",
+        "benefit": "47,000 women fixed this. Free plan → link below in the video",
     },
     {
         "title": "THE 21-DAY BELLY FAT RESET",
@@ -139,7 +139,7 @@ RECIPE_CARDS = [
             "* No gym required",
         ],
         "instruction": "One packet in your morning coffee. Daily.",
-        "benefit": "Start your 21 days free → link in bio",
+        "benefit": "Start your 21 days free → link below in the video",
     },
     {
         "title": "HORMONAL BELLY FAT IS DIFFERENT",
@@ -151,7 +151,7 @@ RECIPE_CARDS = [
             "* Cardio raises cortisol MORE",
         ],
         "instruction": "Lower cortisol first. Everything else follows.",
-        "benefit": "The fix that works → free plan in bio",
+        "benefit": "The fix that works → free plan below in the video",
     },
     {
         "title": "MORNING CORTISOL WINDOW",
@@ -163,7 +163,7 @@ RECIPE_CARDS = [
             "* Fix: add this to your coffee before 8am",
         ],
         "instruction": "Java Burn neutralizes the cortisol spike.",
-        "benefit": "Women over 40: free ritual → link in bio",
+        "benefit": "Women over 40: free ritual → link below in the video",
     },
     {
         "title": "WHY NOTHING IS WORKING",
@@ -175,7 +175,7 @@ RECIPE_CARDS = [
             "* The solution is NOT more restriction",
         ],
         "instruction": "Fix the cortisol. The fat follows.",
-        "benefit": "Free 21-day coffee reset → link in bio",
+        "benefit": "Free 21-day coffee reset → link below in the video",
     },
     {
         "title": "THE PERIMENOPAUSE FAT SHIFT",
@@ -187,7 +187,7 @@ RECIPE_CARDS = [
             "* One morning ritual targets this directly",
         ],
         "instruction": "One packet Java Burn in your first coffee.",
-        "benefit": "Free hormone reset plan → link in bio",
+        "benefit": "Free hormone reset plan → link below in the video",
     },
     {
         "title": "THE COFFEE THAT BURNS FAT",
@@ -223,7 +223,7 @@ RECIPE_CARDS = [
             "* Feeling puffy and inflamed",
         ],
         "instruction": "Java Burn targets all 5 at once.",
-        "benefit": "Fix cortisol free → full plan in bio",
+        "benefit": "Fix cortisol free → full plan below in the video",
     },
     {
         "title": "ESTROGEN BALANCE COFFEE",
@@ -525,14 +525,14 @@ def generate_recipe_overlay(recipe, output_path):
         cx(recipe.get("benefit", ""), y, fnt(44), GREEN)
         y += 70
 
-        # CTA button
+        # CTA button — show real URL, not "link below in the video"
         btn_y = H - 200
         draw.rounded_rectangle(
             [pad + 50, btn_y, W - pad - 50, btn_y + 80],
             radius=18,
             fill=(255, 195, 0, 230)
         )
-        cx("FREE 21-DAY PLAN  ->  LINK IN BIO", btn_y + 16, fnt(44), BLACK)
+        cx("coffee.thehappy-healthy-life.com", btn_y + 16, fnt(40), BLACK)
 
         img.save(output_path, "PNG")
         log(f"  Recipe overlay OK ({recipe.get('title','?')}): {os.path.getsize(output_path)//1024}KB")
@@ -559,10 +559,18 @@ def merge_recipe_card_video(video_path, overlay_path, voiceover_path, music_path
     else:
         audio_f = f"[2:a]atrim=end={max_sec},volume=-15dB[aout]"
 
+    url_text = "coffee.thehappy-healthy-life.com"
+    url_drawtext = (
+        f"drawtext=text='{url_text}':"
+        f"fontsize=32:fontcolor=white:x=(w-text_w)/2:y=h-60:"
+        f"box=1:boxcolor=black@0.55:boxborderw=8:"
+        f"fontfile='C\\\\:/Windows/Fonts/arialbd.ttf'"
+    )
     filter_complex = (
         f"[0:v]scale=1080:1920:force_original_aspect_ratio=increase,"
         f"crop=1080:1920,boxblur=10:3[bg];"
-        f"[bg][1:v]overlay=0:0[vout];"
+        f"[bg][1:v]overlay=0:0[comp];"
+        f"[comp]{url_drawtext}[vout];"
         f"{audio_f}"
     )
 
@@ -617,6 +625,13 @@ def merge_video_voiceover_music(video_path, voiceover_path, music_path, output_p
     def esc_text(t):
         return t.replace("\\", "\\\\").replace("'", "\\'").replace(":", "\\:").replace("%", "\\%")
 
+    url_text = "coffee.thehappy-healthy-life.com"
+    url_drawtext = (
+        f"drawtext=text='{url_text}':"
+        f"fontsize=32:fontcolor=white:x=(w-text_w)/2:y=h-60:"
+        f"box=1:boxcolor=black@0.55:boxborderw=8:"
+        f"fontfile='C\\\\\\\\:/Windows/Fonts/arialbd.ttf'"
+    )
     if text_overlay:
         headline, subline = text_overlay
         vf_filter = (
@@ -625,11 +640,12 @@ def merge_video_voiceover_music(video_path, voiceover_path, music_path, output_p
             f"box=1:boxcolor=black@0.55:boxborderw=14,"
             f"drawtext=text=\'{esc_text(subline)}\':"
             f"fontcolor=yellow:fontsize=38:x=(w-text_w)/2:y=h-90:"
-            f"box=1:boxcolor=black@0.55:boxborderw=10"
+            f"box=1:boxcolor=black@0.55:boxborderw=10,"
+            f"{url_drawtext}"
         )
         vf_args = ["-vf", vf_filter]
     else:
-        vf_args = []
+        vf_args = ["-vf", url_drawtext]
 
     cmd = [
         "ffmpeg", "-y",
@@ -1033,19 +1049,19 @@ def main():
 
 
 TEXT_OVERLAYS = [
-    ("Lost 17 lbs in 21 days", "Free 21-day plan - link in bio"),
-    ("47000 women transformed", "Join them free - link in bio"),
-    ("Cortisol blocks fat after 40", "Fix it free - link in bio"),
-    ("No gym. No diet. Just this.", "Free protocol - link in bio"),
-    ("Your hormones blocked fat loss", "Reset them - link in bio"),
-    ("Works when nothing else does", "Free guide - link in bio"),
-    ("21 days to reset your body", "Start free - link in bio"),
-    ("The coffee that works after 40", "Get it free - link in bio"),
+    ("Lost 17 lbs in 21 days", "Free 21-day plan - link below in the video"),
+    ("47000 women transformed", "Join them free - link below in the video"),
+    ("Cortisol blocks fat after 40", "Fix it free - link below in the video"),
+    ("No gym. No diet. Just this.", "Free protocol - link below in the video"),
+    ("Your hormones blocked fat loss", "Reset them - link below in the video"),
+    ("Works when nothing else does", "Free guide - link below in the video"),
+    ("21 days to reset your body", "Start free - link below in the video"),
+    ("The coffee that works after 40", "Get it free - link below in the video"),
     ("Stop blaming yourself", "It is hormonal - fix it free"),
     ("Dieting raises cortisol after 40", "Java Burn lowers it free"),
-    ("Lost 11 lbs without the gym", "Free 21-day plan - link in bio"),
+    ("Lost 11 lbs without the gym", "Free 21-day plan - link below in the video"),
     ("One coffee every morning", "47000 women already did this"),
-    ("Perimenopause belly fat fix", "Free protocol - link in bio"),
+    ("Perimenopause belly fat fix", "Free protocol - link below in the video"),
     ("Hormonal belly fat is different", "This targets it free - bio"),
     ("Your metabolism did not break", "It shifted - fix it free"),
 ]
