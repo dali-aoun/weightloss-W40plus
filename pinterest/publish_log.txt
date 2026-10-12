@@ -3383,3 +3383,21 @@
 [2026-10-12 16:24 UTC]     → VIDEO PIN OK (media_id=3938961447094837568)
 [2026-10-12 16:24 UTC]   [3] OK VIDEO/STANDARD [Menopause Weight Loss Tips]
 [2026-10-12 16:24 UTC] === Done: 3 published | 0 errors ===
+[2026-10-12 22:43 UTC] UTC 22h43 → next slot: 17h
+[2026-10-12 22:43 UTC] === Pinterest Publisher 2026-10-12 17h (6 pins/day mode) ===
+[2026-10-12 22:43 UTC]   [1] OK [Morning Coffee Metabolism Tips for Women 40+]: The Tasteless Powder 214,000 Women Are Stirring In
+[2026-10-12 22:43 UTC]   [2] OK [Morning Routines for Weight Loss]: Her Morning Routine Changed One Thing and She Lost
+[2026-10-12 22:43 UTC]   [3] VIDEO PIN [Weight Loss for Women Over 40]
+[2026-10-12 22:43 UTC]     → searching Pexels video (real person): 'woman sitting coffee cup morning light'
+[2026-10-12 22:43 UTC]     → downloading Pexels video...
+[2026-10-12 22:43 UTC]     → downloaded 9500KB
+[2026-10-12 22:43 UTC]     → voiceover: She added one tasteless powder to her morning coffee. 21 day...
+[2026-10-12 22:44 UTC]     → edge-tts erreur: entToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&ConnectionId=d567588fba1a4b60a19e10e271d032cd&Sec-MS-GEC=15417495E3F272383E9E2B265CF6C0790C8584383372E2C4E2935FD060B890B0&Sec-MS-GEC-Version=1-143.0.3650.75'
+
+[2026-10-12 22:44 UTC]     → using raw Pexels video (no audio mix)
+[2026-10-12 22:44 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-10-12 22:44 UTC]     → uploading video (media_id=3939727882062483712, url=yes)…
+[2026-10-12 22:44 UTC]     → waiting for Pinterest to process video…
+[2026-10-12 22:44 UTC]     → VIDEO PIN OK (media_id=3939727882062483712)
+[2026-10-12 22:44 UTC]   [3] OK VIDEO/STANDARD [Weight Loss for Women Over 40]
+[2026-10-12 22:44 UTC] === Done: 3 published | 0 errors ===
