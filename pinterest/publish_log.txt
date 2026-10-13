@@ -3401,3 +3401,21 @@
 [2026-10-12 22:44 UTC]     → VIDEO PIN OK (media_id=3939727882062483712)
 [2026-10-12 22:44 UTC]   [3] OK VIDEO/STANDARD [Weight Loss for Women Over 40]
 [2026-10-12 22:44 UTC] === Done: 3 published | 0 errors ===
+[2026-10-13 14:43 UTC] UTC 14h43 → next slot: 08h
+[2026-10-13 14:43 UTC] === Pinterest Publisher 2026-10-13 08h (6 pins/day mode) ===
+[2026-10-13 14:43 UTC]   [1] OK [Metabolism Boost After 40]: Metabolism After 40: The Science Your Doctor Hasn'
+[2026-10-13 14:43 UTC]   [2] OK [Java Burn Coffee Ritual Recipes]: The Morning Coffee Ritual Women Over 40 Are Callin
+[2026-10-13 14:43 UTC]   [3] VIDEO PIN [Anti-Inflammatory Diet Tips]
+[2026-10-13 14:43 UTC]     → searching Pexels video (real person): 'woman wellness morning routine healthy'
+[2026-10-13 14:43 UTC]     → downloading Pexels video...
+[2026-10-13 14:43 UTC]     → downloaded 7185KB
+[2026-10-13 14:43 UTC]     → voiceover: Your morning coffee is spiking cortisol. That cortisol is st...
+[2026-10-13 14:43 UTC]     → edge-tts erreur: entToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&ConnectionId=927a076fb93542aeb840fda262eabbbf&Sec-MS-GEC=2A2669BDFA0CF3B94CC4D483E02A76EDF2E79B5E940CEA1211197C12F75B209F&Sec-MS-GEC-Version=1-143.0.3650.75'
+
+[2026-10-13 14:43 UTC]     → using raw Pexels video (no audio mix)
+[2026-10-13 14:43 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-10-13 14:43 UTC]     → uploading video (media_id=3941660453431728640, url=yes)…
+[2026-10-13 14:43 UTC]     → waiting for Pinterest to process video…
+[2026-10-13 14:44 UTC]     → VIDEO PIN OK (media_id=3941660453431728640)
+[2026-10-13 14:44 UTC]   [3] OK VIDEO/STANDARD [Anti-Inflammatory Diet Tips]
+[2026-10-13 14:44 UTC] === Done: 3 published | 0 errors ===
