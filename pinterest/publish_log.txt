@@ -3473,3 +3473,21 @@
 [2026-10-14 19:59 UTC]     → VIDEO PIN OK (media_id=3945193683918781504)
 [2026-10-14 19:59 UTC]   [3] OK VIDEO/STANDARD [Metabolism Boosting Drinks Women Over 40]
 [2026-10-14 19:59 UTC] === Done: 3 published | 0 errors ===
+[2026-10-15 12:22 UTC] UTC 12h22 → next slot: 08h
+[2026-10-15 12:22 UTC] === Pinterest Publisher 2026-10-15 08h (6 pins/day mode) ===
+[2026-10-15 12:22 UTC]   [1] OK [Weight Loss Transformation]: Before She Found the Java Burn Ritual, She Was Stu
+[2026-10-15 12:23 UTC]   [2] OK [Hormonal Belly Fat Tips]: What Happens to Your Belly Fat When You Add THIS t
+[2026-10-15 12:23 UTC]   [3] VIDEO PIN [Menopause Weight Loss Tips]
+[2026-10-15 12:23 UTC]     → searching Pexels video (real person): 'woman coffee ritual morning wellness'
+[2026-10-15 12:23 UTC]     → downloading Pexels video...
+[2026-10-15 12:23 UTC]     → downloaded 18739KB
+[2026-10-15 12:23 UTC]     → voiceover: The reason belly fat after 40 is different. Your estrogen dr...
+[2026-10-15 12:23 UTC]     → voiceover OK: 86KB
+[2026-10-15 12:23 UTC]     → ffmpeg 3-track OK: 10.2MB
+[2026-10-15 12:23 UTC]     → using mixed video (voiceover + music)
+[2026-10-15 12:23 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-10-15 12:23 UTC]     → uploading video (media_id=3947175909975671168, url=yes)…
+[2026-10-15 12:23 UTC]     → waiting for Pinterest to process video…
+[2026-10-15 12:25 UTC]     → VIDEO PIN OK (media_id=3947175909975671168)
+[2026-10-15 12:25 UTC]   [3] OK VIDEO/STANDARD [Menopause Weight Loss Tips]
+[2026-10-15 12:25 UTC] === Done: 3 published | 0 errors ===
