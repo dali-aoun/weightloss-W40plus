@@ -3509,3 +3509,21 @@
 [2026-10-15 19:43 UTC]     → VIDEO PIN OK (media_id=3948060354202959104)
 [2026-10-15 19:43 UTC]   [3] OK VIDEO/STANDARD [Weight Loss for Women Over 40]
 [2026-10-15 19:43 UTC] === Done: 3 published | 0 errors ===
+[2026-10-16 12:02 UTC] UTC 12h02 → next slot: 08h
+[2026-10-16 12:02 UTC] === Pinterest Publisher 2026-10-16 08h (6 pins/day mode) ===
+[2026-10-16 12:02 UTC]   [1] OK [Metabolism Boost After 40]: What Slows Your Metabolism After 40 (and the Exact
+[2026-10-16 12:02 UTC]   [2] OK [Java Burn Coffee Ritual Recipes]: The Java Burn Coffee Ritual: What It Is, How It Wo
+[2026-10-16 12:02 UTC]   [3] VIDEO PIN [Anti-Inflammatory Diet Tips]
+[2026-10-16 12:02 UTC]     → searching Pexels video (real person): 'woman yoga morning routine'
+[2026-10-16 12:02 UTC]     → downloading Pexels video...
+[2026-10-16 12:02 UTC]     → downloaded 13786KB
+[2026-10-16 12:02 UTC]     → voiceover: What if you could eat normally, skip the gym, and still lose...
+[2026-10-16 12:02 UTC]     → voiceover OK: 83KB
+[2026-10-16 12:03 UTC]     → ffmpeg 3-track OK: 11.6MB
+[2026-10-16 12:03 UTC]     → using mixed video (voiceover + music)
+[2026-10-16 12:03 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-10-16 12:03 UTC]     → uploading video (media_id=3950033844297444160, url=yes)…
+[2026-10-16 12:03 UTC]     → waiting for Pinterest to process video…
+[2026-10-16 12:03 UTC]     → VIDEO PIN OK (media_id=3950033844297444160)
+[2026-10-16 12:03 UTC]   [3] OK VIDEO/STANDARD [Anti-Inflammatory Diet Tips]
+[2026-10-16 12:03 UTC] === Done: 3 published | 0 errors ===
