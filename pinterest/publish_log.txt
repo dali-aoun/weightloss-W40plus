@@ -3635,3 +3635,21 @@
 [2026-10-19 14:14 UTC]     → VIDEO PIN OK (media_id=3958994744407473152)
 [2026-10-19 14:14 UTC]   [3] OK VIDEO/STANDARD [Anti-Inflammatory Diet Tips]
 [2026-10-19 14:14 UTC] === Done: 3 published | 0 errors ===
+[2026-10-19 20:52 UTC] UTC 20h52 → next slot: 17h
+[2026-10-19 20:52 UTC] === Pinterest Publisher 2026-10-19 17h (6 pins/day mode) ===
+[2026-10-19 20:52 UTC]   [1] OK [Natural Supplements & Wellness]: The #1 Natural Ingredient Turning Slow Metabolisms
+[2026-10-19 20:52 UTC]   [2] OK [Motivation & Mindset]: What Changes When You Stop Trying to 'Eat Less' an
+[2026-10-19 20:52 UTC]   [3] VIDEO PIN [Energy Boosters for Women 40+]
+[2026-10-19 20:52 UTC]     → searching Pexels video (real person): 'woman wellness morning routine healthy'
+[2026-10-19 20:52 UTC]     → downloading Pexels video...
+[2026-10-19 20:52 UTC]     → downloaded 8043KB
+[2026-10-19 20:52 UTC]     → voiceover: Women over 40 who lost belly fat without dieting have one th...
+[2026-10-19 20:52 UTC]     → voiceover OK: 61KB
+[2026-10-19 20:53 UTC]     → ffmpeg 3-track OK: 6.2MB
+[2026-10-19 20:53 UTC]     → using mixed video (voiceover + music)
+[2026-10-19 20:53 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-10-19 20:53 UTC]     → uploading video (media_id=3959798469555962048, url=yes)…
+[2026-10-19 20:53 UTC]     → waiting for Pinterest to process video…
+[2026-10-19 20:54 UTC]     → VIDEO PIN OK (media_id=3959798469555962048)
+[2026-10-19 20:54 UTC]   [3] OK VIDEO/STANDARD [Energy Boosters for Women 40+]
+[2026-10-19 20:54 UTC] === Done: 3 published | 0 errors ===
