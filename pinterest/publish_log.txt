@@ -3797,3 +3797,21 @@
 [2026-10-23 20:05 UTC]     → VIDEO PIN OK (media_id=3971296405440693248)
 [2026-10-23 20:05 UTC]   [3] OK VIDEO/STANDARD [Metabolism Boosting Drinks Women Over 40]
 [2026-10-23 20:05 UTC] === Done: 3 published | 0 errors ===
+[2026-10-24 11:46 UTC] UTC 11h46 → next slot: 08h
+[2026-10-24 11:46 UTC] === Pinterest Publisher 2026-10-24 08h (6 pins/day mode) ===
+[2026-10-24 11:46 UTC]   [1] OK [Weight Loss Transformation]: The Transformation That Starts Not With a Diet â€”
+[2026-10-24 11:46 UTC]   [2] OK [Hormonal Belly Fat Tips]: The Belly Fat That Won't Budge After 40 Isn't Abou
+[2026-10-24 11:46 UTC]   [3] VIDEO PIN [Menopause Weight Loss Tips]
+[2026-10-24 11:46 UTC]     → searching Pexels video (real person): 'woman coffee cup smiling morning'
+[2026-10-24 11:46 UTC]     → downloading Pexels video...
+[2026-10-24 11:46 UTC]     → downloaded 4628KB
+[2026-10-24 11:46 UTC]     → voiceover: Your cortisol peaks in the first 30 minutes after you wake u...
+[2026-10-24 11:46 UTC]     → voiceover OK: 82KB
+[2026-10-24 11:46 UTC]     → ffmpeg 3-track OK: 4.1MB
+[2026-10-24 11:46 UTC]     → using mixed video (voiceover + music)
+[2026-10-24 11:46 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-10-24 11:46 UTC]     → uploading video (media_id=3973193997489093632, url=yes)…
+[2026-10-24 11:46 UTC]     → waiting for Pinterest to process video…
+[2026-10-24 11:48 UTC]     → VIDEO PIN OK (media_id=3973193997489093632)
+[2026-10-24 11:48 UTC]   [3] OK VIDEO/STANDARD [Menopause Weight Loss Tips]
+[2026-10-24 11:48 UTC] === Done: 3 published | 0 errors ===
