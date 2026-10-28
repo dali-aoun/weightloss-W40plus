@@ -3959,3 +3959,21 @@
 [2026-10-28 13:44 UTC]     → VIDEO PIN OK (media_id=3985025069257153024)
 [2026-10-28 13:44 UTC]   [3] OK VIDEO/STANDARD [Anti-Inflammatory Diet Tips]
 [2026-10-28 13:44 UTC] === Done: 3 published | 0 errors ===
+[2026-10-28 20:46 UTC] UTC 20h46 → next slot: 17h
+[2026-10-28 20:46 UTC] === Pinterest Publisher 2026-10-28 17h (6 pins/day mode) ===
+[2026-10-28 20:46 UTC]   [1] OK [Natural Supplements & Wellness]: The Wellness Ritual That's Replacing Expensive Sup
+[2026-10-28 20:46 UTC]   [2] OK [Motivation & Mindset]: Your Body Isn't the Problem â€” Your Morning Routi
+[2026-10-28 20:46 UTC]   [3] VIDEO PIN [Energy Boosters for Women 40+]
+[2026-10-28 20:46 UTC]     → searching Pexels video (real person): 'woman yoga morning routine'
+[2026-10-28 20:46 UTC]     → downloading Pexels video...
+[2026-10-28 20:46 UTC]     → downloaded 8195KB
+[2026-10-28 20:46 UTC]     → voiceover: I'm 51. I stopped dieting in March. I added this to my coffe...
+[2026-10-28 20:46 UTC]     → voiceover OK: 77KB
+[2026-10-28 20:46 UTC]     → ffmpeg 3-track OK: 5.2MB
+[2026-10-28 20:46 UTC]     → using mixed video (voiceover + music)
+[2026-10-28 20:46 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-10-28 20:46 UTC]     → uploading video (media_id=3985877128927599360, url=yes)…
+[2026-10-28 20:46 UTC]     → waiting for Pinterest to process video…
+[2026-10-28 20:47 UTC]     → VIDEO PIN OK (media_id=3985877128927599360)
+[2026-10-28 20:47 UTC]   [3] OK VIDEO/STANDARD [Energy Boosters for Women 40+]
+[2026-10-28 20:47 UTC] === Done: 3 published | 0 errors ===
