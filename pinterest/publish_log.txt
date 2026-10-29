@@ -3995,3 +3995,21 @@
 [2026-10-29 13:54 UTC]     → VIDEO PIN OK (media_id=3987943418467500480)
 [2026-10-29 13:54 UTC]   [3] OK VIDEO/STANDARD [High Protein Meals for Women]
 [2026-10-29 13:54 UTC] === Done: 3 published | 0 errors ===
+[2026-10-29 20:52 UTC] UTC 20h52 → next slot: 17h
+[2026-10-29 20:52 UTC] === Pinterest Publisher 2026-10-29 17h (6 pins/day mode) ===
+[2026-10-29 20:52 UTC]   [1] OK [Before and After Transformations]: Before: Exhausted, Bloated, Stuck at 187 lbs. Afte
+[2026-10-29 20:52 UTC]   [2] OK [Weight Loss Meal Recipes for Women Over 40]: Weight Loss Meals for Women Over 40 (Designed Arou
+[2026-10-29 20:52 UTC]   [3] VIDEO PIN [Metabolism Boosting Drinks Women Over 40]
+[2026-10-29 20:52 UTC]     → searching Pexels video (real person): 'woman yoga morning routine'
+[2026-10-29 20:52 UTC]     → downloading Pexels video...
+[2026-10-29 20:52 UTC]     → downloaded 3848KB
+[2026-10-29 20:52 UTC]     → voiceover: Not a diet. Not a supplement. One tasteless addition to the ...
+[2026-10-29 20:52 UTC]     → voiceover OK: 80KB
+[2026-10-29 20:52 UTC]     → ffmpeg 3-track OK: 2.5MB
+[2026-10-29 20:52 UTC]     → using mixed video (voiceover + music)
+[2026-10-29 20:52 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-10-29 20:52 UTC]     → uploading video (media_id=3988788978242207744, url=yes)…
+[2026-10-29 20:52 UTC]     → waiting for Pinterest to process video…
+[2026-10-29 20:53 UTC]     → VIDEO PIN OK (media_id=3988788978242207744)
+[2026-10-29 20:53 UTC]   [3] OK VIDEO/STANDARD [Metabolism Boosting Drinks Women Over 40]
+[2026-10-29 20:53 UTC] === Done: 3 published | 0 errors ===
