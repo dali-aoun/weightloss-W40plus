@@ -560,11 +560,12 @@ def merge_recipe_card_video(video_path, overlay_path, voiceover_path, music_path
         audio_f = f"[2:a]atrim=end={max_sec},volume=-15dB[aout]"
 
     url_text = "coffee.thehappy-healthy-life.com"
+    _font = _ensure_font()
+    _font_arg = f":fontfile='{_font}'" if _font else ""
     url_drawtext = (
         f"drawtext=text='{url_text}':"
         f"fontsize=32:fontcolor=white:x=(w-text_w)/2:y=h-60:"
         f"box=1:boxcolor=black@0.55:boxborderw=8:"
-        f"fontfile='C\\\\:/Windows/Fonts/arialbd.ttf'"
     )
     filter_complex = (
         f"[0:v]scale=1080:1920:force_original_aspect_ratio=increase,"
@@ -626,11 +627,12 @@ def merge_video_voiceover_music(video_path, voiceover_path, music_path, output_p
         return t.replace("\\", "\\\\").replace("'", "\\'").replace(":", "\\:").replace("%", "\\%")
 
     url_text = "coffee.thehappy-healthy-life.com"
+    _font = _ensure_font()
+    _font_arg = f":fontfile='{_font}'" if _font else ""
     url_drawtext = (
         f"drawtext=text='{url_text}':"
         f"fontsize=32:fontcolor=white:x=(w-text_w)/2:y=h-60:"
         f"box=1:boxcolor=black@0.55:boxborderw=8:"
-        f"fontfile='C\\\\\\\\:/Windows/Fonts/arialbd.ttf'"
     )
     if text_overlay:
         headline, subline = text_overlay
