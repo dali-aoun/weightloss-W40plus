@@ -4013,3 +4013,21 @@
 [2026-10-29 20:53 UTC]     → VIDEO PIN OK (media_id=3988788978242207744)
 [2026-10-29 20:53 UTC]   [3] OK VIDEO/STANDARD [Metabolism Boosting Drinks Women Over 40]
 [2026-10-29 20:53 UTC] === Done: 3 published | 0 errors ===
+[2026-10-30 13:45 UTC] UTC 13h45 → next slot: 08h
+[2026-10-30 13:45 UTC] === Pinterest Publisher 2026-10-30 08h (6 pins/day mode) ===
+[2026-10-30 13:45 UTC]   [1] OK [Weight Loss Transformation]: Before She Found the Java Burn Ritual, She Was Stu
+[2026-10-30 13:45 UTC]   [2] OK [Hormonal Belly Fat Tips]: What Happens to Your Belly Fat When You Add THIS t
+[2026-10-30 13:45 UTC]   [3] VIDEO PIN [Menopause Weight Loss Tips]
+[2026-10-30 13:45 UTC]     → searching Pexels video (real person): 'woman drinking morning coffee'
+[2026-10-30 13:45 UTC]     → downloading Pexels video...
+[2026-10-30 13:45 UTC]     → downloaded 8583KB
+[2026-10-30 13:45 UTC]     → voiceover: Your cortisol peaks in the first 30 minutes after you wake u...
+[2026-10-30 13:45 UTC]     → voiceover OK: 82KB
+[2026-10-30 13:45 UTC]     → ffmpeg 3-track OK: 6.7MB
+[2026-10-30 13:45 UTC]     → using mixed video (voiceover + music)
+[2026-10-30 13:45 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-10-30 13:45 UTC]     → uploading video (media_id=3990828176033276672, url=yes)…
+[2026-10-30 13:45 UTC]     → waiting for Pinterest to process video…
+[2026-10-30 13:46 UTC]     → VIDEO PIN OK (media_id=3990828176033276672)
+[2026-10-30 13:46 UTC]   [3] OK VIDEO/STANDARD [Menopause Weight Loss Tips]
+[2026-10-30 13:46 UTC] === Done: 3 published | 0 errors ===
