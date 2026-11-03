@@ -2,29 +2,19 @@
   "pinterest_account_analytics": {
     "all": {
       "summary_metrics": {
-        "SAVE": 52,
-        "IMPRESSION": 20843,
-        "PIN_CLICK": 721,
+        "SAVE": 53,
+        "PIN_CLICK": 723,
+        "IMPRESSION": 20668,
         "OUTBOUND_CLICK": 5
       },
       "daily_metrics": [
-        {
-          "date": "2026-10-03",
-          "data_status": "READY",
-          "metrics": {
-            "SAVE": 0,
-            "IMPRESSION": 522,
-            "PIN_CLICK": 12,
-            "OUTBOUND_CLICK": 0
-          }
-        },
         {
           "date": "2026-10-04",
           "data_status": "READY",
           "metrics": {
             "SAVE": 2,
-            "IMPRESSION": 562,
             "PIN_CLICK": 24,
+            "IMPRESSION": 562,
             "OUTBOUND_CLICK": 0
           }
         },
@@ -33,8 +23,8 @@
           "data_status": "READY",
           "metrics": {
             "SAVE": 3,
-            "IMPRESSION": 1026,
             "PIN_CLICK": 42,
+            "IMPRESSION": 1026,
             "OUTBOUND_CLICK": 0
           }
         },
@@ -43,8 +33,8 @@
           "data_status": "READY",
           "metrics": {
             "SAVE": 0,
-            "IMPRESSION": 1019,
             "PIN_CLICK": 30,
+            "IMPRESSION": 1019,
             "OUTBOUND_CLICK": 1
           }
         },
@@ -53,8 +43,8 @@
           "data_status": "READY",
           "metrics": {
             "SAVE": 0,
-            "IMPRESSION": 979,
             "PIN_CLICK": 32,
+            "IMPRESSION": 979,
             "OUTBOUND_CLICK": 1
           }
         },
@@ -63,8 +53,8 @@
           "data_status": "READY",
           "metrics": {
             "SAVE": 0,
-            "IMPRESSION": 1010,
             "PIN_CLICK": 31,
+            "IMPRESSION": 1010,
             "OUTBOUND_CLICK": 0
           }
         },
@@ -73,8 +63,8 @@
           "data_status": "READY",
           "metrics": {
             "SAVE": 3,
-            "IMPRESSION": 985,
             "PIN_CLICK": 32,
+            "IMPRESSION": 985,
             "OUTBOUND_CLICK": 0
           }
         },
@@ -83,8 +73,8 @@
           "data_status": "READY",
           "metrics": {
             "SAVE": 6,
-            "IMPRESSION": 734,
             "PIN_CLICK": 39,
+            "IMPRESSION": 734,
             "OUTBOUND_CLICK": 0
           }
         },
@@ -93,8 +83,8 @@
           "data_status": "READY",
           "metrics": {
             "SAVE": 4,
-            "IMPRESSION": 484,
             "PIN_CLICK": 18,
+            "IMPRESSION": 484,
             "OUTBOUND_CLICK": 0
           }
         },
@@ -103,8 +93,8 @@
           "data_status": "READY",
           "metrics": {
             "SAVE": 2,
-            "IMPRESSION": 740,
             "PIN_CLICK": 21,
+            "IMPRESSION": 740,
             "OUTBOUND_CLICK": 0
           }
         },
@@ -113,8 +103,8 @@
           "data_status": "READY",
           "metrics": {
             "SAVE": 3,
-            "IMPRESSION": 751,
             "PIN_CLICK": 22,
+            "IMPRESSION": 751,
             "OUTBOUND_CLICK": 0
           }
         },
@@ -123,8 +113,8 @@
           "data_status": "READY",
           "metrics": {
             "SAVE": 0,
-            "IMPRESSION": 672,
             "PIN_CLICK": 26,
+            "IMPRESSION": 672,
             "OUTBOUND_CLICK": 0
           }
         },
@@ -133,8 +123,8 @@
           "data_status": "READY",
           "metrics": {
             "SAVE": 1,
-            "IMPRESSION": 766,
             "PIN_CLICK": 34,
+            "IMPRESSION": 766,
             "OUTBOUND_CLICK": 0
           }
         },
@@ -143,8 +133,8 @@
           "data_status": "READY",
           "metrics": {
             "SAVE": 1,
-            "IMPRESSION": 698,
             "PIN_CLICK": 18,
+            "IMPRESSION": 698,
             "OUTBOUND_CLICK": 0
           }
         },
@@ -153,8 +143,8 @@
           "data_status": "READY",
           "metrics": {
             "SAVE": 1,
-            "IMPRESSION": 391,
             "PIN_CLICK": 8,
+            "IMPRESSION": 391,
             "OUTBOUND_CLICK": 0
           }
         },
@@ -163,8 +153,8 @@
           "data_status": "READY",
           "metrics": {
             "SAVE": 1,
-            "IMPRESSION": 393,
             "PIN_CLICK": 17,
+            "IMPRESSION": 393,
             "OUTBOUND_CLICK": 0
           }
         },
@@ -173,8 +163,8 @@
           "data_status": "READY",
           "metrics": {
             "SAVE": 4,
-            "IMPRESSION": 830,
             "PIN_CLICK": 30,
+            "IMPRESSION": 830,
             "OUTBOUND_CLICK": 1
           }
         },
@@ -183,8 +173,8 @@
           "data_status": "READY",
           "metrics": {
             "SAVE": 2,
-            "IMPRESSION": 723,
             "PIN_CLICK": 27,
+            "IMPRESSION": 723,
             "OUTBOUND_CLICK": 0
           }
         },
@@ -193,8 +183,8 @@
           "data_status": "READY",
           "metrics": {
             "SAVE": 1,
-            "IMPRESSION": 900,
             "PIN_CLICK": 33,
+            "IMPRESSION": 900,
             "OUTBOUND_CLICK": 0
           }
         },
@@ -203,8 +193,8 @@
           "data_status": "READY",
           "metrics": {
             "SAVE": 2,
-            "IMPRESSION": 782,
             "PIN_CLICK": 27,
+            "IMPRESSION": 782,
             "OUTBOUND_CLICK": 1
           }
         },
@@ -213,8 +203,8 @@
           "data_status": "READY",
           "metrics": {
             "SAVE": 1,
-            "IMPRESSION": 690,
             "PIN_CLICK": 20,
+            "IMPRESSION": 690,
             "OUTBOUND_CLICK": 0
           }
         },
@@ -223,8 +213,8 @@
           "data_status": "READY",
           "metrics": {
             "SAVE": 1,
-            "IMPRESSION": 556,
             "PIN_CLICK": 11,
+            "IMPRESSION": 556,
             "OUTBOUND_CLICK": 0
           }
         },
@@ -233,8 +223,8 @@
           "data_status": "READY",
           "metrics": {
             "SAVE": 2,
-            "IMPRESSION": 387,
             "PIN_CLICK": 18,
+            "IMPRESSION": 387,
             "OUTBOUND_CLICK": 1
           }
         },
@@ -243,8 +233,8 @@
           "data_status": "READY",
           "metrics": {
             "SAVE": 2,
-            "IMPRESSION": 821,
             "PIN_CLICK": 24,
+            "IMPRESSION": 821,
             "OUTBOUND_CLICK": 0
           }
         },
@@ -253,8 +243,8 @@
           "data_status": "READY",
           "metrics": {
             "SAVE": 3,
-            "IMPRESSION": 833,
             "PIN_CLICK": 35,
+            "IMPRESSION": 833,
             "OUTBOUND_CLICK": 0
           }
         },
@@ -263,8 +253,8 @@
           "data_status": "READY",
           "metrics": {
             "SAVE": 3,
-            "IMPRESSION": 788,
             "PIN_CLICK": 35,
+            "IMPRESSION": 788,
             "OUTBOUND_CLICK": 0
           }
         },
@@ -273,8 +263,8 @@
           "data_status": "READY",
           "metrics": {
             "SAVE": 2,
-            "IMPRESSION": 654,
             "PIN_CLICK": 25,
+            "IMPRESSION": 654,
             "OUTBOUND_CLICK": 0
           }
         },
@@ -283,8 +273,8 @@
           "data_status": "READY",
           "metrics": {
             "SAVE": 1,
-            "IMPRESSION": 671,
             "PIN_CLICK": 20,
+            "IMPRESSION": 671,
             "OUTBOUND_CLICK": 0
           }
         },
@@ -293,13 +283,23 @@
           "data_status": "READY",
           "metrics": {
             "SAVE": 1,
-            "IMPRESSION": 476,
             "PIN_CLICK": 10,
+            "IMPRESSION": 476,
             "OUTBOUND_CLICK": 0
           }
         },
         {
           "date": "2026-11-01",
+          "data_status": "READY",
+          "metrics": {
+            "SAVE": 1,
+            "PIN_CLICK": 14,
+            "IMPRESSION": 347,
+            "OUTBOUND_CLICK": 0
+          }
+        },
+        {
+          "date": "2026-11-02",
           "data_status": "PROCESSING",
           "metrics": {
             "IMPRESSION": 0.0,
@@ -309,7 +309,7 @@
           }
         },
         {
-          "date": "2026-11-02",
+          "date": "2026-11-03",
           "data_status": "PROCESSING",
           "metrics": {
             "IMPRESSION": 0.0,
@@ -322,16 +322,16 @@
     }
   },
   "pinterest_summary": {
-    "SAVE": 52,
-    "IMPRESSION": 20843,
-    "PIN_CLICK": 721,
+    "SAVE": 53,
+    "PIN_CLICK": 723,
+    "IMPRESSION": 20668,
     "OUTBOUND_CLICK": 5
   },
   "pinterest_boards": [
     {
       "id": "1029635602248341063",
       "name": "Anti-Inflammatory Diet Tips",
-      "pin_count": 135
+      "pin_count": 137
     },
     {
       "id": "1029635602248341068",
@@ -356,17 +356,17 @@
     {
       "id": "1029635602248341069",
       "name": "Energy Boosters for Women 40+",
-      "pin_count": 93
+      "pin_count": 94
     },
     {
       "id": "1029635602248341061",
       "name": "Fat Burning Foods & Drinks",
-      "pin_count": 91
+      "pin_count": 92
     },
     {
       "id": "1029635602248341064",
       "name": "High Protein Meals for Women",
-      "pin_count": 87
+      "pin_count": 88
     },
     {
       "id": "1029635602248341055",
@@ -376,7 +376,7 @@
     {
       "id": "1029635602248462146",
       "name": "Java Burn Coffee Ritual Recipes",
-      "pin_count": 35
+      "pin_count": 37
     },
     {
       "id": "1029635602248460178",
@@ -391,7 +391,7 @@
     {
       "id": "1029635602248341060",
       "name": "Metabolism Boost After 40",
-      "pin_count": 101
+      "pin_count": 103
     },
     {
       "id": "1029635602246765608",
@@ -401,7 +401,7 @@
     {
       "id": "1029635602248462145",
       "name": "Morning Coffee Metabolism Tips for Women 40+",
-      "pin_count": 37
+      "pin_count": 38
     },
     {
       "id": "1029635602248460177",
@@ -411,26 +411,26 @@
     {
       "id": "1029635602248341062",
       "name": "Morning Routines for Weight Loss",
-      "pin_count": 129
+      "pin_count": 130
     },
     {
       "id": "1029635602248341071",
       "name": "Motivation & Mindset",
-      "pin_count": 124
+      "pin_count": 125
     },
     {
       "id": "1029635602248341070",
       "name": "Natural Supplements & Wellness",
-      "pin_count": 116
+      "pin_count": 117
     }
   ],
   "pinterest_boards_count": 19,
   "instagram_account": {
-    "error": "{\"error\":{\"message\":\"Error validating access token: Session has expired on Tuesday, 27-Oct-26 03:49:13 PDT. The current time is Monday, 02-Nov-26 09:44:16 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"A5x1QHG0nWl26XO9gXKxMIg\"}}"
+    "error": "{\"error\":{\"message\":\"Error validating access token: Session has expired on Tuesday, 27-Oct-26 03:49:13 PDT. The current time is Tuesday, 03-Nov-26 07:46:23 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"A25dWhqSDR1AtsZXJo-OSq5\"}}"
   },
   "instagram_reach_14d": [],
   "instagram_profile_views_14d": [],
   "instagram_website_clicks_14d": [],
   "instagram_interactions_14d": [],
-  "generated_at": "2026-11-02T17:44:16.854697+00:00"
+  "generated_at": "2026-11-03T15:46:24.275720+00:00"
 }
