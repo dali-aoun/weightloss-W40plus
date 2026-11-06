@@ -2,28 +2,18 @@
   "pinterest_account_analytics": {
     "all": {
       "summary_metrics": {
-        "IMPRESSION": 20247,
-        "PIN_CLICK": 690,
-        "SAVE": 54,
-        "OUTBOUND_CLICK": 6
+        "PIN_CLICK": 678,
+        "IMPRESSION": 19835,
+        "SAVE": 55,
+        "OUTBOUND_CLICK": 5
       },
       "daily_metrics": [
-        {
-          "date": "2026-10-06",
-          "data_status": "READY",
-          "metrics": {
-            "IMPRESSION": 1019,
-            "PIN_CLICK": 30,
-            "SAVE": 0,
-            "OUTBOUND_CLICK": 1
-          }
-        },
         {
           "date": "2026-10-07",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 979,
             "PIN_CLICK": 32,
+            "IMPRESSION": 979,
             "SAVE": 0,
             "OUTBOUND_CLICK": 1
           }
@@ -32,8 +22,8 @@
           "date": "2026-10-08",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 1010,
             "PIN_CLICK": 31,
+            "IMPRESSION": 1010,
             "SAVE": 0,
             "OUTBOUND_CLICK": 0
           }
@@ -42,8 +32,8 @@
           "date": "2026-10-09",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 985,
             "PIN_CLICK": 32,
+            "IMPRESSION": 985,
             "SAVE": 3,
             "OUTBOUND_CLICK": 0
           }
@@ -52,8 +42,8 @@
           "date": "2026-10-10",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 734,
             "PIN_CLICK": 39,
+            "IMPRESSION": 734,
             "SAVE": 6,
             "OUTBOUND_CLICK": 0
           }
@@ -62,8 +52,8 @@
           "date": "2026-10-11",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 484,
             "PIN_CLICK": 18,
+            "IMPRESSION": 484,
             "SAVE": 4,
             "OUTBOUND_CLICK": 0
           }
@@ -72,8 +62,8 @@
           "date": "2026-10-12",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 740,
             "PIN_CLICK": 21,
+            "IMPRESSION": 740,
             "SAVE": 2,
             "OUTBOUND_CLICK": 0
           }
@@ -82,8 +72,8 @@
           "date": "2026-10-13",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 751,
             "PIN_CLICK": 22,
+            "IMPRESSION": 751,
             "SAVE": 3,
             "OUTBOUND_CLICK": 0
           }
@@ -92,8 +82,8 @@
           "date": "2026-10-14",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 672,
             "PIN_CLICK": 26,
+            "IMPRESSION": 672,
             "SAVE": 0,
             "OUTBOUND_CLICK": 0
           }
@@ -102,8 +92,8 @@
           "date": "2026-10-15",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 766,
             "PIN_CLICK": 34,
+            "IMPRESSION": 766,
             "SAVE": 1,
             "OUTBOUND_CLICK": 0
           }
@@ -112,8 +102,8 @@
           "date": "2026-10-16",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 698,
             "PIN_CLICK": 18,
+            "IMPRESSION": 698,
             "SAVE": 1,
             "OUTBOUND_CLICK": 0
           }
@@ -122,8 +112,8 @@
           "date": "2026-10-17",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 391,
             "PIN_CLICK": 8,
+            "IMPRESSION": 391,
             "SAVE": 1,
             "OUTBOUND_CLICK": 0
           }
@@ -132,8 +122,8 @@
           "date": "2026-10-18",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 393,
             "PIN_CLICK": 17,
+            "IMPRESSION": 393,
             "SAVE": 1,
             "OUTBOUND_CLICK": 0
           }
@@ -142,8 +132,8 @@
           "date": "2026-10-19",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 830,
             "PIN_CLICK": 30,
+            "IMPRESSION": 830,
             "SAVE": 4,
             "OUTBOUND_CLICK": 1
           }
@@ -152,8 +142,8 @@
           "date": "2026-10-20",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 723,
             "PIN_CLICK": 27,
+            "IMPRESSION": 723,
             "SAVE": 2,
             "OUTBOUND_CLICK": 0
           }
@@ -162,8 +152,8 @@
           "date": "2026-10-21",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 900,
             "PIN_CLICK": 33,
+            "IMPRESSION": 900,
             "SAVE": 1,
             "OUTBOUND_CLICK": 0
           }
@@ -172,8 +162,8 @@
           "date": "2026-10-22",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 782,
             "PIN_CLICK": 27,
+            "IMPRESSION": 782,
             "SAVE": 2,
             "OUTBOUND_CLICK": 1
           }
@@ -182,8 +172,8 @@
           "date": "2026-10-23",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 690,
             "PIN_CLICK": 20,
+            "IMPRESSION": 690,
             "SAVE": 1,
             "OUTBOUND_CLICK": 0
           }
@@ -192,8 +182,8 @@
           "date": "2026-10-24",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 556,
             "PIN_CLICK": 11,
+            "IMPRESSION": 556,
             "SAVE": 1,
             "OUTBOUND_CLICK": 0
           }
@@ -202,8 +192,8 @@
           "date": "2026-10-25",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 387,
             "PIN_CLICK": 18,
+            "IMPRESSION": 387,
             "SAVE": 2,
             "OUTBOUND_CLICK": 1
           }
@@ -212,8 +202,8 @@
           "date": "2026-10-26",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 821,
             "PIN_CLICK": 24,
+            "IMPRESSION": 821,
             "SAVE": 2,
             "OUTBOUND_CLICK": 0
           }
@@ -222,8 +212,8 @@
           "date": "2026-10-27",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 833,
             "PIN_CLICK": 35,
+            "IMPRESSION": 833,
             "SAVE": 3,
             "OUTBOUND_CLICK": 0
           }
@@ -232,8 +222,8 @@
           "date": "2026-10-28",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 788,
             "PIN_CLICK": 35,
+            "IMPRESSION": 788,
             "SAVE": 3,
             "OUTBOUND_CLICK": 0
           }
@@ -242,8 +232,8 @@
           "date": "2026-10-29",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 654,
             "PIN_CLICK": 25,
+            "IMPRESSION": 654,
             "SAVE": 2,
             "OUTBOUND_CLICK": 0
           }
@@ -252,8 +242,8 @@
           "date": "2026-10-30",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 671,
             "PIN_CLICK": 20,
+            "IMPRESSION": 671,
             "SAVE": 1,
             "OUTBOUND_CLICK": 0
           }
@@ -262,8 +252,8 @@
           "date": "2026-10-31",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 476,
             "PIN_CLICK": 10,
+            "IMPRESSION": 476,
             "SAVE": 1,
             "OUTBOUND_CLICK": 0
           }
@@ -272,8 +262,8 @@
           "date": "2026-11-01",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 347,
             "PIN_CLICK": 14,
+            "IMPRESSION": 347,
             "SAVE": 1,
             "OUTBOUND_CLICK": 0
           }
@@ -282,8 +272,8 @@
           "date": "2026-11-02",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 570,
             "PIN_CLICK": 20,
+            "IMPRESSION": 570,
             "SAVE": 6,
             "OUTBOUND_CLICK": 1
           }
@@ -292,14 +282,24 @@
           "date": "2026-11-03",
           "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 597,
             "PIN_CLICK": 13,
+            "IMPRESSION": 597,
             "SAVE": 0,
             "OUTBOUND_CLICK": 0
           }
         },
         {
           "date": "2026-11-04",
+          "data_status": "READY",
+          "metrics": {
+            "PIN_CLICK": 18,
+            "IMPRESSION": 607,
+            "SAVE": 1,
+            "OUTBOUND_CLICK": 0
+          }
+        },
+        {
+          "date": "2026-11-05",
           "data_status": "PROCESSING",
           "metrics": {
             "IMPRESSION": 0.0,
@@ -309,7 +309,7 @@
           }
         },
         {
-          "date": "2026-11-05",
+          "date": "2026-11-06",
           "data_status": "PROCESSING",
           "metrics": {
             "IMPRESSION": 0.0,
@@ -322,21 +322,21 @@
     }
   },
   "pinterest_summary": {
-    "IMPRESSION": 20247,
-    "PIN_CLICK": 690,
-    "SAVE": 54,
-    "OUTBOUND_CLICK": 6
+    "PIN_CLICK": 678,
+    "IMPRESSION": 19835,
+    "SAVE": 55,
+    "OUTBOUND_CLICK": 5
   },
   "pinterest_boards": [
     {
       "id": "1029635602248341063",
       "name": "Anti-Inflammatory Diet Tips",
-      "pin_count": 137
+      "pin_count": 138
     },
     {
       "id": "1029635602248341068",
       "name": "Before and After Transformations",
-      "pin_count": 115
+      "pin_count": 116
     },
     {
       "id": "1029635602248460175",
@@ -356,27 +356,27 @@
     {
       "id": "1029635602248341069",
       "name": "Energy Boosters for Women 40+",
-      "pin_count": 95
+      "pin_count": 96
     },
     {
       "id": "1029635602248341061",
       "name": "Fat Burning Foods & Drinks",
-      "pin_count": 93
+      "pin_count": 94
     },
     {
       "id": "1029635602248341064",
       "name": "High Protein Meals for Women",
-      "pin_count": 89
+      "pin_count": 90
     },
     {
       "id": "1029635602248341055",
       "name": "Hormonal Belly Fat Tips",
-      "pin_count": 155
+      "pin_count": 156
     },
     {
       "id": "1029635602248462146",
       "name": "Java Burn Coffee Ritual Recipes",
-      "pin_count": 37
+      "pin_count": 38
     },
     {
       "id": "1029635602248460178",
@@ -386,12 +386,12 @@
     {
       "id": "1029635602248341065",
       "name": "Menopause Weight Loss Tips",
-      "pin_count": 125
+      "pin_count": 126
     },
     {
       "id": "1029635602248341060",
       "name": "Metabolism Boost After 40",
-      "pin_count": 103
+      "pin_count": 104
     },
     {
       "id": "1029635602246765608",
@@ -401,7 +401,7 @@
     {
       "id": "1029635602248462145",
       "name": "Morning Coffee Metabolism Tips for Women 40+",
-      "pin_count": 39
+      "pin_count": 40
     },
     {
       "id": "1029635602248460177",
@@ -411,26 +411,26 @@
     {
       "id": "1029635602248341062",
       "name": "Morning Routines for Weight Loss",
-      "pin_count": 131
+      "pin_count": 132
     },
     {
       "id": "1029635602248341071",
       "name": "Motivation & Mindset",
-      "pin_count": 126
+      "pin_count": 127
     },
     {
       "id": "1029635602248341070",
       "name": "Natural Supplements & Wellness",
-      "pin_count": 118
+      "pin_count": 119
     }
   ],
   "pinterest_boards_count": 19,
   "instagram_account": {
-    "error": "{\"error\":{\"message\":\"Error validating access token: Session has expired on Tuesday, 27-Oct-26 03:49:13 PDT. The current time is Thursday, 05-Nov-26 08:01:29 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AdnC5-JhE-ML1NZN_jWAPpV\"}}"
+    "error": "{\"error\":{\"message\":\"Error validating access token: Session has expired on Tuesday, 27-Oct-26 03:49:13 PDT. The current time is Friday, 06-Nov-26 07:37:32 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"ASd9-TWP_4klgmzZnkbX1nC\"}}"
   },
   "instagram_reach_14d": [],
   "instagram_profile_views_14d": [],
   "instagram_website_clicks_14d": [],
   "instagram_interactions_14d": [],
-  "generated_at": "2026-11-05T16:01:30.257995+00:00"
+  "generated_at": "2026-11-06T15:37:33.390112+00:00"
 }
