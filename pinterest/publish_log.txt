@@ -4337,3 +4337,21 @@
 [2026-11-08 14:01 UTC]     → VIDEO PIN OK (media_id=4016949533384104576)
 [2026-11-08 14:01 UTC]   [3] OK VIDEO/STANDARD [Metabolism Boosting Drinks Women Over 40]
 [2026-11-08 14:01 UTC] === Done: 3 published | 0 errors ===
+[2026-11-08 20:11 UTC] UTC 20h11 → next slot: 17h
+[2026-11-08 20:11 UTC] === Pinterest Publisher 2026-11-08 17h (6 pins/day mode) ===
+[2026-11-08 20:11 UTC]   [1] OK [Weight Loss Transformation]: The Transformation That Starts Not With a Diet â€”
+[2026-11-08 20:11 UTC]   [2] OK [Hormonal Belly Fat Tips]: The Belly Fat That Won't Budge After 40 Isn't Abou
+[2026-11-08 20:11 UTC]   [3] VIDEO PIN [Menopause Weight Loss Tips]
+[2026-11-08 20:11 UTC]     → searching Pexels video (real person): 'fitness woman healthy lifestyle morning'
+[2026-11-08 20:11 UTC]     → downloading Pexels video...
+[2026-11-08 20:11 UTC]     → downloaded 7357KB
+[2026-11-08 20:11 UTC]     → voiceover: The reason belly fat after 40 is different. Your estrogen dr...
+[2026-11-08 20:11 UTC]     → voiceover OK: 86KB
+[2026-11-08 20:12 UTC]     → ffmpeg 3-track OK: 6.1MB
+[2026-11-08 20:12 UTC]     → using mixed video (voiceover + music)
+[2026-11-08 20:12 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-11-08 20:12 UTC]     → uploading video (media_id=4017698015792794432, url=yes)…
+[2026-11-08 20:12 UTC]     → waiting for Pinterest to process video…
+[2026-11-08 20:12 UTC]     → VIDEO PIN OK (media_id=4017698015792794432)
+[2026-11-08 20:12 UTC]   [3] OK VIDEO/STANDARD [Menopause Weight Loss Tips]
+[2026-11-08 20:12 UTC] === Done: 3 published | 0 errors ===
