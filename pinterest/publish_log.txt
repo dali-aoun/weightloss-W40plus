@@ -4355,3 +4355,21 @@
 [2026-11-08 20:12 UTC]     → VIDEO PIN OK (media_id=4017698015792794432)
 [2026-11-08 20:12 UTC]   [3] OK VIDEO/STANDARD [Menopause Weight Loss Tips]
 [2026-11-08 20:12 UTC] === Done: 3 published | 0 errors ===
+[2026-11-09 17:01 UTC] UTC 17h01 → next slot: 08h
+[2026-11-09 17:01 UTC] === Pinterest Publisher 2026-11-09 08h (6 pins/day mode) ===
+[2026-11-09 17:01 UTC]   [1] OK [Morning Coffee Metabolism Tips for Women 40+]: She Added One Ingredient to Her Coffee and Lost 17
+[2026-11-09 17:01 UTC]   [2] OK [Morning Routines for Weight Loss]: The Morning Habit That Resets Your Metabolism Befo
+[2026-11-09 17:01 UTC]   [3] VIDEO PIN [Weight Loss for Women Over 40]
+[2026-11-09 17:01 UTC]     → searching Pexels video (real person): 'woman sitting coffee cup morning light'
+[2026-11-09 17:01 UTC]     → downloading Pexels video...
+[2026-11-09 17:01 UTC]     → downloaded 9500KB
+[2026-11-09 17:01 UTC]     → voiceover: 47,000 women are using this morning coffee ritual to lose ho...
+[2026-11-09 17:01 UTC]     → voiceover OK: 94KB
+[2026-11-09 17:01 UTC]     → ffmpeg 3-track OK: 6.6MB
+[2026-11-09 17:01 UTC]     → using mixed video (voiceover + music)
+[2026-11-09 17:01 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-11-09 17:01 UTC]     → uploading video (media_id=4020214159837421760, url=yes)…
+[2026-11-09 17:01 UTC]     → waiting for Pinterest to process video…
+[2026-11-09 17:02 UTC]     → VIDEO PIN OK (media_id=4020214159837421760)
+[2026-11-09 17:02 UTC]   [3] OK VIDEO/STANDARD [Weight Loss for Women Over 40]
+[2026-11-09 17:02 UTC] === Done: 3 published | 0 errors ===
