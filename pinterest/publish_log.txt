@@ -4409,3 +4409,4 @@
 [2026-11-10 15:28 UTC]     → VIDEO PIN OK (media_id=4022922766735484608)
 [2026-11-10 15:28 UTC]   [3] OK VIDEO/STANDARD [Energy Boosters for Women 40+]
 [2026-11-10 15:28 UTC] === Done: 3 published | 0 errors ===
+[2026-11-10 21:39 UTC] Both slots for 2026-11-10 already published — skip
