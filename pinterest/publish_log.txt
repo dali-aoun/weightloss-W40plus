@@ -4391,3 +4391,21 @@
 [2026-11-09 23:59 UTC]     → VIDEO PIN OK (media_id=4021051956189978560)
 [2026-11-09 23:59 UTC]   [3] OK VIDEO/STANDARD [Anti-Inflammatory Diet Tips]
 [2026-11-09 23:59 UTC] === Done: 3 published | 0 errors ===
+[2026-11-10 15:26 UTC] UTC 15h26 → next slot: 17h
+[2026-11-10 15:26 UTC] === Pinterest Publisher 2026-11-10 17h (6 pins/day mode) ===
+[2026-11-10 15:26 UTC]   [1] OK [Natural Supplements & Wellness]: Women Are Canceling Gym Memberships After Finding 
+[2026-11-10 15:26 UTC]   [2] OK [Motivation & Mindset]: She Quit Dieting at 48 and Finally Lost the Weight
+[2026-11-10 15:27 UTC]   [3] VIDEO PIN [Energy Boosters for Women 40+]
+[2026-11-10 15:27 UTC]     → searching Pexels video (real person): 'woman wellness morning routine healthy'
+[2026-11-10 15:27 UTC]     → downloading Pexels video...
+[2026-11-10 15:27 UTC]     → downloaded 8043KB
+[2026-11-10 15:27 UTC]     → voiceover: I'm 51. I stopped dieting in March. I added this to my coffe...
+[2026-11-10 15:27 UTC]     → voiceover OK: 77KB
+[2026-11-10 15:27 UTC]     → ffmpeg 3-track OK: 6.2MB
+[2026-11-10 15:27 UTC]     → using mixed video (voiceover + music)
+[2026-11-10 15:27 UTC]     → media register response keys: ['media_id', 'media_type', 'upload_url', 'upload_parameters']
+[2026-11-10 15:27 UTC]     → uploading video (media_id=4022922766735484608, url=yes)…
+[2026-11-10 15:27 UTC]     → waiting for Pinterest to process video…
+[2026-11-10 15:28 UTC]     → VIDEO PIN OK (media_id=4022922766735484608)
+[2026-11-10 15:28 UTC]   [3] OK VIDEO/STANDARD [Energy Boosters for Women 40+]
+[2026-11-10 15:28 UTC] === Done: 3 published | 0 errors ===
