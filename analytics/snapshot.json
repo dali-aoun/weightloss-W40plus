@@ -2,304 +2,304 @@
   "pinterest_account_analytics": {
     "all": {
       "summary_metrics": {
+        "PIN_CLICK": 640,
+        "IMPRESSION": 18072,
         "SAVE": 48,
-        "OUTBOUND_CLICK": 4,
-        "IMPRESSION": 17735,
-        "PIN_CLICK": 616
+        "OUTBOUND_CLICK": 5
       },
       "daily_metrics": [
-        {
-          "date": "2026-10-11",
-          "data_status": "READY",
-          "metrics": {
-            "SAVE": 4,
-            "OUTBOUND_CLICK": 0,
-            "IMPRESSION": 484,
-            "PIN_CLICK": 18
-          }
-        },
         {
           "date": "2026-10-12",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 2,
-            "OUTBOUND_CLICK": 0,
+            "PIN_CLICK": 21,
             "IMPRESSION": 740,
-            "PIN_CLICK": 21
+            "SAVE": 2,
+            "OUTBOUND_CLICK": 0
           }
         },
         {
           "date": "2026-10-13",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 3,
-            "OUTBOUND_CLICK": 0,
+            "PIN_CLICK": 22,
             "IMPRESSION": 751,
-            "PIN_CLICK": 22
+            "SAVE": 3,
+            "OUTBOUND_CLICK": 0
           }
         },
         {
           "date": "2026-10-14",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 0,
-            "OUTBOUND_CLICK": 0,
+            "PIN_CLICK": 26,
             "IMPRESSION": 672,
-            "PIN_CLICK": 26
+            "SAVE": 0,
+            "OUTBOUND_CLICK": 0
           }
         },
         {
           "date": "2026-10-15",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 1,
-            "OUTBOUND_CLICK": 0,
+            "PIN_CLICK": 34,
             "IMPRESSION": 766,
-            "PIN_CLICK": 34
+            "SAVE": 1,
+            "OUTBOUND_CLICK": 0
           }
         },
         {
           "date": "2026-10-16",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 1,
-            "OUTBOUND_CLICK": 0,
+            "PIN_CLICK": 18,
             "IMPRESSION": 698,
-            "PIN_CLICK": 18
+            "SAVE": 1,
+            "OUTBOUND_CLICK": 0
           }
         },
         {
           "date": "2026-10-17",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 1,
-            "OUTBOUND_CLICK": 0,
+            "PIN_CLICK": 8,
             "IMPRESSION": 391,
-            "PIN_CLICK": 8
+            "SAVE": 1,
+            "OUTBOUND_CLICK": 0
           }
         },
         {
           "date": "2026-10-18",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 1,
-            "OUTBOUND_CLICK": 0,
+            "PIN_CLICK": 17,
             "IMPRESSION": 393,
-            "PIN_CLICK": 17
+            "SAVE": 1,
+            "OUTBOUND_CLICK": 0
           }
         },
         {
           "date": "2026-10-19",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 4,
-            "OUTBOUND_CLICK": 1,
+            "PIN_CLICK": 30,
             "IMPRESSION": 830,
-            "PIN_CLICK": 30
+            "SAVE": 4,
+            "OUTBOUND_CLICK": 1
           }
         },
         {
           "date": "2026-10-20",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 2,
-            "OUTBOUND_CLICK": 0,
+            "PIN_CLICK": 27,
             "IMPRESSION": 723,
-            "PIN_CLICK": 27
+            "SAVE": 2,
+            "OUTBOUND_CLICK": 0
           }
         },
         {
           "date": "2026-10-21",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 1,
-            "OUTBOUND_CLICK": 0,
+            "PIN_CLICK": 33,
             "IMPRESSION": 900,
-            "PIN_CLICK": 33
+            "SAVE": 1,
+            "OUTBOUND_CLICK": 0
           }
         },
         {
           "date": "2026-10-22",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 2,
-            "OUTBOUND_CLICK": 1,
+            "PIN_CLICK": 27,
             "IMPRESSION": 782,
-            "PIN_CLICK": 27
+            "SAVE": 2,
+            "OUTBOUND_CLICK": 1
           }
         },
         {
           "date": "2026-10-23",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 1,
-            "OUTBOUND_CLICK": 0,
+            "PIN_CLICK": 20,
             "IMPRESSION": 690,
-            "PIN_CLICK": 20
+            "SAVE": 1,
+            "OUTBOUND_CLICK": 0
           }
         },
         {
           "date": "2026-10-24",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 1,
-            "OUTBOUND_CLICK": 0,
+            "PIN_CLICK": 11,
             "IMPRESSION": 556,
-            "PIN_CLICK": 11
+            "SAVE": 1,
+            "OUTBOUND_CLICK": 0
           }
         },
         {
           "date": "2026-10-25",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 2,
-            "OUTBOUND_CLICK": 1,
+            "PIN_CLICK": 18,
             "IMPRESSION": 387,
-            "PIN_CLICK": 18
+            "SAVE": 2,
+            "OUTBOUND_CLICK": 1
           }
         },
         {
           "date": "2026-10-26",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 2,
-            "OUTBOUND_CLICK": 0,
+            "PIN_CLICK": 24,
             "IMPRESSION": 821,
-            "PIN_CLICK": 24
+            "SAVE": 2,
+            "OUTBOUND_CLICK": 0
           }
         },
         {
           "date": "2026-10-27",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 3,
-            "OUTBOUND_CLICK": 0,
+            "PIN_CLICK": 35,
             "IMPRESSION": 833,
-            "PIN_CLICK": 35
+            "SAVE": 3,
+            "OUTBOUND_CLICK": 0
           }
         },
         {
           "date": "2026-10-28",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 3,
-            "OUTBOUND_CLICK": 0,
+            "PIN_CLICK": 35,
             "IMPRESSION": 788,
-            "PIN_CLICK": 35
+            "SAVE": 3,
+            "OUTBOUND_CLICK": 0
           }
         },
         {
           "date": "2026-10-29",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 2,
-            "OUTBOUND_CLICK": 0,
+            "PIN_CLICK": 25,
             "IMPRESSION": 654,
-            "PIN_CLICK": 25
+            "SAVE": 2,
+            "OUTBOUND_CLICK": 0
           }
         },
         {
           "date": "2026-10-30",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 1,
-            "OUTBOUND_CLICK": 0,
+            "PIN_CLICK": 20,
             "IMPRESSION": 671,
-            "PIN_CLICK": 20
+            "SAVE": 1,
+            "OUTBOUND_CLICK": 0
           }
         },
         {
           "date": "2026-10-31",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 1,
-            "OUTBOUND_CLICK": 0,
+            "PIN_CLICK": 10,
             "IMPRESSION": 476,
-            "PIN_CLICK": 10
+            "SAVE": 1,
+            "OUTBOUND_CLICK": 0
           }
         },
         {
           "date": "2026-11-01",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 1,
-            "OUTBOUND_CLICK": 0,
+            "PIN_CLICK": 14,
             "IMPRESSION": 347,
-            "PIN_CLICK": 14
+            "SAVE": 1,
+            "OUTBOUND_CLICK": 0
           }
         },
         {
           "date": "2026-11-02",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 6,
-            "OUTBOUND_CLICK": 1,
+            "PIN_CLICK": 20,
             "IMPRESSION": 570,
-            "PIN_CLICK": 20
+            "SAVE": 6,
+            "OUTBOUND_CLICK": 1
           }
         },
         {
           "date": "2026-11-03",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 0,
-            "OUTBOUND_CLICK": 0,
+            "PIN_CLICK": 13,
             "IMPRESSION": 597,
-            "PIN_CLICK": 13
+            "SAVE": 0,
+            "OUTBOUND_CLICK": 0
           }
         },
         {
           "date": "2026-11-04",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 1,
-            "OUTBOUND_CLICK": 0,
+            "PIN_CLICK": 18,
             "IMPRESSION": 607,
-            "PIN_CLICK": 18
+            "SAVE": 1,
+            "OUTBOUND_CLICK": 0
           }
         },
         {
           "date": "2026-11-05",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 2,
-            "OUTBOUND_CLICK": 0,
+            "PIN_CLICK": 31,
             "IMPRESSION": 687,
-            "PIN_CLICK": 31
+            "SAVE": 2,
+            "OUTBOUND_CLICK": 0
           }
         },
         {
           "date": "2026-11-06",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 0,
-            "OUTBOUND_CLICK": 0,
+            "PIN_CLICK": 27,
             "IMPRESSION": 526,
-            "PIN_CLICK": 27
+            "SAVE": 0,
+            "OUTBOUND_CLICK": 0
           }
         },
         {
           "date": "2026-11-07",
           "data_status": "READY",
           "metrics": {
-            "SAVE": 0,
-            "OUTBOUND_CLICK": 0,
+            "PIN_CLICK": 14,
             "IMPRESSION": 395,
-            "PIN_CLICK": 14
+            "SAVE": 0,
+            "OUTBOUND_CLICK": 0
           }
         },
         {
           "date": "2026-11-08",
-          "data_status": "PROCESSING",
+          "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 0.0,
-            "OUTBOUND_CLICK": 0.0,
-            "PIN_CLICK": 0.0,
-            "SAVE": 0.0
+            "PIN_CLICK": 14,
+            "IMPRESSION": 307,
+            "SAVE": 0,
+            "OUTBOUND_CLICK": 0
           }
         },
         {
           "date": "2026-11-09",
+          "data_status": "READY",
+          "metrics": {
+            "PIN_CLICK": 28,
+            "IMPRESSION": 514,
+            "SAVE": 4,
+            "OUTBOUND_CLICK": 1
+          }
+        },
+        {
+          "date": "2026-11-10",
           "data_status": "PROCESSING",
           "metrics": {
             "IMPRESSION": 0.0,
@@ -309,7 +309,7 @@
           }
         },
         {
-          "date": "2026-11-10",
+          "date": "2026-11-11",
           "data_status": "PROCESSING",
           "metrics": {
             "IMPRESSION": 0.0,
@@ -322,16 +322,16 @@
     }
   },
   "pinterest_summary": {
+    "PIN_CLICK": 640,
+    "IMPRESSION": 18072,
     "SAVE": 48,
-    "OUTBOUND_CLICK": 4,
-    "IMPRESSION": 17735,
-    "PIN_CLICK": 616
+    "OUTBOUND_CLICK": 5
   },
   "pinterest_boards": [
     {
       "id": "1029635602248341063",
       "name": "Anti-Inflammatory Diet Tips",
-      "pin_count": 141
+      "pin_count": 142
     },
     {
       "id": "1029635602248341068",
@@ -356,7 +356,7 @@
     {
       "id": "1029635602248341069",
       "name": "Energy Boosters for Women 40+",
-      "pin_count": 99
+      "pin_count": 100
     },
     {
       "id": "1029635602248341061",
@@ -416,21 +416,21 @@
     {
       "id": "1029635602248341071",
       "name": "Motivation & Mindset",
-      "pin_count": 130
+      "pin_count": 131
     },
     {
       "id": "1029635602248341070",
       "name": "Natural Supplements & Wellness",
-      "pin_count": 122
+      "pin_count": 123
     }
   ],
   "pinterest_boards_count": 19,
   "instagram_account": {
-    "error": "{\"error\":{\"message\":\"Error validating access token: Session has expired on Tuesday, 27-Oct-26 03:49:13 PDT. The current time is Tuesday, 10-Nov-26 08:01:45 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"A255PpJkTk_xa_3RipRUu6z\"}}"
+    "error": "{\"error\":{\"message\":\"Error validating access token: Session has expired on Tuesday, 27-Oct-26 03:49:13 PDT. The current time is Wednesday, 11-Nov-26 07:47:59 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"A6pjd-QQLs6FxoqrJQK_whn\"}}"
   },
   "instagram_reach_14d": [],
   "instagram_profile_views_14d": [],
   "instagram_website_clicks_14d": [],
   "instagram_interactions_14d": [],
-  "generated_at": "2026-11-10T16:01:46.029179+00:00"
+  "generated_at": "2026-11-11T15:48:00.511025+00:00"
 }
