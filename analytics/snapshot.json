@@ -2,22 +2,12 @@
   "pinterest_account_analytics": {
     "all": {
       "summary_metrics": {
-        "OUTBOUND_CLICK": 5,
-        "IMPRESSION": 17256,
-        "PIN_CLICK": 619,
-        "SAVE": 44
+        "OUTBOUND_CLICK": 6,
+        "IMPRESSION": 17923,
+        "PIN_CLICK": 643,
+        "SAVE": 45
       },
       "daily_metrics": [
-        {
-          "date": "2026-10-14",
-          "data_status": "READY",
-          "metrics": {
-            "OUTBOUND_CLICK": 0,
-            "IMPRESSION": 672,
-            "PIN_CLICK": 26,
-            "SAVE": 0
-          }
-        },
         {
           "date": "2026-10-15",
           "data_status": "READY",
@@ -290,16 +280,26 @@
         },
         {
           "date": "2026-11-11",
-          "data_status": "PROCESSING",
+          "data_status": "READY",
           "metrics": {
-            "IMPRESSION": 0.0,
-            "OUTBOUND_CLICK": 0.0,
-            "PIN_CLICK": 0.0,
-            "SAVE": 0.0
+            "OUTBOUND_CLICK": 1,
+            "IMPRESSION": 653,
+            "PIN_CLICK": 31,
+            "SAVE": 0
           }
         },
         {
           "date": "2026-11-12",
+          "data_status": "READY",
+          "metrics": {
+            "OUTBOUND_CLICK": 0,
+            "IMPRESSION": 686,
+            "PIN_CLICK": 19,
+            "SAVE": 1
+          }
+        },
+        {
+          "date": "2026-11-13",
           "data_status": "PROCESSING",
           "metrics": {
             "IMPRESSION": 0.0,
@@ -309,7 +309,7 @@
           }
         },
         {
-          "date": "2026-11-13",
+          "date": "2026-11-14",
           "data_status": "PROCESSING",
           "metrics": {
             "IMPRESSION": 0.0,
@@ -322,21 +322,21 @@
     }
   },
   "pinterest_summary": {
-    "OUTBOUND_CLICK": 5,
-    "IMPRESSION": 17256,
-    "PIN_CLICK": 619,
-    "SAVE": 44
+    "OUTBOUND_CLICK": 6,
+    "IMPRESSION": 17923,
+    "PIN_CLICK": 643,
+    "SAVE": 45
   },
   "pinterest_boards": [
     {
       "id": "1029635602248341063",
       "name": "Anti-Inflammatory Diet Tips",
-      "pin_count": 143
+      "pin_count": 144
     },
     {
       "id": "1029635602248341068",
       "name": "Before and After Transformations",
-      "pin_count": 120
+      "pin_count": 121
     },
     {
       "id": "1029635602248460175",
@@ -356,17 +356,17 @@
     {
       "id": "1029635602248341069",
       "name": "Energy Boosters for Women 40+",
-      "pin_count": 100
+      "pin_count": 102
     },
     {
       "id": "1029635602248341061",
       "name": "Fat Burning Foods & Drinks",
-      "pin_count": 98
+      "pin_count": 99
     },
     {
       "id": "1029635602248341064",
       "name": "High Protein Meals for Women",
-      "pin_count": 94
+      "pin_count": 95
     },
     {
       "id": "1029635602248341055",
@@ -376,7 +376,7 @@
     {
       "id": "1029635602248462146",
       "name": "Java Burn Coffee Ritual Recipes",
-      "pin_count": 43
+      "pin_count": 44
     },
     {
       "id": "1029635602248460178",
@@ -391,12 +391,12 @@
     {
       "id": "1029635602248341060",
       "name": "Metabolism Boost After 40",
-      "pin_count": 109
+      "pin_count": 110
     },
     {
       "id": "1029635602246765608",
       "name": "Metabolism Boosting Drinks Women Over 40",
-      "pin_count": 94
+      "pin_count": 95
     },
     {
       "id": "1029635602248462145",
@@ -416,21 +416,21 @@
     {
       "id": "1029635602248341071",
       "name": "Motivation & Mindset",
-      "pin_count": 131
+      "pin_count": 133
     },
     {
       "id": "1029635602248341070",
       "name": "Natural Supplements & Wellness",
-      "pin_count": 123
+      "pin_count": 125
     }
   ],
   "pinterest_boards_count": 19,
   "instagram_account": {
-    "error": "{\"error\":{\"message\":\"Error validating access token: Session has expired on Tuesday, 27-Oct-26 03:49:13 PDT. The current time is Friday, 13-Nov-26 07:52:38 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AsGAuxehr6pYBO0cXNNcWNH\"}}"
+    "error": "{\"error\":{\"message\":\"Error validating access token: Session has expired on Tuesday, 27-Oct-26 03:49:13 PDT. The current time is Saturday, 14-Nov-26 06:43:15 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"ANBwxuIX3lFM4fziTl3U3ow\"}}"
   },
   "instagram_reach_14d": [],
   "instagram_profile_views_14d": [],
   "instagram_website_clicks_14d": [],
   "instagram_interactions_14d": [],
-  "generated_at": "2026-11-13T15:52:39.737159+00:00"
+  "generated_at": "2026-11-14T14:43:16.840294+00:00"
 }
