@@ -2,22 +2,12 @@
   "pinterest_account_analytics": {
     "all": {
       "summary_metrics": {
-        "OUTBOUND_CLICK": 6,
-        "IMPRESSION": 17923,
-        "PIN_CLICK": 643,
+        "OUTBOUND_CLICK": 7,
+        "IMPRESSION": 17814,
+        "PIN_CLICK": 633,
         "SAVE": 45
       },
       "daily_metrics": [
-        {
-          "date": "2026-10-15",
-          "data_status": "READY",
-          "metrics": {
-            "OUTBOUND_CLICK": 0,
-            "IMPRESSION": 766,
-            "PIN_CLICK": 34,
-            "SAVE": 1
-          }
-        },
         {
           "date": "2026-10-16",
           "data_status": "READY",
@@ -300,6 +290,16 @@
         },
         {
           "date": "2026-11-13",
+          "data_status": "READY",
+          "metrics": {
+            "OUTBOUND_CLICK": 1,
+            "IMPRESSION": 657,
+            "PIN_CLICK": 24,
+            "SAVE": 1
+          }
+        },
+        {
+          "date": "2026-11-14",
           "data_status": "PROCESSING",
           "metrics": {
             "IMPRESSION": 0.0,
@@ -309,7 +309,7 @@
           }
         },
         {
-          "date": "2026-11-14",
+          "date": "2026-11-15",
           "data_status": "PROCESSING",
           "metrics": {
             "IMPRESSION": 0.0,
@@ -322,9 +322,9 @@
     }
   },
   "pinterest_summary": {
-    "OUTBOUND_CLICK": 6,
-    "IMPRESSION": 17923,
-    "PIN_CLICK": 643,
+    "OUTBOUND_CLICK": 7,
+    "IMPRESSION": 17814,
+    "PIN_CLICK": 633,
     "SAVE": 45
   },
   "pinterest_boards": [
@@ -336,22 +336,22 @@
     {
       "id": "1029635602248341068",
       "name": "Before and After Transformations",
-      "pin_count": 121
+      "pin_count": 122
     },
     {
       "id": "1029635602248460175",
       "name": "Coffee & Weight Loss for Women",
-      "pin_count": 36
+      "pin_count": 37
     },
     {
       "id": "1029635602248460179",
       "name": "Coffee Metabolism Hacks",
-      "pin_count": 37
+      "pin_count": 38
     },
     {
       "id": "1029635602248460180",
       "name": "Cortisol & Belly Fat Solutions",
-      "pin_count": 37
+      "pin_count": 38
     },
     {
       "id": "1029635602248341069",
@@ -361,17 +361,17 @@
     {
       "id": "1029635602248341061",
       "name": "Fat Burning Foods & Drinks",
-      "pin_count": 99
+      "pin_count": 100
     },
     {
       "id": "1029635602248341064",
       "name": "High Protein Meals for Women",
-      "pin_count": 95
+      "pin_count": 96
     },
     {
       "id": "1029635602248341055",
       "name": "Hormonal Belly Fat Tips",
-      "pin_count": 161
+      "pin_count": 162
     },
     {
       "id": "1029635602248462146",
@@ -381,12 +381,12 @@
     {
       "id": "1029635602248460178",
       "name": "Java Burn Reviews & Results",
-      "pin_count": 37
+      "pin_count": 38
     },
     {
       "id": "1029635602248341065",
       "name": "Menopause Weight Loss Tips",
-      "pin_count": 131
+      "pin_count": 132
     },
     {
       "id": "1029635602248341060",
@@ -396,22 +396,22 @@
     {
       "id": "1029635602246765608",
       "name": "Metabolism Boosting Drinks Women Over 40",
-      "pin_count": 95
+      "pin_count": 96
     },
     {
       "id": "1029635602248462145",
       "name": "Morning Coffee Metabolism Tips for Women 40+",
-      "pin_count": 45
+      "pin_count": 46
     },
     {
       "id": "1029635602248460177",
       "name": "Morning Coffee Ritual for Women 40+",
-      "pin_count": 36
+      "pin_count": 37
     },
     {
       "id": "1029635602248341062",
       "name": "Morning Routines for Weight Loss",
-      "pin_count": 137
+      "pin_count": 138
     },
     {
       "id": "1029635602248341071",
@@ -426,11 +426,11 @@
   ],
   "pinterest_boards_count": 19,
   "instagram_account": {
-    "error": "{\"error\":{\"message\":\"Error validating access token: Session has expired on Tuesday, 27-Oct-26 03:49:13 PDT. The current time is Saturday, 14-Nov-26 06:43:15 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"ANBwxuIX3lFM4fziTl3U3ow\"}}"
+    "error": "{\"error\":{\"message\":\"Error validating access token: Session has expired on Tuesday, 27-Oct-26 03:49:13 PDT. The current time is Sunday, 15-Nov-26 07:15:07 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AnmbpEd1V8QidofShDDEPTn\"}}"
   },
   "instagram_reach_14d": [],
   "instagram_profile_views_14d": [],
   "instagram_website_clicks_14d": [],
   "instagram_interactions_14d": [],
-  "generated_at": "2026-11-14T14:43:16.840294+00:00"
+  "generated_at": "2026-11-15T15:15:08.631928+00:00"
 }
