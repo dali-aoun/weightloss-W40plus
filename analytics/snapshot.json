@@ -2,22 +2,12 @@
   "pinterest_account_analytics": {
     "all": {
       "summary_metrics": {
-        "PIN_CLICK": 631,
-        "IMPRESSION": 17852,
+        "PIN_CLICK": 621,
+        "IMPRESSION": 17596,
         "SAVE": 41,
         "OUTBOUND_CLICK": 6
       },
       "daily_metrics": [
-        {
-          "date": "2026-10-21",
-          "data_status": "READY",
-          "metrics": {
-            "PIN_CLICK": 33,
-            "IMPRESSION": 900,
-            "SAVE": 1,
-            "OUTBOUND_CLICK": 0
-          }
-        },
         {
           "date": "2026-10-22",
           "data_status": "READY",
@@ -300,6 +290,16 @@
         },
         {
           "date": "2026-11-19",
+          "data_status": "READY",
+          "metrics": {
+            "PIN_CLICK": 23,
+            "IMPRESSION": 644,
+            "SAVE": 1,
+            "OUTBOUND_CLICK": 0
+          }
+        },
+        {
+          "date": "2026-11-20",
           "data_status": "PROCESSING",
           "metrics": {
             "IMPRESSION": 0.0,
@@ -309,7 +309,7 @@
           }
         },
         {
-          "date": "2026-11-20",
+          "date": "2026-11-21",
           "data_status": "PROCESSING",
           "metrics": {
             "IMPRESSION": 0.0,
@@ -322,8 +322,8 @@
     }
   },
   "pinterest_summary": {
-    "PIN_CLICK": 631,
-    "IMPRESSION": 17852,
+    "PIN_CLICK": 621,
+    "IMPRESSION": 17596,
     "SAVE": 41,
     "OUTBOUND_CLICK": 6
   },
@@ -331,7 +331,7 @@
     {
       "id": "1029635602248341063",
       "name": "Anti-Inflammatory Diet Tips",
-      "pin_count": 148
+      "pin_count": 149
     },
     {
       "id": "1029635602248341068",
@@ -356,17 +356,17 @@
     {
       "id": "1029635602248341069",
       "name": "Energy Boosters for Women 40+",
-      "pin_count": 105
+      "pin_count": 107
     },
     {
       "id": "1029635602248341061",
       "name": "Fat Burning Foods & Drinks",
-      "pin_count": 103
+      "pin_count": 104
     },
     {
       "id": "1029635602248341064",
       "name": "High Protein Meals for Women",
-      "pin_count": 99
+      "pin_count": 100
     },
     {
       "id": "1029635602248341055",
@@ -376,7 +376,7 @@
     {
       "id": "1029635602248462146",
       "name": "Java Burn Coffee Ritual Recipes",
-      "pin_count": 48
+      "pin_count": 49
     },
     {
       "id": "1029635602248460178",
@@ -386,12 +386,12 @@
     {
       "id": "1029635602248341065",
       "name": "Menopause Weight Loss Tips",
-      "pin_count": 135
+      "pin_count": 136
     },
     {
       "id": "1029635602248341060",
       "name": "Metabolism Boost After 40",
-      "pin_count": 114
+      "pin_count": 115
     },
     {
       "id": "1029635602246765608",
@@ -401,7 +401,7 @@
     {
       "id": "1029635602248462145",
       "name": "Morning Coffee Metabolism Tips for Women 40+",
-      "pin_count": 49
+      "pin_count": 50
     },
     {
       "id": "1029635602248460177",
@@ -411,26 +411,26 @@
     {
       "id": "1029635602248341062",
       "name": "Morning Routines for Weight Loss",
-      "pin_count": 141
+      "pin_count": 142
     },
     {
       "id": "1029635602248341071",
       "name": "Motivation & Mindset",
-      "pin_count": 136
+      "pin_count": 138
     },
     {
       "id": "1029635602248341070",
       "name": "Natural Supplements & Wellness",
-      "pin_count": 128
+      "pin_count": 130
     }
   ],
   "pinterest_boards_count": 19,
   "instagram_account": {
-    "error": "{\"error\":{\"message\":\"Error validating access token: Session has expired on Tuesday, 27-Oct-26 03:49:13 PDT. The current time is Friday, 20-Nov-26 08:38:26 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AGE-s_xNE6CZAn9XHrwI3is\"}}"
+    "error": "{\"error\":{\"message\":\"Error validating access token: Session has expired on Tuesday, 27-Oct-26 03:49:13 PDT. The current time is Saturday, 21-Nov-26 07:52:30 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"A1NXagQlJwb1WK0-Xn-DKgY\"}}"
   },
   "instagram_reach_14d": [],
   "instagram_profile_views_14d": [],
   "instagram_website_clicks_14d": [],
   "instagram_interactions_14d": [],
-  "generated_at": "2026-11-20T16:38:26.824842+00:00"
+  "generated_at": "2026-11-21T15:52:30.924501+00:00"
 }
